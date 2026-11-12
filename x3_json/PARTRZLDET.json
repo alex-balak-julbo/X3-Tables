@@ -1,0 +1,209 @@
+{
+  "table": "PARTRZLDET",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PARTRZLDET.htm",
+  "keys": [
+    {
+      "key": "TZD0",
+      "description": "KEYTZL+CODZONSRC+CODZONDES",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ALLVALEQU",
+      "label": "Même valeur",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CNSVAL",
+      "label": "Constante",
+      "dim": "",
+      "type": "A",
+      "length": "20",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODZONDES",
+      "label": "Champ destination",
+      "dim": "",
+      "type": "AVA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODZONSRC",
+      "label": "Champ source",
+      "dim": "",
+      "type": "AVA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CPY",
+      "label": "Société",
+      "dim": "",
+      "type": "CPY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CPY]CPY0=[TZD]CPY",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D4",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CUM",
+      "label": "Cumul",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FREMAI",
+      "label": "Vide/Principale",
+      "dim": "",
+      "type": "M",
+      "length": "10",
+      "menu": "3190",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "KEYTZL",
+      "label": "Identifiant",
+      "dim": "",
+      "type": "TZL",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ORNUL",
+      "label": "Ou vide",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D4",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "TZD",
+  "label": "Param transit zones détail",
+  "module": "Immobilisations"
+}

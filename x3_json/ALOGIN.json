@@ -1,0 +1,269 @@
+{
+  "table": "ALOGIN",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/ALOGIN.htm",
+  "keys": [
+    {
+      "key": "ALO0",
+      "description": "BDDID+FLG",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "ALO1",
+      "description": "SEQ",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "ALO2",
+      "description": "ADOID+FLG",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ADOID",
+      "label": "Identifiant adonix",
+      "dim": "",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ADOLOG",
+      "label": "Identifiant X3",
+      "dim": "",
+      "type": "ALO",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ADOTYP",
+      "label": "Type de connexion",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "924",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ADOUSR",
+      "label": "Utilisateur x3",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ADRCLI",
+      "label": "Adresse client",
+      "dim": "",
+      "type": "A",
+      "length": "30",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BDDID",
+      "label": "Identifiant BDD",
+      "dim": "",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ALO]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DATCNX",
+      "label": "Date connexion",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DATDCX",
+      "label": "Date déconnexion",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FLG",
+      "label": "Flag actif",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "HOUCNX",
+      "label": "Heure connexion",
+      "dim": "",
+      "type": "HS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "HOUDCX",
+      "label": "Heure déconnexion",
+      "dim": "",
+      "type": "HS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MSG",
+      "label": "Message",
+      "dim": "",
+      "type": "A",
+      "length": "80",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SEQ",
+      "label": "Chrono",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "STA",
+      "label": "Statut",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SYSUSR",
+      "label": "Utilisateur système",
+      "dim": "",
+      "type": "A",
+      "length": "20",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ALO]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ALO",
+  "label": "Table de login",
+  "module": "Superviseur"
+}

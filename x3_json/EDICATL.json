@@ -1,0 +1,161 @@
+{
+  "table": "EDICATL",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/EDICATL.htm",
+  "keys": [
+    {
+      "key": "ECAL0",
+      "description": "CATCOD+NUMLIN",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "ECAL1",
+      "description": "CATCOD+SORT",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "ECAL2",
+      "description": "CATCOD+CODE",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CATCOD",
+      "label": "Code catégorie",
+      "dim": "",
+      "type": "CAT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ECA]ECA0=[ECAL]CATCOD",
+      "nullify": "BSRA",
+      "activity": ""
+    },
+    {
+      "name": "CODE",
+      "label": "Code",
+      "dim": "",
+      "type": "EDO",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ECAL]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DOSSIER",
+      "label": "Dossier",
+      "dim": "",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DUPLICATE",
+      "label": "Duplicata",
+      "dim": "",
+      "type": "M",
+      "length": "30",
+      "menu": "2010",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUMLIN",
+      "label": "Numéro ligne",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SORT",
+      "label": "Tri",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ECAL]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ECAL",
+  "label": "Catégorie EDI (législations)",
+  "module": "Données de base"
+}

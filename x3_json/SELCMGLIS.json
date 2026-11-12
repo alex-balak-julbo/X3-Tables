@@ -1,0 +1,221 @@
+{
+  "table": "SELCMGLIS",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/SELCMGLIS.htm",
+  "keys": [
+    {
+      "key": "SCL0",
+      "description": "OPGNUM+RECTYP",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "SCL1",
+      "description": "OPGNUM+RECTYP+RECNUM",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "SCL2",
+      "description": "OPGNUM+RECTYP+RECNUM+BPRNUM",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BPAADD",
+      "label": "Code adresse",
+      "dim": "",
+      "type": "ADR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BPRNUM",
+      "label": "Code tiers",
+      "dim": "",
+      "type": "BPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPR]BPR0=[SCL]BPRNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CLSNUM",
+      "label": "N° d'ordre",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[SCL]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "OPGNUM",
+      "label": "Code opération",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "RECNUM",
+      "label": "Code",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "RECTYP",
+      "label": "Type",
+      "dim": "",
+      "type": "ABR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "REPNUM",
+      "label": "Code représentant",
+      "dim": "",
+      "type": "REP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[REP]REP0=[SCL]REPNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "SCLCRY",
+      "label": "Pays",
+      "dim": "",
+      "type": "CRY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TCY]TCY0=[SCL]SCLCRY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "SCLCTY",
+      "label": "Ville",
+      "dim": "",
+      "type": "CTY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SCLSAT",
+      "label": "Etat",
+      "dim": "",
+      "type": "SAT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SCLZIP",
+      "label": "Code postal",
+      "dim": "",
+      "type": "POS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[SCL]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "SCL",
+  "label": "Contenu sélections marketing",
+  "module": "Action commerciale"
+}

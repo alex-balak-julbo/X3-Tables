@@ -1,0 +1,167 @@
+{
+  "table": "GSTGRPD",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/GSTGRPD.htm",
+  "keys": [
+    {
+      "key": "GSTGD0",
+      "description": "CODGSTGRP+LIN",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "GSTGD1",
+      "description": "CODGSTGRP+CPY",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ABN",
+      "label": "Numéro ABN",
+      "dim": "",
+      "type": "A",
+      "length": "11",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODGSTGRP",
+      "label": "Groupe GST",
+      "dim": "",
+      "type": "GSTGRP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GSTGH]GSTGH0=[GSTGD]CODGSTGRP",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CPY",
+      "label": "Société membre GST",
+      "dim": "",
+      "type": "CPY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CPY]CPY0=[GSTGD]CPY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[GSTGD]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DATCES",
+      "label": "Date fin opérations",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DATFOR",
+      "label": "Date début opérations",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "GSTHEA",
+      "label": "Entité principale",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LIN",
+      "label": "Numéro de la ligne",
+      "dim": "",
+      "type": "L",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[GSTGD]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "GSTGD",
+  "label": "Détails groupe GST",
+  "module": "Comptabilité"
+}

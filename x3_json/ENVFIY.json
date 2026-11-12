@@ -1,0 +1,215 @@
+{
+  "table": "ENVFIY",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/ENVFIY.htm",
+  "keys": [
+    {
+      "key": "ENF0",
+      "description": "ENV+FIYNUM",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "ENF1",
+      "description": "ENV",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AMTAPPFIY",
+      "label": "Montant approuvé",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AMTBUDFIY",
+      "label": "Montant initial",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AMTRESFIY",
+      "label": "Montant réserve",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "APPDATFIY",
+      "label": "Date d'approbation",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BUDRPT",
+      "label": "Report de budgets",
+      "dim": "",
+      "type": "MDC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ENF]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "ENV",
+      "label": "Enveloppe",
+      "dim": "",
+      "type": "ENV",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ENV]ENV0=[ENF]ENV",
+      "nullify": "Bloquant",
+      "activity": "GDD"
+    },
+    {
+      "name": "FIYEND",
+      "label": "Fin",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FIYNUM",
+      "label": "Exercice",
+      "dim": "",
+      "type": "C",
+      "length": "2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FIYSTR",
+      "label": "Début",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "REVDATFIY",
+      "label": "Date dernière révision",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "STAFIY",
+      "label": "Statut",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "2691",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ENF]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ENF",
+  "label": "Ventilation enveloppe/exercice",
+  "module": "Comptabilité"
+}

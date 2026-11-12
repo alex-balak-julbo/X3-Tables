@@ -1,0 +1,113 @@
+{
+  "table": "AENUMBDGL",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/AENUMBDGL.htm",
+  "keys": [
+    {
+      "key": "AENUML0",
+      "description": "AMENLOC+LANNUM",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AENUMVAL",
+      "label": "Valeur enum",
+      "dim": "",
+      "type": "APROP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AMENLOC",
+      "label": "Chapitre",
+      "dim": "",
+      "type": "MNL",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AENUML]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "LANNUM",
+      "label": "Numéro message",
+      "dim": "",
+      "type": "C",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AENUML]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "AENUML",
+  "label": "Lignes de binding d'énums",
+  "module": "Superviseur"
+}

@@ -1,0 +1,191 @@
+{
+  "table": "AESPION",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/AESPION.htm",
+  "keys": [
+    {
+      "key": "ESPDAT",
+      "description": "ESPDAT+ESPTIM",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "ESPUSR",
+      "description": "ESPUSR+ESPDAT+ESPTIM",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AES]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "ESP1",
+      "label": "Paramètre",
+      "dim": "",
+      "type": "ID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ESP2",
+      "label": "Paramètre",
+      "dim": "",
+      "type": "ID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ESPDAT",
+      "label": "Date",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ESPFNC",
+      "label": "Fonction",
+      "dim": "",
+      "type": "AFC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AFC]CODINT=[AES]ESPFNC",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "ESPMOT",
+      "label": "Motif",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=81;ESPMOT",
+      "nullify": "R.A.Z.",
+      "activity": ""
+    },
+    {
+      "name": "ESPNAT",
+      "label": "Nature opération",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "83",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ESPTAB",
+      "label": "Table",
+      "dim": "",
+      "type": "ATB",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ATB]CODFIC=[AES]ESPTAB",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "ESPTIM",
+      "label": "Heure",
+      "dim": "",
+      "type": "A",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ESPUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AES]ESPUSR",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AES]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "AES",
+  "label": "Trace des opérations",
+  "module": "Superviseur"
+}

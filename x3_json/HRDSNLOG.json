@@ -1,0 +1,9 @@
+{
+  "table": "HRDSNLOG",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/HRDSNLOG.htm",
+  "keys": [],
+  "fields": [],
+  "abbreviation": "HRLOG",
+  "label": "Table des erreurs DSN",
+  "module": "Administration des RH"
+}

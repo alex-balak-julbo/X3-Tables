@@ -1,0 +1,257 @@
+{
+  "table": "TABBOMALT",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/TABBOMALT.htm",
+  "keys": [
+    {
+      "key": "TBO0",
+      "description": "BOMALTTYP+BOMALT",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "TBO1",
+      "description": "FCY+BOMALT+BOMALTTYP",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "TBO2",
+      "description": "BOMALT+BOMALTTYP",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ACSCOD",
+      "label": "Code accès",
+      "dim": "",
+      "type": "ACS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ACS]ACS0=[TBO]ACSCOD",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BOMALT",
+      "label": "Alternative nomencl",
+      "dim": "",
+      "type": "TBO",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TBO]TBO0=BOMALTTYP;BOMALT",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "BOMALTTYP",
+      "label": "Type alternative",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "224",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CSTUSE",
+      "label": "Utilisation coûts",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FCY",
+      "label": "Site",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[TBO]FCY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "MFGUSE",
+      "label": "Utilisation fabric",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MPSUSE",
+      "label": "Utilisation PDP",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MRPUSE",
+      "label": "Utilisation CBN",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TBODES",
+      "label": "Intitulé",
+      "dim": "",
+      "type": "DES",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TBODESAXX",
+      "label": "Intitulé",
+      "dim": "",
+      "type": "AX3",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TBOSHO",
+      "label": "Intitulé court",
+      "dim": "",
+      "type": "SHO",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TBOSHOAXX",
+      "label": "Intitulé court",
+      "dim": "",
+      "type": "AX1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "TBO",
+  "label": "Table des Altern. Nomenclature",
+  "module": "Données de base"
+}

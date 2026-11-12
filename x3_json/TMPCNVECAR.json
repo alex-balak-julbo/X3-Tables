@@ -1,0 +1,197 @@
+{
+  "table": "TMPCNVECAR",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/TMPCNVECAR.htm",
+  "keys": [
+    {
+      "key": "TCE0",
+      "description": "LEDTYP+SOC+SITE+NUM+DEV",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AMT",
+      "label": "Montant",
+      "dim": "10",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BPR",
+      "label": "Tiers",
+      "dim": "",
+      "type": "BPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPR]BPR0=[TCE]BPR",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CPTDES",
+      "label": "Compte destination",
+      "dim": "",
+      "type": "A",
+      "length": "30",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CPTORI",
+      "label": "Compte origine",
+      "dim": "",
+      "type": "A",
+      "length": "30",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[TCE]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DAT",
+      "label": "Date",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DEV",
+      "label": "Devise",
+      "dim": "",
+      "type": "A",
+      "length": "3",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LEDTYP",
+      "label": "Type de référentiel",
+      "dim": "",
+      "type": "M",
+      "length": "",
+      "menu": "2644",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUM",
+      "label": "Numéro",
+      "dim": "",
+      "type": "C",
+      "length": "3",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SITE",
+      "label": "Site",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[TCE]SITE",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "SOC",
+      "label": "Société",
+      "dim": "",
+      "type": "CPY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CPY]CPY0=[TCE]SOC",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[TCE]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "TCE",
+  "label": "Table temporaire ecart conv",
+  "module": "Comptabilité"
+}

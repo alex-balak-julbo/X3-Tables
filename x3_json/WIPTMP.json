@@ -1,0 +1,221 @@
+{
+  "table": "WIPTMP",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/WIPTMP.htm",
+  "keys": [
+    {
+      "key": "MWT0",
+      "description": "ENTCOD+CPY+KEY1+KEY2+KEY3+KEY4+KEY5+VCRTYP+VCRNUM+WIPSEQ",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CPY",
+      "label": "Société",
+      "dim": "",
+      "type": "CPY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CPY]CPY0=[MWT]CPY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[MWT]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "ENTCOD",
+      "label": "Code pièce auto",
+      "dim": "",
+      "type": "GAU",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GAU]GAU0=[MWT]ENTCOD",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "KEY1",
+      "label": "Clé",
+      "dim": "",
+      "type": "A",
+      "length": "30",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "KEY2",
+      "label": "Clé",
+      "dim": "",
+      "type": "A",
+      "length": "30",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "KEY3",
+      "label": "Clé",
+      "dim": "",
+      "type": "A",
+      "length": "30",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "KEY4",
+      "label": "Clé",
+      "dim": "",
+      "type": "A",
+      "length": "30",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "KEY5",
+      "label": "Clé",
+      "dim": "",
+      "type": "A",
+      "length": "30",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PWIPCOST",
+      "label": "Chrono",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TXNTYP",
+      "label": "Type de transaction",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2358",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[MWT]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VCRNUM",
+      "label": "No pièce",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VCRTYP",
+      "label": "Type pièce",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "701",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "WIPSEQ",
+      "label": "Séquence",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "MWT",
+  "label": "Wipcost-Interface",
+  "module": "Production"
+}

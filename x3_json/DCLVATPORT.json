@@ -1,0 +1,185 @@
+{
+  "table": "DCLVATPORT",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/DCLVATPORT.htm",
+  "keys": [
+    {
+      "key": "DVPT0",
+      "description": "DCLTYP+DCLPAG+DCLFLD+CPY+VAT",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CPY",
+      "label": "Société",
+      "dim": "",
+      "type": "CPY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CPY]CPY0=[DVPT]CPY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[DVPT]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DCLFLD",
+      "label": "Champ déclaration",
+      "dim": "",
+      "type": "A",
+      "length": "3",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DCLPAG",
+      "label": "Annexe",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "3618",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DCLTYP",
+      "label": "Type",
+      "dim": "",
+      "type": "M",
+      "length": "12",
+      "menu": "2643",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DES",
+      "label": "Libellé",
+      "dim": "",
+      "type": "DES",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "GOODAQU",
+      "label": "Achat biens",
+      "dim": "",
+      "type": "M",
+      "length": "20",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SERVAQU",
+      "label": "Achat services",
+      "dim": "",
+      "type": "M",
+      "length": "20",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TRIOPE",
+      "label": "Opération triangulaire",
+      "dim": "",
+      "type": "M",
+      "length": "20",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[DVPT]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VAT",
+      "label": "Taxe",
+      "dim": "",
+      "type": "VAT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TVT]TVT0=VAT;[V]GSUPCLE",
+      "nullify": "Bloquant",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "DVPT",
+  "label": "Taxes",
+  "module": "Comptabilité"
+}

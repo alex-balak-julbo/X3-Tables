@@ -1,0 +1,221 @@
+{
+  "table": "ABATHOR",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/ABATHOR.htm",
+  "keys": [
+    {
+      "key": "ABH0",
+      "description": "COD",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CAL",
+      "label": "Calendrier",
+      "dim": "",
+      "type": "ABC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ABC]ABC0=[ABH]CAL",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "COD",
+      "label": "Contrainte",
+      "dim": "",
+      "type": "ABH",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ABH]ABH0=[ABH]COD",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ABH]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DAYOPE",
+      "label": "Jour ouvré",
+      "dim": "7",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DES",
+      "label": "Désignation",
+      "dim": "",
+      "type": "DES",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ENDCLO",
+      "label": "Heure fin",
+      "dim": "5",
+      "type": "HM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ENDOPE",
+      "label": "Heure fin",
+      "dim": "5",
+      "type": "HM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NBRCLO",
+      "label": "Lignes",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NBROPE",
+      "label": "Lignes",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "STRCLO",
+      "label": "Heure début",
+      "dim": "5",
+      "type": "HM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "STROPE",
+      "label": "Heure début",
+      "dim": "5",
+      "type": "HM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ABH]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ABH",
+  "label": "Contraintes horaires",
+  "module": "Superviseur"
+}

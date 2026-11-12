@@ -1,0 +1,191 @@
+{
+  "table": "SELSSPCPN",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/SELSSPCPN.htm",
+  "keys": [
+    {
+      "key": "SSC0",
+      "description": "SPTNUM+SPTLEV",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "SSC1",
+      "description": "SPTNUM+SPTTAB",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[SSC]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "SPTCPNSTD",
+      "label": "Support standard",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SPTFLT",
+      "label": "Filtre",
+      "dim": "",
+      "type": "A",
+      "length": "215",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SPTIDX",
+      "label": "Index",
+      "dim": "",
+      "type": "ANX",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SPTKEY",
+      "label": "Clé",
+      "dim": "",
+      "type": "AVA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SPTKEYPAE",
+      "label": "Clé parent",
+      "dim": "",
+      "type": "AVA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SPTLEV",
+      "label": "Niveau",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SPTNUM",
+      "label": "Code support",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SPTTAB",
+      "label": "Table",
+      "dim": "",
+      "type": "ATB",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ATB]CODFIC=[SSC]SPTTAB",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "SPTTABPAE",
+      "label": "Table parent",
+      "dim": "",
+      "type": "ATB",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ATB]CODFIC=[SSC]SPTTABPAE",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[SSC]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "SSC",
+  "label": "Composants supports sélection",
+  "module": "Action commerciale"
+}

@@ -1,0 +1,9 @@
+{
+  "table": "PAYPTD",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PAYPTD.htm",
+  "keys": [],
+  "fields": [],
+  "abbreviation": "PYP",
+  "label": "Lignes Ord. paiement/Reçus",
+  "module": "Comptabilité tiers"
+}

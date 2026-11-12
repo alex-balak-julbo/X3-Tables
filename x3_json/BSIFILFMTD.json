@@ -1,0 +1,191 @@
+{
+  "table": "BSIFILFMTD",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/BSIFILFMTD.htm",
+  "keys": [
+    {
+      "key": "BSIFFD0",
+      "description": "CODBFF+LIN",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "BSIFFD1",
+      "description": "CODBFF+SCT",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODBFF",
+      "label": "Format",
+      "dim": "",
+      "type": "BSIBFF",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BSIFFM]BSIFFM0=CODBFF",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[BSIFFD]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DBACT",
+      "label": "Opération",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "3672",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LEV",
+      "label": "Niveau",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LIN",
+      "label": "Numéro de la ligne",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SCT",
+      "label": "Segment",
+      "dim": "",
+      "type": "BSISCT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SCTEND",
+      "label": "Fin",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SCTSTR",
+      "label": "Démarrage",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SEGOBY",
+      "label": "Obligatoire",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TABTYP",
+      "label": "Table destination",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "3689",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[BSIFFD]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "BSIFFD",
+  "label": "Détail déf. format import bancaire",
+  "module": "Comptabilité tiers"
+}

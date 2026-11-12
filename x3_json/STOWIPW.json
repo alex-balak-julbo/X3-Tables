@@ -1,0 +1,149 @@
+{
+  "table": "STOWIPW",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/STOWIPW.htm",
+  "keys": [
+    {
+      "key": "SWW0",
+      "description": "STOCOU+PRONUM+SEQ",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PRONUM",
+      "label": "Numéro process",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SEQ",
+      "label": "Séquence",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "STOCOU",
+      "label": "Chrono stock",
+      "dim": "",
+      "type": "DCB",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[SWW]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "WIPQTA",
+      "label": "Qté active en trait",
+      "dim": "",
+      "type": "QTY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "WIPQTY",
+      "label": "Qté en traitement",
+      "dim": "",
+      "type": "QTY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "SWW",
+  "label": "Stocks en cours de traitement",
+  "module": "Stocks"
+}

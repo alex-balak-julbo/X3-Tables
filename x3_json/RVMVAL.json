@@ -1,0 +1,215 @@
+{
+  "table": "RVMVAL",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/RVMVAL.htm",
+  "keys": [
+    {
+      "key": "RVV1",
+      "description": "ITMREF+FCY+ECCVALMAJ+ECCVALMIN",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "RVV0",
+      "description": "ITMREF+FCY+ECCSEQ",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[RVV]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "ECCSEQ",
+      "label": "Séquence",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ECCVALMAJ",
+      "label": "Version majeure",
+      "dim": "",
+      "type": "ICVVAL",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ECCVALMIN",
+      "label": "Version mineure",
+      "dim": "",
+      "type": "ICVVAL",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ENDDAT",
+      "label": "Date fin",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "EXNDAT",
+      "label": "Date dérog.",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "EXNFLG",
+      "label": "Dérogation",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FCY",
+      "label": "Site",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[RVV]FCY",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "ITMREF",
+      "label": "Article",
+      "dim": "",
+      "type": "ROH",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ROH]ROH0=ITMREF;ROUALT;FCY",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "ROUALT",
+      "label": "Alternative gamme",
+      "dim": "",
+      "type": "TRO",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TRO]TRO0=[RVV]ROUALT",
+      "nullify": "BSRA",
+      "activity": ""
+    },
+    {
+      "name": "STRDAT",
+      "label": "Date début",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[RVV]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "USESTA",
+      "label": "Statut utilisation",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "240",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "RVV",
+  "label": "Versions de gammes",
+  "module": "Production"
+}

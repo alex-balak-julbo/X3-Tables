@@ -1,0 +1,155 @@
+{
+  "table": "TGRLISFIE",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/TGRLISFIE.htm",
+  "keys": [
+    {
+      "key": "TLF0",
+      "description": "TGRTAB+TGRSSPNUM",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "TLF1",
+      "description": "TGRTAB+TGRSSPNUM+TGRTABLNK+TGRFIE",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[TLF]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "TGRFIE",
+      "label": "Champ",
+      "dim": "",
+      "type": "A",
+      "length": "17",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TGRFIEORD",
+      "label": "N° d'ordre",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TGRFIESTD",
+      "label": "Standard",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TGRSSPNUM",
+      "label": "Support présentation",
+      "dim": "",
+      "type": "TGP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TGP]TGP0=[TLF]TGRSSPNUM",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "TGRTAB",
+      "label": "Table",
+      "dim": "",
+      "type": "ATB",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ATB]CODFIC=[TLF]TGRTAB",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "TGRTABLNK",
+      "label": "Table liée",
+      "dim": "",
+      "type": "ATB",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ATB]CODFIC=[TLF]TGRTABLNK",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[TLF]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "TLF",
+  "label": "Consultation cibles",
+  "module": "Action commerciale"
+}

@@ -1,0 +1,113 @@
+{
+  "table": "ITMACGGRP",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/ITMACGGRP.htm",
+  "keys": [
+    {
+      "key": "ITA0",
+      "description": "ITMREF+LEG",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ACGGRP",
+      "label": "Famille",
+      "dim": "",
+      "type": "FAM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FAM]FAM0=ACGGRP",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ITA]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "ITMREF",
+      "label": "Article",
+      "dim": "",
+      "type": "ITM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ITM]ITM0=[ITA]ITMREF",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "LEG",
+      "label": "Législation",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=909;LEG",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ITA]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ITA",
+  "label": "Article",
+  "module": "Immobilisations"
+}

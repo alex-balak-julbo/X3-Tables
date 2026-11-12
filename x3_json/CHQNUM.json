@@ -1,0 +1,233 @@
+{
+  "table": "CHQNUM",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/CHQNUM.htm",
+  "keys": [
+    {
+      "key": "CHN0",
+      "description": "BAN+CHQNUM",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BAN",
+      "label": "Banque",
+      "dim": "",
+      "type": "BAN",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BAN]BAN0=[CHN]BAN",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CHQNUM",
+      "label": "Numéro chèque",
+      "dim": "",
+      "type": "A",
+      "length": "15",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CHQTYP",
+      "label": "Type de chèque",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2761",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CLODAT",
+      "label": "Pointé / Annulé le",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PAYNUM",
+      "label": "Numéro règlement",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PAYORDNUM",
+      "label": "Ordre de paiement",
+      "dim": "",
+      "type": "A",
+      "length": "1",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": "KAG"
+    },
+    {
+      "name": "POSPAYCREDAT",
+      "label": "Date Positive Pay",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": "CHQMG"
+    },
+    {
+      "name": "POSPAYSEQ",
+      "label": "N° séq Positive Pay",
+      "dim": "",
+      "type": "A",
+      "length": "14",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": "CHQMG"
+    },
+    {
+      "name": "PRNDAT",
+      "label": "Date d'édition",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PRNFLG",
+      "label": "Imprimée",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "STA",
+      "label": "Etat",
+      "dim": "",
+      "type": "M",
+      "length": "30",
+      "menu": "2658",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "CHN",
+  "label": "Table des chéques",
+  "module": "Comptabilité tiers"
+}

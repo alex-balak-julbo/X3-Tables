@@ -1,0 +1,179 @@
+{
+  "table": "CFGDEF",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/CFGDEF.htm",
+  "keys": [
+    {
+      "key": "CDF0",
+      "description": "RECCOD+CODFIC+CODFLD+SCENUM",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "CDF1",
+      "description": "RECCOD+CODFIC+SCENUM+CODFLD",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODFIC",
+      "label": "Code table",
+      "dim": "",
+      "type": "M",
+      "length": "",
+      "menu": "752",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODFLD",
+      "label": "Code champ",
+      "dim": "",
+      "type": "AVA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DEFTYP",
+      "label": "Type de valeur",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DEFVAL",
+      "label": "Valeur par défaut",
+      "dim": "",
+      "type": "A",
+      "length": "80",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "EXPNUM",
+      "label": "Numéro export",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "RECCOD",
+      "label": "Code",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SCENUM",
+      "label": "Scénario",
+      "dim": "",
+      "type": "CFG",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CSC]CSC0=[CDF]SCENUM",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[CDF]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "CDF",
+  "label": "Valeurs par défaut config.",
+  "module": "Données de base"
+}

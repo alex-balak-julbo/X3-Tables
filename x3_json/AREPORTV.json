@@ -1,0 +1,155 @@
+{
+  "table": "AREPORTV",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/AREPORTV.htm",
+  "keys": [
+    {
+      "key": "ARV0",
+      "description": "FONCTION+TYPCOD+ETAT+PARAM",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "ARV1",
+      "description": "TYPCOD+ETAT+PARAM+FONCTION",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ARV]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "ETAT",
+      "label": "Etat",
+      "dim": "",
+      "type": "A",
+      "length": "15",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FONCTION",
+      "label": "Fonction",
+      "dim": "",
+      "type": "AFC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AFC]CODINT=[ARV]FONCTION",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "PARAM",
+      "label": "Paramètre",
+      "dim": "",
+      "type": "A",
+      "length": "30",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYPCOD",
+      "label": "Type impression",
+      "dim": "",
+      "type": "M",
+      "length": "20",
+      "menu": "7818",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ARV]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VALDEF1",
+      "label": "Valeur par défaut",
+      "dim": "",
+      "type": "AFR",
+      "length": "250",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VALDEF2",
+      "label": "Valeur par défaut",
+      "dim": "",
+      "type": "AFR",
+      "length": "250",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ARV",
+  "label": "Impressions",
+  "module": "Superviseur"
+}

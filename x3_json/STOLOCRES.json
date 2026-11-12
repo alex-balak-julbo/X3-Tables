@@ -1,0 +1,227 @@
+{
+  "table": "STOLOCRES",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/STOLOCRES.htm",
+  "keys": [
+    {
+      "key": "SWL0",
+      "description": "PRONUM+LINNUM",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "SWL1",
+      "description": "STOFCY+LOC",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ITMREF",
+      "label": "Article",
+      "dim": "",
+      "type": "ITM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ITM]ITM0=[SWL]ITMREF",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "LINNUM",
+      "label": "Numéro de ligne",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LOC",
+      "label": "Emplacement",
+      "dim": "",
+      "type": "LOC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[STC]STC0=STOFCY;LOC",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "LOKDAT",
+      "label": "Date réservation",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LOKHOU",
+      "label": "Heure réservation",
+      "dim": "",
+      "type": "HM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MAXQTYPCU",
+      "label": "Quantité maxi UC",
+      "dim": "",
+      "type": "QTY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PCU",
+      "label": "Conditionnement",
+      "dim": "",
+      "type": "UOM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TUN]TUN0=[SWL]PCU",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "PRONUM",
+      "label": "Numéro process",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "QTYPCU",
+      "label": "Quantité UC",
+      "dim": "",
+      "type": "QTY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "STA",
+      "label": "Statut",
+      "dim": "",
+      "type": "A",
+      "length": "3",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "STOFCY",
+      "label": "Site stockage",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[SWL]STOFCY",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[SWL]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "SWL",
+  "label": "Travail emplacements",
+  "module": "Stocks"
+}

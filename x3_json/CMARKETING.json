@@ -1,0 +1,263 @@
+{
+  "table": "CMARKETING",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/CMARKETING.htm",
+  "keys": [
+    {
+      "key": "CMG0",
+      "description": "NUM",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "CMG1",
+      "description": "DATSTR",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BUD",
+      "label": "Budget",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CLO",
+      "label": "Clôturée",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREHOU",
+      "label": "Heure création",
+      "dim": "",
+      "type": "HM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CUR",
+      "label": "Devise",
+      "dim": "",
+      "type": "CUR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TCU]TCU0=[CMG]CUR",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "DATEND",
+      "label": "Date fin",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DATSTR",
+      "label": "Date début",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DES",
+      "label": "Description",
+      "dim": "",
+      "type": "CLX",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FCY",
+      "label": "Site",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[CMG]FCY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "NUM",
+      "label": "Code",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUMFULOBJ",
+      "label": "Chrono Clob",
+      "dim": "",
+      "type": "CLC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OBJFLG",
+      "label": "Flag Clob",
+      "dim": "",
+      "type": "C",
+      "length": "2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TTR",
+      "label": "Dénomination",
+      "dim": "",
+      "type": "DCO",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYPFULOBJ",
+      "label": "Type Clob",
+      "dim": "",
+      "type": "CLT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "CMG",
+  "label": "Campagne marketing",
+  "module": "Action commerciale"
+}

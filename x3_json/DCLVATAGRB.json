@@ -1,0 +1,179 @@
+{
+  "table": "DCLVATAGRB",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/DCLVATAGRB.htm",
+  "keys": [
+    {
+      "key": "VATAGR0",
+      "description": "CPY+FIY+PER+MODEL",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "VATAGR1",
+      "description": "CPY+FCY+FIY+PER+MODEL",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CPY",
+      "label": "Société",
+      "dim": "",
+      "type": "CPY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CPY]CPY0=[VATAGR]CPY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[VATAGR]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DATTYP",
+      "label": "Type",
+      "dim": "60",
+      "type": "C",
+      "length": "1",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DES",
+      "label": "Désignation",
+      "dim": "60",
+      "type": "A",
+      "length": "60",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FCY",
+      "label": "Site",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[VATAGR]FCY",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "FIY",
+      "label": "Exercice",
+      "dim": "",
+      "type": "A",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MODEL",
+      "label": "Formulaire",
+      "dim": "",
+      "type": "A",
+      "length": "3",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PER",
+      "label": "Période",
+      "dim": "",
+      "type": "A",
+      "length": "2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "RESULT",
+      "label": "Résultat",
+      "dim": "60",
+      "type": "DCB",
+      "length": "16.2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[VATAGR]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "VATAGR",
+  "label": "Livres TVA agrégés",
+  "module": "Données de base"
+}

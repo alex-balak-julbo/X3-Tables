@@ -1,0 +1,149 @@
+{
+  "table": "EDTDADSU",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/EDTDADSU.htm",
+  "keys": [
+    {
+      "key": "EDU0",
+      "description": "REFSND",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "EDU1",
+      "description": "REFSND+NUMLIN",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "EDU2",
+      "description": "GRP",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[EDU]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "GRP",
+      "label": "Groupe",
+      "dim": "",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUMLIN",
+      "label": "Ligne",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUMREC",
+      "label": "No enregistrement",
+      "dim": "",
+      "type": "A",
+      "length": "20",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "REFSND",
+      "label": "Numéro requête",
+      "dim": "",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[EDU]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VALDADS",
+      "label": "Valeur",
+      "dim": "",
+      "type": "A",
+      "length": "250",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "EDU",
+  "label": "Edition fichier DADSU",
+  "module": "Comptabilité"
+}

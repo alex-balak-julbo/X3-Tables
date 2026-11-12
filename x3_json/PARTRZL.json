@@ -1,0 +1,191 @@
+{
+  "table": "PARTRZL",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PARTRZL.htm",
+  "keys": [
+    {
+      "key": "TZL0",
+      "description": "KEYTZL",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "TZL1",
+      "description": "OBJSRC+OBJDES+CPY",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CPY",
+      "label": "Société",
+      "dim": "",
+      "type": "CPY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CPY]CPY0=[TZL]CPY",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D4",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DES",
+      "label": "Désignation",
+      "dim": "",
+      "type": "DES",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "KEYTZL",
+      "label": "Identifiant",
+      "dim": "",
+      "type": "TZL",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OBJDES",
+      "label": "Objet destination",
+      "dim": "",
+      "type": "MM",
+      "length": "15",
+      "menu": "3141",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OBJSRC",
+      "label": "Objet source",
+      "dim": "",
+      "type": "MM",
+      "length": "15",
+      "menu": "3141",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D4",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "WINDES",
+      "label": "Fenêtre destination",
+      "dim": "",
+      "type": "FEN",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AWI]AWI0=[TZL]WINDES",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "WINSRC",
+      "label": "Fenêtre source",
+      "dim": "",
+      "type": "FEN",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AWI]AWI0=[TZL]WINSRC",
+      "nullify": "Suppression",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "TZL",
+  "label": "Paramétrage transite zones",
+  "module": "Immobilisations"
+}

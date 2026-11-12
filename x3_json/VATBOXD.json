@@ -1,0 +1,227 @@
+{
+  "table": "VATBOXD",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/VATBOXD.htm",
+  "keys": [
+    {
+      "key": "VTD0",
+      "description": "VATFNC+LEG+LIN+FLGVAT+VATIPT+VAT+VCRTYP+VLYSTR+VLYEND",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "VTD1",
+      "description": "VATFNC+LEG+VCRTYP+FLGVAT+VATIPT+VAT+VLYSTR+VLYEND",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[VTD]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "FLGVAT",
+      "label": "Gestion TVA",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "608",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "GTEGRPCOD",
+      "label": "Groupe types de pièce",
+      "dim": "",
+      "type": "GTEGRP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GTEGH]GTEGH0=GTEGRPCOD;LEG",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "LEG",
+      "label": "Législation",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=909;LEG",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "LIN",
+      "label": "Ligne",
+      "dim": "",
+      "type": "C",
+      "length": "3",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SNS",
+      "label": "Sens",
+      "dim": "",
+      "type": "C",
+      "length": "2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[VTD]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VAT",
+      "label": "Code taxe",
+      "dim": "",
+      "type": "VAT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TVT]TVT0=VAT;[V]GSUPCLE",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "VATBOX",
+      "label": "Cases TVA",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VATFNC",
+      "label": "Code fonction",
+      "dim": "",
+      "type": "AFC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AFC]CODINT=[VTD]VATFNC",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "VATIPT",
+      "label": "Imputation taxe",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "609",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VCRTYP",
+      "label": "Type de pièce",
+      "dim": "",
+      "type": "GTE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GTE]GTE0=VCRTYP;[V]GSUPCLE",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "VLYEND",
+      "label": "Date fin validité",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VLYSTR",
+      "label": "Date début validité",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "VTD",
+  "label": "Cases TVA",
+  "module": "Comptabilité"
+}

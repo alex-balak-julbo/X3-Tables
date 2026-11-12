@@ -1,0 +1,209 @@
+{
+  "table": "PITDEBD",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PITDEBD.htm",
+  "keys": [
+    {
+      "key": "PBD0",
+      "description": "BPR+ITMREF+PBL+PBDLIN",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BPR",
+      "label": "Client",
+      "dim": "",
+      "type": "BPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPR]BPR0=[PBD]BPR",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DEBFRY",
+      "label": "Quantité",
+      "dim": "",
+      "type": "QTY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DEBFRYBAS",
+      "label": "Unité",
+      "dim": "",
+      "type": "UOM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TUN]TUN0=[PBD]DEBFRYBAS",
+      "nullify": "R.A.Z.",
+      "activity": ""
+    },
+    {
+      "name": "ITM",
+      "label": "Article consommé",
+      "dim": "",
+      "type": "ITM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ITM]ITM0=[PBD]ITM",
+      "nullify": "R.A.Z.",
+      "activity": ""
+    },
+    {
+      "name": "ITMREF",
+      "label": "Parc",
+      "dim": "",
+      "type": "ITM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ITM]ITM0=[PBD]ITMREF",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "NBRPIT",
+      "label": "Points débités",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NULPIOVAL",
+      "label": "Valeur nulle",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PBDLIN",
+      "label": "Ligne de débit",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PBL",
+      "label": "Famille de compétence",
+      "dim": "",
+      "type": "PBL",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PBL]PBL0=[PBD]PBL",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "PBD",
+  "label": "Débit de points (Lignes)",
+  "module": "Données de base"
+}

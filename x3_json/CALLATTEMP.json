@@ -1,0 +1,173 @@
+{
+  "table": "CALLATTEMP",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/CALLATTEMP.htm",
+  "keys": [
+    {
+      "key": "CTT0",
+      "description": "CTTNUM",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "CTT1",
+      "description": "CTTCMP",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "CTT2",
+      "description": "CTTCCN",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CLLNUM",
+      "label": "Code appel",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[CTT]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CTTCCN",
+      "label": "Interlocuteur",
+      "dim": "",
+      "type": "AIN",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AIN]AIN0=[CTT]CTTCCN",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CTTCMP",
+      "label": "Société",
+      "dim": "",
+      "type": "BPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPR]BPR0=[CTT]CTTCMP",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CTTDAT",
+      "label": "Date tentative",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CTTNUM",
+      "label": "Code tentative",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CTTREP",
+      "label": "Représentant",
+      "dim": "",
+      "type": "REP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[REP]REP0=[CTT]CTTREP",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "HOUCRE",
+      "label": "Heure création",
+      "dim": "",
+      "type": "HM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[CTT]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "CTT",
+  "label": "Tentative d'appel",
+  "module": "Action commerciale"
+}

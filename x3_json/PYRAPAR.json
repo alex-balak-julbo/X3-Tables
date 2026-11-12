@@ -1,0 +1,221 @@
+{
+  "table": "PYRAPAR",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PYRAPAR.htm",
+  "keys": [
+    {
+      "key": "PYRA0",
+      "description": "ID",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CCETPL",
+      "label": "Sections",
+      "dim": "",
+      "type": "AOE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AOE]AOE0=[PYRA]CCETPL",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DACDIA",
+      "label": "Transaction",
+      "dim": "",
+      "type": "GDE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GDE]DIA=[PYRA]DACDIA",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "DRTSTO",
+      "label": "Répertoire stockage",
+      "dim": "",
+      "type": "A",
+      "length": "250",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DRTWRK",
+      "label": "Répertoire de travail",
+      "dim": "",
+      "type": "A",
+      "length": "250",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "GACTPL",
+      "label": "Comptes",
+      "dim": "",
+      "type": "AOE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AOE]AOE0=[PYRA]GACTPL",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "GASTPL",
+      "label": "Journaux",
+      "dim": "",
+      "type": "AOE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AOE]AOE0=[PYRA]GASTPL",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "ID",
+      "label": "Identifiant",
+      "dim": "",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "INTIT",
+      "label": "Intitulé",
+      "dim": "",
+      "type": "DES",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "JOU",
+      "label": "Journal",
+      "dim": "",
+      "type": "JOU",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[JOU]JOU0=JOU;LEG",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "LEG",
+      "label": "Législation",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=909;LEG",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "TYP",
+      "label": "Type document paie",
+      "dim": "",
+      "type": "GTE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GTE]GTE0=TYP;LEG",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "TYPEXP",
+      "label": "Type de destination",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "921",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Auteur modification",
+      "dim": "",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "PYRA",
+  "label": "Paramétrage HRMS NA",
+  "module": "Données de base"
+}

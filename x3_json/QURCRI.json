@@ -1,0 +1,185 @@
+{
+  "table": "QURCRI",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/QURCRI.htm",
+  "keys": [
+    {
+      "key": "QCR0",
+      "description": "QURNUM+PPLORD",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "QCR1",
+      "description": "QURNUM+PPLORD+CRINUM",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "QCR2",
+      "description": "QURNUM+CRICND",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[QCR]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CRICND",
+      "label": "Condition",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2960",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CRIFIE",
+      "label": "Champ",
+      "dim": "",
+      "type": "AVA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CRINUM",
+      "label": "Code critère",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CRIOPD",
+      "label": "Opérateur",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2959",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CRITAB",
+      "label": "Table",
+      "dim": "",
+      "type": "ATB",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ATB]CODFIC=[QCR]CRITAB",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "FGVCAH",
+      "label": "Cache abandon",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PPLORD",
+      "label": "Code population",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "QURNUM",
+      "label": "Code ciblage",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[QCR]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "QCR",
+  "label": "Critères de ciblage",
+  "module": "Action commerciale"
+}

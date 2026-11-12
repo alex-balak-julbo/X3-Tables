@@ -1,0 +1,245 @@
+{
+  "table": "EINVMAPNODES",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/EINVMAPNODES.htm",
+  "keys": [
+    {
+      "key": "EINVMND0",
+      "description": "MAPNAME+NODE",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "EINVMND1",
+      "description": "MD5",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "EINVMND2",
+      "description": "NODE",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODE",
+      "label": "Code",
+      "dim": "",
+      "type": "A",
+      "length": "20",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CPY",
+      "label": "Société",
+      "dim": "",
+      "type": "CPY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CPY]CPY0=[EINVMND]CPY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[EINVMND]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "FCY",
+      "label": "Site",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[EINVMND]FCY",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "LEG",
+      "label": "Législation",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=909;LEG",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "MAPNAME",
+      "label": "ID",
+      "dim": "",
+      "type": "MAPNAM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[EINVMAP]EINVMAP0=[EINVMND]MAPNAME",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "MD5",
+      "label": "ID",
+      "dim": "",
+      "type": "A",
+      "length": "50",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NODE",
+      "label": "Noeud",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PATHPARENTTY",
+      "label": "Parent",
+      "dim": "",
+      "type": "A",
+      "length": "250",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PATHREST",
+      "label": "Restriction",
+      "dim": "",
+      "type": "A",
+      "length": "250",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PATHSTR",
+      "label": "Chemin",
+      "dim": "",
+      "type": "A",
+      "length": "250",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PATHTYPE",
+      "label": "Type",
+      "dim": "",
+      "type": "A",
+      "length": "100",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SENSE",
+      "label": "Sens",
+      "dim": "",
+      "type": "M",
+      "length": "20",
+      "menu": "2005",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[EINVMND]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VER",
+      "label": "Version",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "EINVMND",
+  "label": "Noeud",
+  "module": "Données de base"
+}

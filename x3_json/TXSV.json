@@ -1,0 +1,197 @@
+{
+  "table": "TXSV",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/TXSV.htm",
+  "keys": [
+    {
+      "key": "TXX0",
+      "description": "TXSNAM+VERSION+VARNAM",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[TXX]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "LSTGRP",
+      "label": "Groupe d'états",
+      "dim": "",
+      "type": "A",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TXSNAM",
+      "label": "Nom tableau",
+      "dim": "",
+      "type": "TXS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TXS]TXS1=[TXX]TXSNAM",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[TXX]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VARDEF",
+      "label": "Valeur / défaut",
+      "dim": "",
+      "type": "A",
+      "length": "30",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VARDES",
+      "label": "Intitulé",
+      "dim": "",
+      "type": "A",
+      "length": "40",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VARNAM",
+      "label": "Variable",
+      "dim": "",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VARPAR",
+      "label": "Paramètre",
+      "dim": "",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VARTRA",
+      "label": "",
+      "dim": "",
+      "type": "AX3",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VARTYP",
+      "label": "Type",
+      "dim": "",
+      "type": "ATY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ATY]CODTYP=[TXX]VARTYP",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "VARVAL",
+      "label": "Valeur",
+      "dim": "",
+      "type": "A",
+      "length": "30",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VERSION",
+      "label": "Version",
+      "dim": "",
+      "type": "A",
+      "length": "15",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "TXX",
+  "label": "Variables Tableaux de bord",
+  "module": "Comptabilité"
+}

@@ -1,0 +1,239 @@
+{
+  "table": "FXDLOFGRP",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/FXDLOFGRP.htm",
+  "keys": [
+    {
+      "key": "LFG0",
+      "description": "GRPREF",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "LFG1",
+      "description": "CPY+GRPREF",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ANDOR",
+      "label": "Opérateur",
+      "dim": "5",
+      "type": "M",
+      "length": "15",
+      "menu": "56",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODZON",
+      "label": "Code champ",
+      "dim": "20",
+      "type": "AVA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CPY",
+      "label": "Société",
+      "dim": "",
+      "type": "CPY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CPY]CPY0=[LFG]CPY",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[LFG]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DES",
+      "label": "Désignation",
+      "dim": "",
+      "type": "DCO",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "EXP1",
+      "label": "Expression",
+      "dim": "",
+      "type": "A",
+      "length": "250",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FGACTIF",
+      "label": "Actif",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FLD",
+      "label": "Champ",
+      "dim": "5",
+      "type": "AVA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "GRPREF",
+      "label": "Référence",
+      "dim": "",
+      "type": "LGT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[LFG]LFG0=[LFG]GRPREF",
+      "nullify": "BSRA",
+      "activity": ""
+    },
+    {
+      "name": "NBCRIT",
+      "label": "Nombre de champs",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPE",
+      "label": "Opérateur",
+      "dim": "5",
+      "type": "MM",
+      "length": "15",
+      "menu": "55",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PRILOF",
+      "label": "Dépense principale",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "3296",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "REQUETE",
+      "label": "Requete",
+      "dim": "",
+      "type": "A",
+      "length": "250",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[LFG]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VALE",
+      "label": "Valeur",
+      "dim": "5",
+      "type": "A",
+      "length": "30",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "LFG",
+  "label": "Regroupement des dépenses",
+  "module": "Immobilisations"
+}

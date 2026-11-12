@@ -1,0 +1,149 @@
+{
+  "table": "GACCPYMLIK",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/GACCPYMLIK.htm",
+  "keys": [
+    {
+      "key": "GYK0",
+      "description": "PYM+LEV+ACC",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ACC",
+      "label": "Compte",
+      "dim": "",
+      "type": "GAC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GAC]GAC0=COA;ACC",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "COA",
+      "label": "Plan comptable",
+      "dim": "",
+      "type": "COA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[COA]COA0=[GYK]COA",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[GYK]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "GRU",
+      "label": "Code groupe",
+      "dim": "",
+      "type": "GRY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GRY]GRY0=PYM;GRU;1",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "LEV",
+      "label": "Niveau",
+      "dim": "",
+      "type": "C",
+      "length": "2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PRNROW",
+      "label": "Rang d'impression",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PYM",
+      "label": "Code pyramide",
+      "dim": "",
+      "type": "GYM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GYM]GYM0=[GYK]PYM",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[GYK]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "GYK",
+  "label": "Liens pyramides comptes",
+  "module": "Données de base"
+}

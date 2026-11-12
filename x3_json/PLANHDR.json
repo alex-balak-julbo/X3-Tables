@@ -1,0 +1,125 @@
+{
+  "table": "PLANHDR",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PLANHDR.htm",
+  "keys": [
+    {
+      "key": "PLAHDR_0",
+      "description": "PLANID",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PLAHDR]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "IMPLEMENT",
+      "label": "Planning réalisé",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NCSID",
+      "label": "Non-conformité",
+      "dim": "",
+      "type": "NCSID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[NCSRC]NCSRC0=[PLAHDR]NCSID",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "PLANID",
+      "label": "Planifier",
+      "dim": "",
+      "type": "PLANID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PLAHDR]PLAHDR_0=[PLAHDR]PLANID",
+      "nullify": "BSRA",
+      "activity": ""
+    },
+    {
+      "name": "PLANSTATUS",
+      "label": "Statut plan",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2045",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PLAHDR]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "PLAHDR",
+  "label": "En-tête plan",
+  "module": "Données de base"
+}

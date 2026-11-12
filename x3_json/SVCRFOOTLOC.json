@@ -1,0 +1,185 @@
+{
+  "table": "SVCRFOOTLOC",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/SVCRFOOTLOC.htm",
+  "keys": [
+    {
+      "key": "SVFLOC0",
+      "description": "VCRNUM+VCRTYP+DTA",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[SVFLOC]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DTA",
+      "label": "Elément facturation",
+      "dim": "",
+      "type": "SFI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[SFI]SFI0=[SVFLOC]DTA",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DTADEPLOC",
+      "label": "Montant escompte",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DTANETLOC",
+      "label": "Montant soumis elt",
+      "dim": "10",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DTANOTLOC",
+      "label": "Montant Ht élément",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DTAVATAMTLOC",
+      "label": "Montant taxe",
+      "dim": "10",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DTAVATDEPLOC",
+      "label": "Montant escompte",
+      "dim": "10",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DTAVATNOTLOC",
+      "label": "Montant Ht élément",
+      "dim": "10",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[SVFLOC]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VCRNUM",
+      "label": "Pièce",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VCRTYP",
+      "label": "Type pièce",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "476",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "SVFLOC",
+  "label": "Document ventes - Elt pied",
+  "module": "Ventes"
+}

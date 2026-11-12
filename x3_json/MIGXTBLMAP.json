@@ -1,0 +1,263 @@
+{
+  "table": "MIGXTBLMAP",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/MIGXTBLMAP.htm",
+  "keys": [
+    {
+      "key": "MIGTM0",
+      "description": "MIGREFNUM+TMNBR",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "MIGTM1",
+      "description": "TMSTATCOD",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[MIGXTM]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "MIGREFNUM",
+      "label": "N° ref. migration",
+      "dim": "",
+      "type": "MIGX",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TMCLSMAP",
+      "label": "Mapping classe",
+      "dim": "",
+      "type": "ADC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TMIDXCOUNT",
+      "label": "Comptage indices",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TMIDXQUERY",
+      "label": "Requête indice",
+      "dim": "",
+      "type": "A",
+      "length": "200",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TMIDXVAL",
+      "label": "Valeurs des indices",
+      "dim": "",
+      "type": "A",
+      "length": "200",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TMINCLUDE",
+      "label": "Inclue",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TMMOD",
+      "label": "Module",
+      "dim": "",
+      "type": "A",
+      "length": "30",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TMNBR",
+      "label": "Numéro de la ligne",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TMSRCRC",
+      "label": "Comptage lignes source",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TMSRCTBL",
+      "label": "Table source",
+      "dim": "",
+      "type": "ATB",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ATB]CODFIC=[MIGXTM]TMSRCTBL",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "TMSTAT",
+      "label": "Statut",
+      "dim": "",
+      "type": "A",
+      "length": "30",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TMSTATCOD",
+      "label": "Code statut",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TMSTATMSG",
+      "label": "Message statut",
+      "dim": "",
+      "type": "A",
+      "length": "250",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TMTRGRC",
+      "label": "Comptage lignes cible",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TMTRGTBL",
+      "label": "Table cible",
+      "dim": "",
+      "type": "ATB",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ATB]CODFIC=[MIGXTM]TMTRGTBL",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[MIGXTM]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "MIGXTM",
+  "label": "Mapping table migration",
+  "module": "Données de base"
+}

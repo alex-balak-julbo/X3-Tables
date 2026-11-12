@@ -1,0 +1,191 @@
+{
+  "table": "EDIPARTNERD",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/EDIPARTNERD.htm",
+  "keys": [
+    {
+      "key": "EPRD0",
+      "description": "PARCOD+NUMLIN",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "EPRD1",
+      "description": "PARCOD+SORT",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "EPRD2",
+      "description": "PARCOD+CATCOD+CATACT",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "EPRD3",
+      "description": "PARCOD+CATTYP+CATOPE",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CATACT",
+      "label": "Action",
+      "dim": "",
+      "type": "M",
+      "length": "20",
+      "menu": "2011",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CATCOD",
+      "label": "Code catégorie",
+      "dim": "",
+      "type": "CAT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ECA]ECA0=CATCOD",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CATOPE",
+      "label": "Opération",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2025",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CATTYP",
+      "label": "Type de catégorie",
+      "dim": "",
+      "type": "M",
+      "length": "50",
+      "menu": "2012",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[EPRD]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "NUMLIN",
+      "label": "Numéro de la ligne",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PARCOD",
+      "label": "Code",
+      "dim": "",
+      "type": "EPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[EPR]EPR0=[EPRD]PARCOD",
+      "nullify": "BSRA",
+      "activity": ""
+    },
+    {
+      "name": "PTCCOD",
+      "label": "Protocole",
+      "dim": "",
+      "type": "PTC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SORT",
+      "label": "Tri",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[EPRD]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "EPRD",
+  "label": "Partenaires EDI",
+  "module": "Données de base"
+}

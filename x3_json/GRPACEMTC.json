@@ -1,0 +1,185 @@
+{
+  "table": "GRPACEMTC",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/GRPACEMTC.htm",
+  "keys": [
+    {
+      "key": "GRM0",
+      "description": "COD+NUMORD+CODACE1+LIG1",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "COD",
+      "label": "Groupe pièce",
+      "dim": "",
+      "type": "GRA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GRA]GRA0=COD",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CODACE1",
+      "label": "Code pièce",
+      "dim": "",
+      "type": "GAU",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GAU]GAU0=CODACE1",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CODACE2",
+      "label": "Code pièce",
+      "dim": "",
+      "type": "GAU",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GAU]GAU0=CODACE2",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CODACE3",
+      "label": "Code pièce",
+      "dim": "",
+      "type": "GAU",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GAU]GAU0=CODACE3",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[GRM]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "INVMTC",
+      "label": "Lettrage facture",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LIG1",
+      "label": "Numéro de ligne",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LIG2",
+      "label": "Numéro de ligne",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LIG3",
+      "label": "Numéro de ligne",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUMORD",
+      "label": "No ordre",
+      "dim": "",
+      "type": "C",
+      "length": "2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[GRM]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "GRM",
+  "label": "Lettrage groupe pièces",
+  "module": "Données de base"
+}

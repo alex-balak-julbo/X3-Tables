@@ -1,0 +1,263 @@
+{
+  "table": "CFGMEMO",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/CFGMEMO.htm",
+  "keys": [
+    {
+      "key": "CME0",
+      "description": "RECCOD+SCENUM+CREUSR+CFGBPRNUM+CFGBPRREF+QSTNUM+SELSEQ",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "CME1",
+      "description": "RECCOD+PRONUM+SCENUM+QSTNUM",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BLOB",
+      "label": "Blob",
+      "dim": "",
+      "type": "AB0",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CFGBPRNUM",
+      "label": "Tiers",
+      "dim": "",
+      "type": "BPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPR]BPR0=[CME]CFGBPRNUM",
+      "nullify": "R.A.Z.",
+      "activity": ""
+    },
+    {
+      "name": "CFGBPRREF",
+      "label": "Référence tiers",
+      "dim": "",
+      "type": "A",
+      "length": "20",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CLOB",
+      "label": "Clob",
+      "dim": "",
+      "type": "AC0",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PRONUM",
+      "label": "Numéro process",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "QSTNUM",
+      "label": "Question",
+      "dim": "",
+      "type": "CQU",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CQU]CQU0=[CME]QSTNUM",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "QTYSAU",
+      "label": "Quantité UV",
+      "dim": "",
+      "type": "QTY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "QTYSTU",
+      "label": "Quantité US",
+      "dim": "",
+      "type": "QTY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "RECCOD",
+      "label": "Code",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SCENUM",
+      "label": "Scénario",
+      "dim": "",
+      "type": "CFG",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CSC]CSC0=[CME]SCENUM",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "SELSEQ",
+      "label": "No ligne",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[CME]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VALALP",
+      "label": "Valeur symbole",
+      "dim": "",
+      "type": "A",
+      "length": "250",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VALDAT",
+      "label": "Valeur symbole",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VALNUM",
+      "label": "Valeur symbole",
+      "dim": "",
+      "type": "DCB",
+      "length": "20",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "CME",
+  "label": "Configurateur mémo",
+  "module": "Stocks"
+}

@@ -1,0 +1,209 @@
+{
+  "table": "SCPQSTCND",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/SCPQSTCND.htm",
+  "keys": [
+    {
+      "key": "SQC0",
+      "description": "SCPNUM+QSTNUM+CNDNUM",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "SQC1",
+      "description": "SCPNUM+NEXQST",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "SQC2",
+      "description": "SCPNUM+QSTNUM+CND",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ALHCND",
+      "label": "Condition alpha",
+      "dim": "",
+      "type": "DCO",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CND",
+      "label": "Condition",
+      "dim": "",
+      "type": "MM",
+      "length": "15",
+      "menu": "962",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CNDNUM",
+      "label": "Code condition",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[SQC]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DATCNDMAX",
+      "label": "Condition date maxi",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DATCNDMIN",
+      "label": "Condition date mini",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NEXQST",
+      "label": "Prochaine question",
+      "dim": "",
+      "type": "QSS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUMCNDMAX",
+      "label": "Condition num. maxi",
+      "dim": "",
+      "type": "DCB",
+      "length": "9.2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUMCNDMIN",
+      "label": "Condition num. mini",
+      "dim": "",
+      "type": "DCB",
+      "length": "9.2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "QSTNUM",
+      "label": "Code question",
+      "dim": "",
+      "type": "QSS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SCPNUM",
+      "label": "Code script",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[SQC]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "SQC",
+  "label": "Conditions de cheminement",
+  "module": "Action commerciale"
+}

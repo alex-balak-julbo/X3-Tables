@@ -1,0 +1,203 @@
+{
+  "table": "PARESC",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PARESC.htm",
+  "keys": [
+    {
+      "key": "PEC0",
+      "description": "ESCNUM",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "PEC1",
+      "description": "ENAFLG+ESCCAT",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ENAFLG",
+      "label": "Actif",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ESCACTNAM",
+      "label": "Dénomination",
+      "dim": "10",
+      "type": "A",
+      "length": "100",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ESCACTNUM",
+      "label": "Action",
+      "dim": "10",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=455;ESCACTNUM",
+      "nullify": "R.A.Z.",
+      "activity": ""
+    },
+    {
+      "name": "ESCCAT",
+      "label": "Catégorie",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=453;ESCCAT",
+      "nullify": "R.A.Z.",
+      "activity": ""
+    },
+    {
+      "name": "ESCCND",
+      "label": "Condition",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=454;ESCCND",
+      "nullify": "R.A.Z.",
+      "activity": ""
+    },
+    {
+      "name": "ESCNAM",
+      "label": "Dénomination",
+      "dim": "",
+      "type": "A",
+      "length": "100",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ESCNUM",
+      "label": "Code",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ESCTYP",
+      "label": "Type",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "3028",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "PEC",
+  "label": "Paramétrage des escalades",
+  "module": "Données de base"
+}

@@ -1,0 +1,179 @@
+{
+  "table": "TABRATVAT",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/TABRATVAT.htm",
+  "keys": [
+    {
+      "key": "TRA0",
+      "description": "VAT+LEG+CPY+STRDAT",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "TRA1",
+      "description": "VAT+CPY+STRDAT",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AMTTSD",
+      "label": "Seuil",
+      "dim": "",
+      "type": "DCB",
+      "length": "9.2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": "PTX"
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CPY",
+      "label": "Société",
+      "dim": "",
+      "type": "CPY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CPY]CPY0=[TRA]CPY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[TRA]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DEDRAT",
+      "label": "% Déductible",
+      "dim": "",
+      "type": "DCB",
+      "length": "3.6",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LEG",
+      "label": "Législation",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=909;LEG",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "STRDAT",
+      "label": "Date début validité",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[TRA]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VAT",
+      "label": "Taxe",
+      "dim": "",
+      "type": "VAT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TVT]TVT0=VAT;LEG",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "VATEXEFLG",
+      "label": "Flag exonération",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VATRAT",
+      "label": "Taux",
+      "dim": "",
+      "type": "DCB",
+      "length": "3.6",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "TRA",
+  "label": "Taux de taxes",
+  "module": "Données de base"
+}

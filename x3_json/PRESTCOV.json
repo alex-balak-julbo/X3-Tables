@@ -1,0 +1,161 @@
+{
+  "table": "PRESTCOV",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PRESTCOV.htm",
+  "keys": [
+    {
+      "key": "PCO0",
+      "description": "CONNUM+TPL+MACNUM+TYPSVC",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CONNUM",
+      "label": "Code contrat",
+      "dim": "",
+      "type": "CON",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CON]CON0=[PCO]CONNUM",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PCO]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "LNDAUZ",
+      "label": "Prêt autorisé",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MACNUM",
+      "label": "Code machine",
+      "dim": "",
+      "type": "MAC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[MAC]MAC0=[PCO]MACNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "MAXCOV",
+      "label": "Couverture maximum",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MINCOV",
+      "label": "Couverture minimum",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TPL",
+      "label": "Modèle",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYPSVC",
+      "label": "Prestations couvertes",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=407;TYPSVC",
+      "nullify": "R.A.Z.",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PCO]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "PCO",
+  "label": "Prestations couvertes",
+  "module": "Données de base"
+}

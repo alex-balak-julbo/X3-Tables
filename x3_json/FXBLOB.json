@@ -1,0 +1,185 @@
+{
+  "table": "FXBLOB",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/FXBLOB.htm",
+  "keys": [
+    {
+      "key": "ABB0",
+      "description": "CODBLB+IDENT1+IDENT2+IDENT3",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BLOB",
+      "label": "Blob",
+      "dim": "",
+      "type": "ABB",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CNTTYP",
+      "label": "Content type",
+      "dim": "",
+      "type": "ATYP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ATYP]ATYP0=CNTTYP",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CODBLB",
+      "label": "Code",
+      "dim": "",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[FBB]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "IDENT1",
+      "label": "Identifiant 1",
+      "dim": "",
+      "type": "ID1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "IDENT2",
+      "label": "Identifiant 2",
+      "dim": "",
+      "type": "ID2",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "IDENT3",
+      "label": "Identifiant 3",
+      "dim": "",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NAMBLB",
+      "label": "Nom du fichier",
+      "dim": "",
+      "type": "DES",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYPBLB",
+      "label": "Type",
+      "dim": "",
+      "type": "AT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[FBB]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "FBB",
+  "label": "Fichiers spéciaux",
+  "module": "Immobilisations"
+}

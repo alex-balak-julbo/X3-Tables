@@ -1,0 +1,161 @@
+{
+  "table": "MFGSERHDR",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/MFGSERHDR.htm",
+  "keys": [
+    {
+      "key": "MFSH0",
+      "description": "ITMREF+MFGSER",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[MFSH]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "ECCVALMAJ",
+      "label": "Version majeure",
+      "dim": "",
+      "type": "ECS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": "ECC"
+    },
+    {
+      "name": "ECCVALMIN",
+      "label": "Version mineure",
+      "dim": "",
+      "type": "EVL",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": "ECC"
+    },
+    {
+      "name": "ITMREF",
+      "label": "Article",
+      "dim": "",
+      "type": "ITM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ITM]ITM0=[MFSH]ITMREF",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "MFGFCY",
+      "label": "Site production",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[MFSH]MFGFCY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "MFGLIN",
+      "label": "No ligne",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MFGNUM",
+      "label": "No ordre",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MFGSER",
+      "label": "Série",
+      "dim": "",
+      "type": "SER",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[MFSH]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "MFSH",
+  "label": "OF - en-tête lien No série",
+  "module": "Production"
+}

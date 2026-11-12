@@ -1,0 +1,161 @@
+{
+  "table": "AOBJLNK",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/AOBJLNK.htm",
+  "keys": [
+    {
+      "key": "AOK0",
+      "description": "SRCOBJ+LIN",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ABRFIC",
+      "label": "Abréviation table",
+      "dim": "",
+      "type": "ABR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BASPAG",
+      "label": "Tableau",
+      "dim": "",
+      "type": "A",
+      "length": "30",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AOK]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DSTOBJ",
+      "label": "Objet destination",
+      "dim": "",
+      "type": "AOB",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AOB]ABREV=[AOK]DSTOBJ",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "EXPLIEN",
+      "label": "Expression de lien",
+      "dim": "",
+      "type": "A",
+      "length": "50",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LIN",
+      "label": "No de ligne",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LNK",
+      "label": "Code liaison",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=61;LNK",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "SRCOBJ",
+      "label": "Objet source",
+      "dim": "",
+      "type": "AOB",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AOB]ABREV=[AOK]SRCOBJ",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AOK]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "AOK",
+  "label": "Explorateur de liaisons",
+  "module": "Superviseur"
+}

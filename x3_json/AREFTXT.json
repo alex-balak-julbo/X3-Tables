@@ -1,0 +1,173 @@
+{
+  "table": "AREFTXT",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/AREFTXT.htm",
+  "keys": [
+    {
+      "key": "ART0",
+      "description": "TXTNUM+NUM",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "ART1",
+      "description": "TXTNUM+CODFIC+CODZONE+CLES",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "ART2",
+      "description": "CODFIC+CODZONE+CLES+TXTNUM",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CLES",
+      "label": "Clé",
+      "dim": "",
+      "type": "A",
+      "length": "50",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODFIC",
+      "label": "Code table",
+      "dim": "",
+      "type": "ATB",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ATB]CODFIC=[ART]CODFIC",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CODZONE",
+      "label": "Code champ",
+      "dim": "",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ART]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "MODULE",
+      "label": "Module",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "14",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUM",
+      "label": "Chrono",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TXTNUM",
+      "label": "Numéro texte",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ART]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ART",
+  "label": "Références croisées textes",
+  "module": "Superviseur"
+}

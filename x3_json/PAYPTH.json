@@ -1,0 +1,9 @@
+{
+  "table": "PAYPTH",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PAYPTH.htm",
+  "keys": [],
+  "fields": [],
+  "abbreviation": "PAH",
+  "label": "En-tête Ord. paiement/Reçus",
+  "module": "Comptabilité tiers"
+}

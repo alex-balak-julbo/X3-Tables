@@ -1,0 +1,143 @@
+{
+  "table": "PAREVT",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PAREVT.htm",
+  "keys": [
+    {
+      "key": "PVT0",
+      "description": "EVT+PLN+EVTINT",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "PVT1",
+      "description": "EVT+EVTINT",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PVT]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "EVT",
+      "label": "Type événement",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=962;EVT",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "EVTINT",
+      "label": "Code interne",
+      "dim": "",
+      "type": "A",
+      "length": "15",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OBJTYP",
+      "label": "Type d'objet",
+      "dim": "",
+      "type": "M",
+      "length": "1",
+      "menu": "3141",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PLN",
+      "label": "Plan",
+      "dim": "",
+      "type": "M",
+      "length": "25",
+      "menu": "3101",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TABEVT",
+      "label": "Table événements",
+      "dim": "",
+      "type": "ATB",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ATB]CODFIC=[PVT]TABEVT",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PVT]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "PVT",
+  "label": "Paramétrage des événements",
+  "module": "Immobilisations"
+}

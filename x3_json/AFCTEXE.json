@@ -1,0 +1,125 @@
+{
+  "table": "AFCTEXE",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/AFCTEXE.htm",
+  "keys": [
+    {
+      "key": "AFE0",
+      "description": "USR+LIG",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AFE]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "FCT",
+      "label": "Fonction",
+      "dim": "",
+      "type": "AFC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AFC]CODINT=[AFE]FCT",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "LIG",
+      "label": "Numéro de ligne",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TRN",
+      "label": "Transaction",
+      "dim": "",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AFE]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "USR",
+      "label": "Code utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AFE]USR",
+      "nullify": "Suppression",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "AFE",
+  "label": "Dernières fonctions exécutées",
+  "module": "Superviseur"
+}

@@ -1,0 +1,203 @@
+{
+  "table": "ITMBOM",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/ITMBOM.htm",
+  "keys": [
+    {
+      "key": "ITB0",
+      "description": "ITMREF+BOMALT+LLCTYP",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "ITB1",
+      "description": "BOMALT+LLCTYP+LLC+ITMREF",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BOHITM",
+      "label": "Entête le plus bas",
+      "dim": "",
+      "type": "ITM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ITM]ITM0=[ITB]BOHITM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "BOMALT",
+      "label": "Alternative nomencl",
+      "dim": "",
+      "type": "C",
+      "length": "2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BOMEXIFLG",
+      "label": "Existence nomenclat",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "EXPNUM",
+      "label": "Numéro export",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ITMREF",
+      "label": "Article",
+      "dim": "",
+      "type": "ITM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ITM]ITM0=[ITB]ITMREF",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "LLC",
+      "label": "Code plus bas niveau",
+      "dim": "",
+      "type": "C",
+      "length": "2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LLCTYP",
+      "label": "Type code",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "2224",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "WUSEXIFLG",
+      "label": "Existence cas emploi",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ITB",
+  "label": "Articles - Nomenclatures",
+  "module": "Données de base"
+}

@@ -1,0 +1,353 @@
+{
+  "table": "OPPOR",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/OPPOR.htm",
+  "keys": [
+    {
+      "key": "OPP0",
+      "description": "OPPNUM",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "OPP2",
+      "description": "OPPCMGNUM",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "OPP3",
+      "description": "OPPOPGNUM",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "OPP4",
+      "description": "OPPCMP",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "OPP5",
+      "description": "OPPMCN",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CHGTYP",
+      "label": "Type cours",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "202",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREHOU",
+      "label": "Heure création",
+      "dim": "",
+      "type": "HM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CUR",
+      "label": "Devise",
+      "dim": "",
+      "type": "CUR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TCU]TCU0=[OPP]CUR",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "OPPCLO",
+      "label": "Affaire clôturée",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPPCMGNUM",
+      "label": "Code campagne",
+      "dim": "",
+      "type": "CMG",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CMG]CMG0=[OPP]OPPCMGNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "OPPCMP",
+      "label": "Tiers",
+      "dim": "",
+      "type": "BPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPR]BPR0=[OPP]OPPCMP",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "OPPDATOPN",
+      "label": "Date d'ouverture",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPPEXTNUM",
+      "label": "Identifiant externe",
+      "dim": "",
+      "type": "A",
+      "length": "20",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPPMCN",
+      "label": "Interlocuteur",
+      "dim": "",
+      "type": "AIN",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AIN]AIN0=OPPMCN",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "OPPNUM",
+      "label": "Chrono affaire",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPPOPGNUM",
+      "label": "Code opération",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPPOPGTYP",
+      "label": "Type opération",
+      "dim": "",
+      "type": "AOB",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AOB]ABREV=[OPP]OPPOPGTYP",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "OPPORI",
+      "label": "Origine",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2995",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPPORITYP",
+      "label": "Type origine",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "3037",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPPORIVCR",
+      "label": "N° de pièce",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPPORIVCRL",
+      "label": "N° de ligne",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPPREP",
+      "label": "Représentant",
+      "dim": "",
+      "type": "REP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[REP]REP0=[OPP]OPPREP",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "OPPTYP",
+      "label": "Catégorie",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=434;OPPTYP",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "SALFCY",
+      "label": "Site vente",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[OPP]SALFCY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "OPP",
+  "label": "Affaire",
+  "module": "Données de base"
+}

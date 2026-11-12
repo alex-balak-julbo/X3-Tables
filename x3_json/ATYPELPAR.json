@@ -1,0 +1,185 @@
+{
+  "table": "ATYPELPAR",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/ATYPELPAR.htm",
+  "keys": [
+    {
+      "key": "ATYLP0",
+      "description": "CODTYP+CODLNK+PARCOD",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AWMAJTYP",
+      "label": "",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODLNK",
+      "label": "Code",
+      "dim": "",
+      "type": "A",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODTYP",
+      "label": "Type de données",
+      "dim": "",
+      "type": "ATY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ATY]CODTYP=[ATYLP]CODTYP",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ATYLP]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "PARCLA",
+      "label": "Code classe",
+      "dim": "",
+      "type": "ACLA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ACLA]ACLA0=[ATYLP]PARCLA",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "PARCOD",
+      "label": "Code",
+      "dim": "",
+      "type": "A",
+      "length": "50",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PARDIM",
+      "label": "Dim",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "7987",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PARMOD",
+      "label": "Mode",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "34",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PARTIT",
+      "label": "Intitulé",
+      "dim": "",
+      "type": "ATX",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PARTYP",
+      "label": "Type",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "10030",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ATYLP]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ATYLP",
+  "label": "Paramètres types de données",
+  "module": "Superviseur"
+}

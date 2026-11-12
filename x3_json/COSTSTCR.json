@@ -1,0 +1,251 @@
+{
+  "table": "COSTSTCR",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/COSTSTCR.htm",
+  "keys": [
+    {
+      "key": "STCR0",
+      "description": "NUM+PIDLIN",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "STCR1",
+      "description": "TYPORI+NUMORI+LINORI+SEQORI+FCSCOD+CREDATTIM",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AMTNOTLIN",
+      "label": "Montant ligne HT",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CUR",
+      "label": "Devise",
+      "dim": "",
+      "type": "CUR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TCU]TCU0=[STCR]CUR",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "FCSCOD",
+      "label": "Charge",
+      "dim": "",
+      "type": "FCS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCS]FCS0=[STCR]FCSCOD",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "ITMREF",
+      "label": "Article",
+      "dim": "",
+      "type": "ITM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ITM]ITM0=[STCR]ITMREF",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "ITMREFORI",
+      "label": "Article origine",
+      "dim": "",
+      "type": "ITM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ITM]ITM0=[STCR]ITMREFORI",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "LINORI",
+      "label": "Ligne d'origine",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUM",
+      "label": "Numéro de pièce",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUMORI",
+      "label": "Numéro d'origine",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PIDLIN",
+      "label": "Ligne",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SEQORI",
+      "label": "Séquence d'origine",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "STCRFLG",
+      "label": "Rapproché",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYPORI",
+      "label": "Origine ligne",
+      "dim": "",
+      "type": "M",
+      "length": "10",
+      "menu": "511",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modif",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "STCR",
+  "label": "Rapprochement charges",
+  "module": "Achats"
+}

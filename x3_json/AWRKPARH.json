@@ -1,0 +1,197 @@
+{
+  "table": "AWRKPARH",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/AWRKPARH.htm",
+  "keys": [
+    {
+      "key": "AWH0",
+      "description": "CODE",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CNDDES",
+      "label": "Condition",
+      "dim": "10",
+      "type": "AFR",
+      "length": "80",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODE",
+      "label": "Code workflow",
+      "dim": "",
+      "type": "AWA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AWA]AWA0=[AWH]CODE",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AWH]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DESTIN",
+      "label": "Destinataires",
+      "dim": "10",
+      "type": "AFR",
+      "length": "80",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ENVOI",
+      "label": "Envoi mail",
+      "dim": "10",
+      "type": "M",
+      "length": "10",
+      "menu": "2919",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FNCDES",
+      "label": "Fonction",
+      "dim": "10",
+      "type": "M",
+      "length": "15",
+      "menu": "233",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NATURE",
+      "label": "Natures",
+      "dim": "10",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=50;NATURE(indice)",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "NBDEST",
+      "label": "Nb destinataires",
+      "dim": "",
+      "type": "C",
+      "length": "2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPTDEL",
+      "label": "Option délégués",
+      "dim": "10",
+      "type": "M",
+      "length": "15",
+      "menu": "2918",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SUIVI",
+      "label": "Suivi",
+      "dim": "10",
+      "type": "M",
+      "length": "20",
+      "menu": "2920",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYPDES",
+      "label": "Type",
+      "dim": "10",
+      "type": "M",
+      "length": "15",
+      "menu": "76",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AWH]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "AWH",
+  "label": "Règles Workflow (destinataire)",
+  "module": "Superviseur"
+}

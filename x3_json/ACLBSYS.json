@@ -1,0 +1,113 @@
+{
+  "table": "ACLBSYS",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/ACLBSYS.htm",
+  "keys": [
+    {
+      "key": "ASA0",
+      "description": "CAT+CODFIC",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CAT",
+      "label": "Catégorie",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=914;CAT",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CLOB",
+      "label": "Clob",
+      "dim": "",
+      "type": "AC0",
+      "length": "9",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODFIC",
+      "label": "Code",
+      "dim": "",
+      "type": "ASB",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ASB]ASB0=[ASA]CODFIC",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ASA]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ASA]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ASA",
+  "label": "Composants graphiques",
+  "module": "Superviseur"
+}

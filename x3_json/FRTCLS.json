@@ -1,0 +1,167 @@
+{
+  "table": "FRTCLS",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/FRTCLS.htm",
+  "keys": [
+    {
+      "key": "FRT0",
+      "description": "FRTCLS+LEG",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "FRT1",
+      "description": "LEG+FRTCLS",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[FRT]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DESAXX",
+      "label": "Intitulé",
+      "dim": "",
+      "type": "AXX",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ENAFLG",
+      "label": "Actif",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FRTCLS",
+      "label": "Classe de fret",
+      "dim": "",
+      "type": "FRT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FRT]FRT0=FRTCLS;LEG",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "LANDESSHO",
+      "label": "Descriptions",
+      "dim": "",
+      "type": "A",
+      "length": "60",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LEG",
+      "label": "Législation",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=909;LEG",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "SHOAXX",
+      "label": "Intitulé court",
+      "dim": "",
+      "type": "AX1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SOC",
+      "label": "Groupe",
+      "dim": "",
+      "type": "AGF",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AGF]AGF0=[FRT]SOC",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[FRT]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "FRT",
+  "label": "Classe de fret",
+  "module": "Données de base"
+}

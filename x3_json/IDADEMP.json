@@ -1,0 +1,9 @@
+{
+  "table": "IDADEMP",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/IDADEMP.htm",
+  "keys": [],
+  "fields": [],
+  "abbreviation": "IDA",
+  "label": "Import Salariés DADS-U",
+  "module": "Administration des RH"
+}

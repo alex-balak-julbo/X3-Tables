@@ -1,0 +1,233 @@
+{
+  "table": "POSCOD",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/POSCOD.htm",
+  "keys": [
+    {
+      "key": "POS0",
+      "description": "CRY+POSCOD+POSCTY+POSCTYCOD",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "POS1",
+      "description": "CRY+POSCTY+POSCOD",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "POS2",
+      "description": "CRY+POSCTYSEA+POSCOD",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BURDIS",
+      "label": "Bureau distributeur",
+      "dim": "",
+      "type": "A",
+      "length": "40",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": "KFR"
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[POS]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CRY",
+      "label": "Pays",
+      "dim": "",
+      "type": "CRY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TCY]TCY0=[POS]CRY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "EXPNUM",
+      "label": "Numéro export",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "GEOCOD",
+      "label": "Code géographique",
+      "dim": "",
+      "type": "GEO",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": "KUS"
+    },
+    {
+      "name": "POSCOD",
+      "label": "Code postal",
+      "dim": "",
+      "type": "POS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "POSCTY",
+      "label": "Ville",
+      "dim": "",
+      "type": "CTY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "POSCTYCOD",
+      "label": "Code commune",
+      "dim": "",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "POSCTYSEA",
+      "label": "Ville (recherche)",
+      "dim": "",
+      "type": "A",
+      "length": "40",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "POSUPDFLG",
+      "label": "Flag",
+      "dim": "",
+      "type": "A",
+      "length": "1",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SATCOD",
+      "label": "Subdivision",
+      "dim": "",
+      "type": "SAT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[POS]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "POS",
+  "label": "Codes postaux",
+  "module": "Superviseur"
+}

@@ -1,0 +1,185 @@
+{
+  "table": "NOTCATEG",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/NOTCATEG.htm",
+  "keys": [
+    {
+      "key": "NTG0",
+      "description": "NTGTYP+NTGCOD",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FIE",
+      "label": "Inclure",
+      "dim": "20",
+      "type": "M",
+      "length": "3",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NTGCOD",
+      "label": "Catégorie",
+      "dim": "",
+      "type": "NTG",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[NTG]NTG0=[NTG]NTGCOD",
+      "nullify": "BSRA",
+      "activity": ""
+    },
+    {
+      "name": "NTGDESAXX",
+      "label": "Désignation",
+      "dim": "",
+      "type": "AX3",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NTGSHOAXX",
+      "label": "Intitulé court",
+      "dim": "",
+      "type": "AX1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NTGTYP",
+      "label": "Type relevé",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2087",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PLAACS",
+      "label": "Accès gestionnaire",
+      "dim": "",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VCRTYP",
+      "label": "Fonction",
+      "dim": "20",
+      "type": "M",
+      "length": "15",
+      "menu": "2088",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "NTG",
+  "label": "Catégorie note",
+  "module": "Données de base"
+}

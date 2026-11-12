@@ -1,0 +1,197 @@
+{
+  "table": "GENTLOT",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/GENTLOT.htm",
+  "keys": [
+    {
+      "key": "LOT0",
+      "description": "LOT",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CPY",
+      "label": "Société",
+      "dim": "",
+      "type": "CPY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CPY]CPY0=[LOT]CPY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Auteur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DACDIA",
+      "label": "Transaction",
+      "dim": "",
+      "type": "GDE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GDE]DIA=[LOT]DACDIA",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "DACDIAGAS",
+      "label": "Transaction",
+      "dim": "",
+      "type": "GDE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GDE]DIA=[LOT]DACDIAGAS",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "DESLOT",
+      "label": "Libellé",
+      "dim": "",
+      "type": "DES",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FCY",
+      "label": "Site",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[LOT]FCY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "JOU",
+      "label": "Journal",
+      "dim": "",
+      "type": "JOU",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[JOU]JOU0=JOU;[V]GSUPCLE",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "LOT",
+      "label": "Code lot",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDFLG",
+      "label": "Flag validé",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Auteur modification",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "LOT",
+  "label": "Lots pièces comptables",
+  "module": "Comptabilité"
+}

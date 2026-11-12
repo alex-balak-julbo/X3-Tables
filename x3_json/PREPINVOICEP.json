@@ -1,0 +1,239 @@
+{
+  "table": "PREPINVOICEP",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PREPINVOICEP.htm",
+  "keys": [
+    {
+      "key": "PREPIP0",
+      "description": "INVNUM+PAYNUM+PAYLIN",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "PREPIP1",
+      "description": "PAYNUM",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PREPIP]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "INVNUM",
+      "label": "Numéro facture",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUMVCR",
+      "label": "Pièce comptable",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PAYAMTNOT",
+      "label": "Montant réglé HT",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PAYAMTNOTLED",
+      "label": "Mnt réglé HT réf.",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PAYAMTTAX",
+      "label": "Impôt acquitté",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PAYAMTTAXLED",
+      "label": "Taxe rég réf",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PAYLIN",
+      "label": "Lig",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PAYNUM",
+      "label": "Numéro règlement",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PCNTCUR",
+      "label": "Devise contrat",
+      "dim": "",
+      "type": "CUR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TCU]TCU0=[PREPIP]PCNTCUR",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "PCNTLIN",
+      "label": "Numéro de ligne",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PCNTNUM",
+      "label": "Numéro de contrat",
+      "dim": "",
+      "type": "PREPI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PREPI]PREPI0=[PREPIP]PCNTNUM",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "TYP",
+      "label": "Type de saisie",
+      "dim": "",
+      "type": "GTE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GTE]GTE0=TYP(indice);[V]GCURLEG",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PREPIP]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VAT",
+      "label": "Code taxe",
+      "dim": "",
+      "type": "VAT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TVT]TVT0=VAT(indice);[V]GSUPCLE",
+      "nullify": "Bloquant",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "PREPIP",
+  "label": "Paiements factures d'acompte",
+  "module": "Comptabilité tiers"
+}

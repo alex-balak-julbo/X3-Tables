@@ -1,0 +1,203 @@
+{
+  "table": "ADOCFLD",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/ADOCFLD.htm",
+  "keys": [
+    {
+      "key": "ADZ0",
+      "description": "LAN+MOTCLE",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "ADZ1",
+      "description": "MOTCLE+LAN",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ADZ]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "GEN",
+      "label": "Aide générique",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LAN",
+      "label": "Langue",
+      "dim": "",
+      "type": "LAN",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TLA]TLA0=[ADZ]LAN",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "LNKHLP",
+      "label": "Aide liée",
+      "dim": "",
+      "type": "ADZ",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADZ]ADZ0=[V]GLANGUE;LNKHLP",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "LNKORD",
+      "label": "Lien",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "7810",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MODULE",
+      "label": "Module",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "14",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MOTCLE",
+      "label": "Mot-clé",
+      "dim": "",
+      "type": "ADZ",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADZ]ADZ0=LAN;MOTCLE",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "PRIO",
+      "label": "Priorité traduction",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2953",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TEXTE",
+      "label": "Texte",
+      "dim": "",
+      "type": "AC0",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ADZ]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ADZ",
+  "label": "Documentation sur champs",
+  "module": "Superviseur"
+}

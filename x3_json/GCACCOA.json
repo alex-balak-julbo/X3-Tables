@@ -1,0 +1,137 @@
+{
+  "table": "GCACCOA",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/GCACCOA.htm",
+  "keys": [
+    {
+      "key": "GCO0",
+      "description": "COD",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "COA",
+      "label": "Plan comptable",
+      "dim": "9",
+      "type": "COA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[COA]COA0=[GCO]COA",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "COD",
+      "label": "Code transaction",
+      "dim": "",
+      "type": "GCO",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GCO]GCO0=[GCO]COD",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[GCO]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DESTRA",
+      "label": "Intitulé",
+      "dim": "",
+      "type": "AX3",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LEG",
+      "label": "Législation",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=909;LEG",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "NBRCOA",
+      "label": "Nb plans comptes",
+      "dim": "",
+      "type": "C",
+      "length": "1",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[GCO]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "GCO",
+  "label": "Transaction saisie code compta",
+  "module": "Données de base"
+}

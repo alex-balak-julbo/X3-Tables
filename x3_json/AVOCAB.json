@@ -1,0 +1,161 @@
+{
+  "table": "AVOCAB",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/AVOCAB.htm",
+  "keys": [
+    {
+      "key": "AVO0",
+      "description": "LAN+VER+TYP+CHP+NUM",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CHP",
+      "label": "Chapitre",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AVO]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CUR",
+      "label": "Version",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "7840",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LAN",
+      "label": "Langue",
+      "dim": "",
+      "type": "LAN",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TLA]TLA0=[AVO]LAN",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "NUM",
+      "label": "Numéro",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TXT",
+      "label": "Texte",
+      "dim": "",
+      "type": "A",
+      "length": "123",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYP",
+      "label": "Type de texte",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "937",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AVO]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VER",
+      "label": "Version",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "7840",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "AVO",
+  "label": "Personnalisation vocabulaire",
+  "module": "Superviseur"
+}

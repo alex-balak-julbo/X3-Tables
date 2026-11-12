@@ -1,0 +1,131 @@
+{
+  "table": "TMPGACCENTRY",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/TMPGACCENTRY.htm",
+  "keys": [
+    {
+      "key": "HAE0",
+      "description": "TYP+NUM",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "RPTUID",
+      "description": "RPTUID",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[TMPHAE]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "NUM",
+      "label": "Numéro de pièce",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUMDCL",
+      "label": "Numéro déclaration",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "RPTUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "A",
+      "length": "50",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYP",
+      "label": "Type de pièce",
+      "dim": "",
+      "type": "GTE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GTE]GTE0=[TMPHAE]TYP",
+      "nullify": "BSRA",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[TMPHAE]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "TMPHAE",
+  "label": "Ecritures comptables",
+  "module": "Comptabilité"
+}

@@ -1,0 +1,125 @@
+{
+  "table": "GFSITFATTV",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/GFSITFATTV.htm",
+  "keys": [
+    {
+      "key": "GFSIAV0",
+      "description": "ITMREF+STOFCY+ATTCOD",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ATTCOD",
+      "label": "Attribut",
+      "dim": "",
+      "type": "GFSATT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GFSATT]ATT0=[GFSIAV]ATTCOD",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "ATTVALCOD",
+      "label": "Valeur attribut",
+      "dim": "",
+      "type": "GFSATTV",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GFSATTV]ATTVAL0=ATTCOD;ATTVALCOD",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[GFSIAV]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "ITMREF",
+      "label": "Produit",
+      "dim": "",
+      "type": "ITF",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ITF]ITF0=ITMREF;STOFCY",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "STOFCY",
+      "label": "Site stock",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[GFSIAV]STOFCY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[GFSIAV]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "GFSIAV",
+  "label": "Attribut article-site",
+  "module": "Données de base"
+}

@@ -1,0 +1,293 @@
+{
+  "table": "ACTIV",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/ACTIV.htm",
+  "keys": [
+    {
+      "key": "CODACT",
+      "description": "CODACT",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "ACV1",
+      "description": "MODULE+CODACT",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "ACV2",
+      "description": "ORDRE+CODACT",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ACTDEP",
+      "label": "Code activité",
+      "dim": "",
+      "type": "ACV",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ACV]CODACT=[ACV]ACTDEP",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "ACTFOR",
+      "label": "Formule",
+      "dim": "",
+      "type": "AFR",
+      "length": "80",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODACT",
+      "label": "Code activité",
+      "dim": "",
+      "type": "ACV",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ACV]CODACT=[ACV]CODACT",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ACV]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DEP",
+      "label": "Dépendance",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "74",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DIME",
+      "label": "Dimension écran",
+      "dim": "",
+      "type": "L",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DIMFIL",
+      "label": "Dimension mini",
+      "dim": "",
+      "type": "L",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DIMMAX",
+      "label": "Dimension maxi",
+      "dim": "",
+      "type": "L",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FLACT",
+      "label": "Flag actif",
+      "dim": "",
+      "type": "M",
+      "length": "6",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "INTIT",
+      "label": "Intitulé",
+      "dim": "",
+      "type": "DES",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LIBACT",
+      "label": "Intitulé",
+      "dim": "",
+      "type": "ATX",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MODULE",
+      "label": "Module",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "14",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ORDRE",
+      "label": "Ordre",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "RANG",
+      "label": "Rang",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYP",
+      "label": "Type",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "93",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDFLG",
+      "label": "Flag validé",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ACV]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ACV",
+  "label": "Codes activité",
+  "module": "Superviseur"
+}

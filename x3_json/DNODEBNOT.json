@@ -1,0 +1,293 @@
+{
+  "table": "DNODEBNOT",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/DNODEBNOT.htm",
+  "keys": [
+    {
+      "key": "DNO0",
+      "description": "TYP+NUM+LIG+DUDLIG+NUMD",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "DNO1",
+      "description": "TYP+NUM+LIG+DUDLIG+DNONUM",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "DNO2",
+      "description": "DNOTYP+DNONUM+DNOLIN",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AMTATILIN",
+      "label": "Montant TTC",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AMTNOTLIN",
+      "label": "Montant HT (société)",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BPR",
+      "label": "Tiers",
+      "dim": "",
+      "type": "BPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPR]BPR0=[DNO]BPR",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CPY",
+      "label": "Société",
+      "dim": "",
+      "type": "CPY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CPY]CPY0=[DNO]CPY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[DNO]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CUR",
+      "label": "Devise",
+      "dim": "",
+      "type": "CUR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TCU]TCU0=[DNO]CUR",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "DNODAT",
+      "label": "Date facture d'agios",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DNOLIN",
+      "label": "Ligne de débit",
+      "dim": "",
+      "type": "C",
+      "length": "3",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DNONUM",
+      "label": "Doc. facture d'agios",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DNOTYP",
+      "label": "Type facture d'agios",
+      "dim": "",
+      "type": "GTE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GTE]GTE0=DNOTYP;[V]GSUPCLE",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "DUDLIG",
+      "label": "Numéro échéance",
+      "dim": "",
+      "type": "C",
+      "length": "3",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FCY",
+      "label": "Site",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[DNO]FCY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "LIG",
+      "label": "Numéro ligne",
+      "dim": "",
+      "type": "C",
+      "length": "3",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUM",
+      "label": "N° de pièce",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUMD",
+      "label": "Numéro facture d'agios",
+      "dim": "",
+      "type": "C",
+      "length": "3",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ORIDOC",
+      "label": "Pièce origine",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYP",
+      "label": "Type pièce",
+      "dim": "",
+      "type": "GTE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GTE]GTE0=TYP;[V]GSUPCLE",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modification",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[DNO]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "DNO",
+  "label": "Factures d'agios",
+  "module": "Comptabilité tiers"
+}

@@ -1,0 +1,215 @@
+{
+  "table": "KPYIMPTRAN",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/KPYIMPTRAN.htm",
+  "keys": [
+    {
+      "key": "KPYT0",
+      "description": "TYP+INVALUE+COA+FCY+ACC",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "KPUT1",
+      "description": "TYP+COA+FCY",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ACC",
+      "label": "Compte",
+      "dim": "",
+      "type": "GAC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GAC]GAC0=COA;ACC",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "ACCDAT",
+      "label": "Date de l'état",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CCE",
+      "label": "Section analytique",
+      "dim": "",
+      "type": "A",
+      "length": "15",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CDE",
+      "label": "Sections par défaut",
+      "dim": "",
+      "type": "CDE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CDE]CDE0=CDE;[V]GSUPCLE",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "COA",
+      "label": "Plan comptable",
+      "dim": "",
+      "type": "COA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[COA]COA0=[KPT]COA",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CONTRA",
+      "label": "Contrepartie",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[KPT]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "FCY",
+      "label": "Site",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[KPT]FCY",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "GAU",
+      "label": "Pièce automatique",
+      "dim": "",
+      "type": "GAU",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GAU]GAU0=[KPT]GAU",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "GTE",
+      "label": "Type saisie",
+      "dim": "",
+      "type": "GTE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GTE]GTE0=GTE;[V]GSUPCLE",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "INVALUE",
+      "label": "Valeur d'origine",
+      "dim": "",
+      "type": "A",
+      "length": "100",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYP",
+      "label": "Type",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "3700",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[KPT]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "KPT",
+  "label": "Transcription imports Sage 50",
+  "module": "Comptabilité"
+}

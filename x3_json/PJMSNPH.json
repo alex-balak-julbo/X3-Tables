@@ -1,0 +1,173 @@
+{
+  "table": "PJMSNPH",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PJMSNPH.htm",
+  "keys": [
+    {
+      "key": "PSNPH0",
+      "description": "SNPCOD",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PSNPH]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CUR",
+      "label": "Devise",
+      "dim": "",
+      "type": "CUR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TCU]TCU0=[PSNPH]CUR",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "DESAXX",
+      "label": "Intitulé",
+      "dim": "",
+      "type": "AXX",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPPNUM",
+      "label": "Numéro affaire",
+      "dim": "",
+      "type": "PIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PIM]PIM0=[PSNPH]OPPNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "REVRECFLG",
+      "label": "Reconnaissance de revenu",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": "REVRC"
+    },
+    {
+      "name": "SHOWGRP",
+      "label": "Vue financière",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=388;SHOWGRP",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "SNPCOD",
+      "label": "Code cliché",
+      "dim": "",
+      "type": "SNP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PSNPH]PSNPH0=[PSNPH]SNPCOD",
+      "nullify": "BSRA",
+      "activity": ""
+    },
+    {
+      "name": "SNPDTECRE",
+      "label": "Date cliché",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UOM",
+      "label": "Unité",
+      "dim": "",
+      "type": "UOM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TUN]TUN0=[PSNPH]UOM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PSNPH]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "PSNPH",
+  "label": "Clichés",
+  "module": "Données de base"
+}

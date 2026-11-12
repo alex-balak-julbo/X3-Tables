@@ -1,0 +1,203 @@
+{
+  "table": "ACLAPARFLD",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/ACLAPARFLD.htm",
+  "keys": [
+    {
+      "key": "ACLFP0",
+      "description": "CODCLA+TYPPAR+TYPKEY+FLDCLA+CODPAR",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "ACLFP1",
+      "description": "CODCLA+TYPPAR+TYPKEY+FLDCLA+NUMPAR",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ADRVAL",
+      "label": "Type argument",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "34",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AWMAJTYP",
+      "label": "",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODCLA",
+      "label": "Code classe",
+      "dim": "",
+      "type": "ACLA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ACLA]ACLA0=[ACLFP]CODCLA",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CODPAR",
+      "label": "Code paramètre",
+      "dim": "",
+      "type": "AVB",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ACLFP]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "FLDCLA",
+      "label": "Code champ",
+      "dim": "",
+      "type": "AVA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUMPAR",
+      "label": "Numéro",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYPINT",
+      "label": "Type interne",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "10030",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYPKEY",
+      "label": "Clés",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYPPAR",
+      "label": "Type paramètre",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ACLFP]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VALEUR",
+      "label": "Valeur",
+      "dim": "",
+      "type": "A",
+      "length": "80",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ACLFP",
+  "label": "Classes (paramètres)",
+  "module": "Superviseur"
+}

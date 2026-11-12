@@ -1,0 +1,203 @@
+{
+  "table": "AUPDATE",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/AUPDATE.htm",
+  "keys": [
+    {
+      "key": "AUPD0",
+      "description": "UPDSEQ",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "AUPD1",
+      "description": "AFOLDER+UPDTYP+UPDINTREL+UPDSEQ",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AFOLDER",
+      "label": "Dossier",
+      "dim": "",
+      "type": "ADS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADS]DOSSIER=[AUPD]AFOLDER",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AUPD]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "ENDDATTIM",
+      "label": "Date fin",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FOLDERSYNC",
+      "label": "Validation différée",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "GENSTATUS",
+      "label": "Statut génération",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "64",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDINTREL",
+      "label": "Version interne",
+      "dim": "",
+      "type": "AREL",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDLOGFIL",
+      "label": "",
+      "dim": "2",
+      "type": "TRA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDPROCESS",
+      "label": "Type de process",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "61",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDSEQ",
+      "label": "Séquence",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDSTATUS",
+      "label": "Statut intégration",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "64",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDTYP",
+      "label": "Type de mise à jour",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "54",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AUPD]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "AUPD",
+  "label": "Mise à jour",
+  "module": "Superviseur"
+}

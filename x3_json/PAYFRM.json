@@ -1,0 +1,281 @@
+{
+  "table": "PAYFRM",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PAYFRM.htm",
+  "keys": [
+    {
+      "key": "FRM0",
+      "description": "FRMFLG+FRMNUM",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "FRM1",
+      "description": "FRMFLG+TFBDAT-FILIDMOD",
+      "duplicates": true,
+      "activity": "KUS"
+    },
+    {
+      "key": "FRM2",
+      "description": "FRMFLG+FRMGRP",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BAN",
+      "label": "Banque",
+      "dim": "",
+      "type": "BAN",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BAN]BAN0=[FRM]BAN",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CHQTYP",
+      "label": "Type de chèque",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "654",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CPY",
+      "label": "Société",
+      "dim": "",
+      "type": "CPY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CPY]CPY0=[FRM]CPY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "EXEDAT",
+      "label": "Date d'exécution",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FILIDMOD",
+      "label": "Identifiant fichier",
+      "dim": "",
+      "type": "A",
+      "length": "1",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": "KUS"
+    },
+    {
+      "name": "FRMFCY",
+      "label": "Site",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[FRM]FRMFCY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "FRMFLG",
+      "label": "Type bordereau",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "685",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FRMGRP",
+      "label": "Groupe",
+      "dim": "",
+      "type": "A",
+      "length": "20",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FRMNUM",
+      "label": "No bordereau",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FRMTYP",
+      "label": "Type remise",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "655",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PAYTYP",
+      "label": "Type règlement",
+      "dim": "",
+      "type": "TPY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TPY]TPY0=PAYTYP;[V]GSUPCLE",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "STA",
+      "label": "Etat",
+      "dim": "",
+      "type": "M",
+      "length": "30",
+      "menu": "689",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TFBDAT",
+      "label": "Fichier banque",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TFBFIL",
+      "label": "Fichier banque",
+      "dim": "",
+      "type": "A",
+      "length": "15",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "FRM",
+  "label": "Bordereaux de paiement",
+  "module": "Comptabilité tiers"
+}

@@ -1,0 +1,161 @@
+{
+  "table": "APRTBRW",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/APRTBRW.htm",
+  "keys": [
+    {
+      "key": "AP20",
+      "description": "AP2BRW",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AP2BRW",
+      "label": "Fournisseur",
+      "dim": "",
+      "type": "AP2",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AP2]AP20=[AP2]AP2BRW",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "AP2INTIT",
+      "label": "Intitulé",
+      "dim": "",
+      "type": "AX3",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AP2NBOBJ",
+      "label": "Nombre",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AP2]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "NBREC",
+      "label": "Nombre de fiches",
+      "dim": "10",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OBJ",
+      "label": "Objet",
+      "dim": "10",
+      "type": "AOB",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AOB]ABREV=[AP2]OBJ",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "OBJSEL",
+      "label": "Sélection",
+      "dim": "10",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ORDTRI",
+      "label": "",
+      "dim": "10",
+      "type": "M",
+      "length": "10",
+      "menu": "90",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AP2]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "AP2",
+  "label": "Multi-listes",
+  "module": "Superviseur"
+}

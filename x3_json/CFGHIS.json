@@ -1,0 +1,257 @@
+{
+  "table": "CFGHIS",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/CFGHIS.htm",
+  "keys": [
+    {
+      "key": "CFH0",
+      "description": "SCENUM+CFGVCRNUM+SYMNUM+SYMSEQ",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "CFH1",
+      "description": "CFGVCRNUM+SCENUM+SYMNUM+SYMSEQ",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "CFH2",
+      "description": "SCENUM+SYMSEQ+SYMNUM+CFGVCRNUM",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CFGVCRNUM",
+      "label": "N.pièce config.",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "EXPNUM",
+      "label": "Numéro Export",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SCENUM",
+      "label": "Scénario",
+      "dim": "",
+      "type": "CFG",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CSC]CSC0=[CFH]SCENUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "SYMNAT",
+      "label": "Type réponse",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "252",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SYMNUM",
+      "label": "Symbole",
+      "dim": "",
+      "type": "CQU",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CQU]CQU0=[CFH]SYMNUM",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "SYMORI",
+      "label": "Origine",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "771",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SYMSEQ",
+      "label": "No séquence",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SYMTYP",
+      "label": "Type symbole",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "752",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[CFH]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VALALP",
+      "label": "Valeur symbole",
+      "dim": "",
+      "type": "A",
+      "length": "250",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VALBLB",
+      "label": "Valeur symbole",
+      "dim": "",
+      "type": "AB0",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VALCLB",
+      "label": "Valeur symbole",
+      "dim": "",
+      "type": "AC0",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VALDAT",
+      "label": "Valeur symbole",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VALNUM",
+      "label": "Valeur symbole",
+      "dim": "",
+      "type": "DCB",
+      "length": "20",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "CFH",
+  "label": "Historique configurations",
+  "module": "Stocks"
+}

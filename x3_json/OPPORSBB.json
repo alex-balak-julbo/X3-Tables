@@ -1,0 +1,137 @@
+{
+  "table": "OPPORSBB",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/OPPORSBB.htm",
+  "keys": [
+    {
+      "key": "OBB0",
+      "description": "OPPNUM+SBBPJT",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CONSFLG",
+      "label": "Consolidation",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPPNUM",
+      "label": "Chrono affaire",
+      "dim": "",
+      "type": "OPP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[OPP]OPP0=[OBB]OPPNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "SBBPJT",
+      "label": "Sous-projet",
+      "dim": "",
+      "type": "OPP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[OPP]OPP0=[OBB]SBBPJT",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "OBB",
+  "label": "Sous-projets affaire",
+  "module": "Données de base"
+}

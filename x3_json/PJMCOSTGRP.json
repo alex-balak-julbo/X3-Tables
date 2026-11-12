@@ -1,0 +1,137 @@
+{
+  "table": "PJMCOSTGRP",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PJMCOSTGRP.htm",
+  "keys": [
+    {
+      "key": "PCG0",
+      "description": "PCCCOD+PCGTYP+PCGGRPMAT+PCGGRPLAB+PCGGRPMAC",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PJCG]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "PCCCOD",
+      "label": "Nature de dépense",
+      "dim": "",
+      "type": "PJCC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PJCC]PCC0=[PJCG]PCCCOD",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "PCGGRPLAB",
+      "label": "Main d'oeuvre",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "316",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PCGGRPMAC",
+      "label": "Machine",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "316",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PCGGRPMAT",
+      "label": "Matière",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "325",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PCGTYP",
+      "label": "Type famille coûts",
+      "dim": "",
+      "type": "M",
+      "length": "20",
+      "menu": "7722",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PJCG]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "PJCG",
+  "label": "Famille coûts",
+  "module": "Données de base"
+}

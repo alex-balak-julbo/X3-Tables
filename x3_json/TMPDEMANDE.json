@@ -1,0 +1,9 @@
+{
+  "table": "TMPDEMANDE",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/TMPDEMANDE.htm",
+  "keys": [],
+  "fields": [],
+  "abbreviation": "TDM",
+  "label": "Table temporaire demande form.",
+  "module": "Gestion des talents"
+}

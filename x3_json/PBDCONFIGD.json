@@ -1,0 +1,233 @@
+{
+  "table": "PBDCONFIGD",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PBDCONFIGD.htm",
+  "keys": [
+    {
+      "key": "PBDCNFD0",
+      "description": "CODE+LEG+ISINCLUDED+LINE",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ACCSIGN",
+      "label": "Sens",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "610",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BALAMT",
+      "label": "Balance utilisée",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BPGROUP",
+      "label": "Famille de tiers",
+      "dim": "",
+      "type": "PBDBPG",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "COA",
+      "label": "Plan comptable",
+      "dim": "",
+      "type": "COA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[COA]COA0=COA",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CODE",
+      "label": "Code",
+      "dim": "",
+      "type": "A",
+      "length": "20",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PBDCNFD]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CROOTACC",
+      "label": "Racine de compte",
+      "dim": "",
+      "type": "A",
+      "length": "15",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DOCTYPE",
+      "label": "Type document",
+      "dim": "",
+      "type": "GTE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GTE]GTE0=[PBDCNFD]DOCTYPE",
+      "nullify": "BSRA",
+      "activity": ""
+    },
+    {
+      "name": "ISINCLUDED",
+      "label": "Inclus/Exclus",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LEG",
+      "label": "Législation",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=909;LEG",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "LINE",
+      "label": "Ligne",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NOTES",
+      "label": "Notes",
+      "dim": "",
+      "type": "A",
+      "length": "60",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ORIENT",
+      "label": "Orientation",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "3645",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PBDECO",
+      "label": "Code motif économique",
+      "dim": "",
+      "type": "PBDECO",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PBDECO]PBDECO0=PBDECO;LEG",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PBDCNFD]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "PBDCNFD",
+  "label": "Configuration balance pmts",
+  "module": "Comptabilité"
+}

@@ -1,0 +1,149 @@
+{
+  "table": "DOOBPCLNK",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/DOOBPCLNK.htm",
+  "keys": [
+    {
+      "key": "DBL0",
+      "description": "DOONUM+BPCNUM",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "DBL1",
+      "description": "DOONUM",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "DBL2",
+      "description": "BPCNUM",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BPCNAM",
+      "label": "Nom client",
+      "dim": "",
+      "type": "NAM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BPCNUM",
+      "label": "Client",
+      "dim": "",
+      "type": "BPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPR]BPR0=[DBL]BPCNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "BPCSHO",
+      "label": "Intitulé court",
+      "dim": "",
+      "type": "SHO",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[DBL]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DOONAM",
+      "label": "Nom donneur d'ordre",
+      "dim": "",
+      "type": "NAM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DOONUM",
+      "label": "Donneur d'ordre",
+      "dim": "",
+      "type": "BPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPR]BPR0=[DBL]DOONUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[DBL]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "DBL",
+  "label": "Association de donneur d'ordre",
+  "module": "Support client"
+}

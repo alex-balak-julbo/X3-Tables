@@ -1,0 +1,209 @@
+{
+  "table": "MTCGAUTMP",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/MTCGAUTMP.htm",
+  "keys": [
+    {
+      "key": "MGT0",
+      "description": "COD+LINNUM+CLEA1+CLEA2+ACCNUM",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ACC",
+      "label": "Compte",
+      "dim": "",
+      "type": "GAC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GAC]GAC0=\"\";ACC",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "ACCNUM",
+      "label": "Numéro interne",
+      "dim": "",
+      "type": "UNQ",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AMTCUR",
+      "label": "Montant en devise",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AMTLED",
+      "label": "Mt dev référentiel",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BPR",
+      "label": "Tiers facturé/cde",
+      "dim": "",
+      "type": "BPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPR]BPR0=[MGT]BPR",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CLEA1",
+      "label": "Alpha 1",
+      "dim": "",
+      "type": "A",
+      "length": "15",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CLEA2",
+      "label": "Alpha 2",
+      "dim": "",
+      "type": "A",
+      "length": "15",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "COD",
+      "label": "Code",
+      "dim": "",
+      "type": "GAU",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GAU]GAU0=[MGT]COD",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CPY",
+      "label": "Société",
+      "dim": "",
+      "type": "CPY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CPY]CPY0=[MGT]CPY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[MGT]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CUR",
+      "label": "Devise",
+      "dim": "",
+      "type": "CUR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TCU]TCU0=[MGT]CUR",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "LINNUM",
+      "label": "Numéro de ligne",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[MGT]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "MGT",
+  "label": "Préparation lettrage pièces",
+  "module": "Comptabilité"
+}

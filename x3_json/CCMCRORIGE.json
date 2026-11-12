@@ -1,0 +1,137 @@
+{
+  "table": "CCMCRORIGE",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/CCMCRORIGE.htm",
+  "keys": [
+    {
+      "key": "CCMCROE0",
+      "description": "CRID+ORIGELN",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "CCMCROE1",
+      "description": "CRID+EXTCONTACT",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "CCMCROE2",
+      "description": "CRID+SORTSEQ",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[CCMCROE]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CRID",
+      "label": "ID demande",
+      "dim": "",
+      "type": "CCMCRID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "EXTCONTACT",
+      "label": "Contact",
+      "dim": "",
+      "type": "AIN",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AIN]AIN0=[CCMCROE]EXTCONTACT",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "ORIGELN",
+      "label": "Numéro de la ligne",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SORTSEQ",
+      "label": "Sens tri",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[CCMCROE]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "CCMCROE",
+  "label": "Initiateurs externes",
+  "module": "Données de base"
+}

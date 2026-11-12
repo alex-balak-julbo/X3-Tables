@@ -1,0 +1,209 @@
+{
+  "table": "BSIITCD",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/BSIITCD.htm",
+  "keys": [
+    {
+      "key": "BSITCD0",
+      "description": "BSICODTC+BAN+COD",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "BSITCD1",
+      "description": "BAN+COD",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "BSITCD2",
+      "description": "BAN+COD+LEV",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BAN",
+      "label": "Banque",
+      "dim": "",
+      "type": "BANESS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BSICODTC",
+      "label": "Alternative",
+      "dim": "",
+      "type": "BSITCF",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BSITC]BSITC0=[BSIITCD]BSICODTC",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "COD",
+      "label": "Code",
+      "dim": "",
+      "type": "A",
+      "length": "3",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[BSIITCD]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DESAXX",
+      "label": "Intitulé",
+      "dim": "",
+      "type": "AX3",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DESFLD",
+      "label": "Destination",
+      "dim": "",
+      "type": "A",
+      "length": "200",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LEV",
+      "label": "Niveau",
+      "dim": "",
+      "type": "M",
+      "length": "10",
+      "menu": "3695",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LIN",
+      "label": "Ligne",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "REC",
+      "label": "Fiche",
+      "dim": "",
+      "type": "A",
+      "length": "2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SIG",
+      "label": "Sens",
+      "dim": "",
+      "type": "M",
+      "length": "10",
+      "menu": "3696",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SUMCOD",
+      "label": "Code récapitulatif",
+      "dim": "",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[BSIITCD]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "BSIITCD",
+  "label": "Codes type import bancaire",
+  "module": "Comptabilité tiers"
+}

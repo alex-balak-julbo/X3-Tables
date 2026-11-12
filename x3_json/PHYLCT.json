@@ -1,0 +1,197 @@
+{
+  "table": "PHYLCT",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PHYLCT.htm",
+  "keys": [
+    {
+      "key": "LCT0",
+      "description": "LCTCOD",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "LCT1",
+      "description": "FCY+LCTCOD",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "LCT2",
+      "description": "BAC+FCY+LCTCOD",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BAC",
+      "label": "Code-barres",
+      "dim": "",
+      "type": "BAC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BUICOD",
+      "label": "Bâtiment",
+      "dim": "",
+      "type": "BUI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BUI]BUI0=[LCT]BUICOD",
+      "nullify": "BSRA",
+      "activity": ""
+    },
+    {
+      "name": "CPY",
+      "label": "Société",
+      "dim": "",
+      "type": "CPY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CPY]CPY0=[LCT]CPY",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[LCT]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DFLFLG",
+      "label": "Localis par défaut",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FCY",
+      "label": "Site",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=FCY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "FLOOR",
+      "label": "Etage",
+      "dim": "",
+      "type": "A",
+      "length": "30",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "GEOLOC",
+      "label": "Géolocalisation",
+      "dim": "",
+      "type": "A",
+      "length": "250",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LCTCOD",
+      "label": "Localisation",
+      "dim": "",
+      "type": "LCT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[LCT]LCT0=[LCT]LCTCOD",
+      "nullify": "BSRA",
+      "activity": ""
+    },
+    {
+      "name": "LCTDES",
+      "label": "Désignation",
+      "dim": "",
+      "type": "DCO",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[LCT]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "LCT",
+  "label": "Localisations",
+  "module": "Immobilisations"
+}

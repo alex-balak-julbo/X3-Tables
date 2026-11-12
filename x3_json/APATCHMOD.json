@@ -1,0 +1,197 @@
+{
+  "table": "APATCHMOD",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/APATCHMOD.htm",
+  "keys": [
+    {
+      "key": "APH0",
+      "description": "MODPAT+NUMLIG",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODACT",
+      "label": "Code activité",
+      "dim": "",
+      "type": "ACV",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ACV]CODACT=[APH]CODACT",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[APH]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "EXPSEL",
+      "label": "Sélection",
+      "dim": "",
+      "type": "AFR",
+      "length": "210",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "INTPAT",
+      "label": "Intitulé",
+      "dim": "",
+      "type": "AX3",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MODDON",
+      "label": "Modèle de données",
+      "dim": "",
+      "type": "AWM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AWM]AWM0=[APH]MODDON",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "MODPAT",
+      "label": "Code modèle",
+      "dim": "",
+      "type": "APH",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[APH]APH0=MODPAT;NUMLIG",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "MODULE",
+      "label": "Module",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "14",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUMLIG",
+      "label": "No de ligne",
+      "dim": "",
+      "type": "C",
+      "length": "3",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TRANSAC",
+      "label": "Transaction",
+      "dim": "",
+      "type": "ATN",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ATN]ATN0=[APH]TRANSAC",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[APH]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "APH",
+  "label": "Modèle de paramétrage",
+  "module": "Superviseur"
+}

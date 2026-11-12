@@ -1,0 +1,113 @@
+{
+  "table": "AVIEWB",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/AVIEWB.htm",
+  "keys": [
+    {
+      "key": "AVB0",
+      "description": "CODVUE+TYPDBA",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODVUE",
+      "label": "Code vue",
+      "dim": "",
+      "type": "AVW",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AVW]AVW0=[AVB]CODVUE",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AVB]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "TEXTE",
+      "label": "Requête",
+      "dim": "",
+      "type": "AC0",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYPDBA",
+      "label": "Type de base",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "57",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AVB]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "AVB",
+  "label": "Dictionnaire des vues",
+  "module": "Superviseur"
+}

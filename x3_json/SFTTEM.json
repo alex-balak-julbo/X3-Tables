@@ -1,0 +1,131 @@
+{
+  "table": "SFTTEM",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/SFTTEM.htm",
+  "keys": [
+    {
+      "key": "SFTTM0",
+      "description": "TEAMNUM+TEAMLIN",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "SFTTM1",
+      "description": "TEAMNUM+EMPNUM",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[SFTTM]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "EMPNUM",
+      "label": "Matricule",
+      "dim": "",
+      "type": "TMA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TMA]TMA0=[SFTTM]EMPNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "STRDAT",
+      "label": "Date début",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TEAMLIN",
+      "label": "Ligne",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TEAMNUM",
+      "label": "Équipe",
+      "dim": "",
+      "type": "TMA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TMA]TMA0=[SFTTM]TEAMNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[SFTTM]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "SFTTM",
+  "label": "Equipes",
+  "module": "Données de base"
+}

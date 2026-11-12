@@ -1,0 +1,221 @@
+{
+  "table": "KPYIMPDTLA",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/KPYIMPDTLA.htm",
+  "keys": [
+    {
+      "key": "KPYA0",
+      "description": "RECID+LINENO+ANALIG",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ACC",
+      "label": "Comptes généraux",
+      "dim": "10",
+      "type": "GAC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GAC]GAC0=COA(indice);ACC(indice)",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "AMTCUR",
+      "label": "Montant",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ANALIG",
+      "label": "Numéro d'ordre",
+      "dim": "",
+      "type": "C",
+      "length": "3",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CCE",
+      "label": "Section analytique",
+      "dim": "",
+      "type": "CCE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CCE]CCE0=DIE(indice);CCE(indice)",
+      "nullify": "Bloquant",
+      "activity": "ANA"
+    },
+    {
+      "name": "COA",
+      "label": "Code plan",
+      "dim": "10",
+      "type": "COA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[COA]COA0=[KPA]COA",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[KPA]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DIE",
+      "label": "Code axe",
+      "dim": "",
+      "type": "DIE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[DIE]DIE0=[KPA]DIE",
+      "nullify": "Bloquant",
+      "activity": "ANA"
+    },
+    {
+      "name": "DSPLIN",
+      "label": "Répartition",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "GRPGAS",
+      "label": "Groupe pièce",
+      "dim": "",
+      "type": "A",
+      "length": "30",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LINENO",
+      "label": "N° ligne",
+      "dim": "",
+      "type": "L",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "QTY",
+      "label": "Quantité",
+      "dim": "",
+      "type": "QTY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "RECID",
+      "label": "Identifiant",
+      "dim": "",
+      "type": "A",
+      "length": "25",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UOM",
+      "label": "Unité",
+      "dim": "",
+      "type": "UOM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TUN]TUN0=[KPA]UOM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[KPA]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "KPA",
+  "label": "Ligne analytique",
+  "module": "Comptabilité"
+}

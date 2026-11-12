@@ -1,0 +1,149 @@
+{
+  "table": "AMETUTI",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/AMETUTI.htm",
+  "keys": [
+    {
+      "key": "AME0",
+      "description": "CODMET",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODMET",
+      "label": "Code métier",
+      "dim": "",
+      "type": "AME",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AME]AME0=[AME]CODMET",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AME]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "INTMET",
+      "label": "Intitulé",
+      "dim": "",
+      "type": "AX3",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PRFFCT",
+      "label": "Profil fonction",
+      "dim": "",
+      "type": "AFT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AFT]AFT0=[AME]PRFFCT",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "PRFMEN",
+      "label": "Profil menu",
+      "dim": "",
+      "type": "APM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[APF]CODPRF=0;PRFMEN",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "PRFXTD",
+      "label": "Profil Safe X3 WAS",
+      "dim": "",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": "AYT"
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AME]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "USRBI",
+      "label": "Utilisateur BI",
+      "dim": "",
+      "type": "AIU",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AIU]AIU0=[AME]USRBI",
+      "nullify": "Bloquant",
+      "activity": "ABI"
+    }
+  ],
+  "abbreviation": "AME",
+  "label": "Profil métier",
+  "module": "Superviseur"
+}

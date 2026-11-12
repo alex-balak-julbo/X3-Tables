@@ -1,0 +1,173 @@
+{
+  "table": "AMIGKEY",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/AMIGKEY.htm",
+  "keys": [
+    {
+      "key": "AMY0",
+      "description": "DOSSIER+IDENT",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CLOB",
+      "label": "Clob",
+      "dim": "",
+      "type": "ACB",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AMY]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DOSSIER",
+      "label": "Dossier",
+      "dim": "",
+      "type": "ADS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADS]DOSSIER=[AMY]DOSSIER",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "IDENT",
+      "label": "Identifiant",
+      "dim": "",
+      "type": "ID1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PCDRECNBR",
+      "label": "Nb traités",
+      "dim": "",
+      "type": "ANB",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PROENDFLG",
+      "label": "Etat",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "21",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PRORECNBR",
+      "label": "Nb lus",
+      "dim": "",
+      "type": "ANB",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TOTRECNBR",
+      "label": "Nb enregistrements",
+      "dim": "",
+      "type": "DCB",
+      "length": "12.3",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AMY]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "AMY",
+  "label": "Clés",
+  "module": "Superviseur"
+}

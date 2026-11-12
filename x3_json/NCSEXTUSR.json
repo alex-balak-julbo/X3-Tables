@@ -1,0 +1,137 @@
+{
+  "table": "NCSEXTUSR",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/NCSEXTUSR.htm",
+  "keys": [
+    {
+      "key": "NCSEU0",
+      "description": "NCSID+ORIGELN",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "NCSEU1",
+      "description": "NCSID+EXTCONTACT",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "NCSEU2",
+      "description": "NCSID+SORTSEQ",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[NCSEU]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "EXTCONTACT",
+      "label": "Contact",
+      "dim": "",
+      "type": "AIN",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AIN]AIN0=[NCSEU]EXTCONTACT",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "NCSID",
+      "label": "Non-conformité",
+      "dim": "",
+      "type": "NCSID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[NCSRC]NCSRC0=[NCSEU]NCSID",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "ORIGELN",
+      "label": "Numéro de la ligne",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SORTSEQ",
+      "label": "Sens tri",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[NCSEU]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "NCSEU",
+  "label": "Utilisateur externe",
+  "module": "Données de base"
+}

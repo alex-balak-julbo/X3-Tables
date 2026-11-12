@@ -1,0 +1,197 @@
+{
+  "table": "CRMCLOB",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/CRMCLOB.htm",
+  "keys": [
+    {
+      "key": "CRC0",
+      "description": "CRCNUM",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CRCAINNUM",
+      "label": "Code interlocuteur",
+      "dim": "",
+      "type": "AIN",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AIN]AIN0=[CRC]CRCAINNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CRCBPATYP",
+      "label": "Type entité",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "943",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CRCBPRNUM",
+      "label": "Code tiers",
+      "dim": "",
+      "type": "BPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPR]BPR0=[CRC]CRCBPRNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CRCCLOB",
+      "label": "Clob",
+      "dim": "",
+      "type": "HDC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CRCCORNUM",
+      "label": "Code correspondant",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CRCNUM",
+      "label": "Chrono",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CRCREP",
+      "label": "Représentant",
+      "dim": "",
+      "type": "BPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPR]BPR0=[CRC]CRCREP",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CRCTYP",
+      "label": "Type",
+      "dim": "",
+      "type": "ABR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "CRC",
+  "label": "Clob CRM",
+  "module": "Action commerciale"
+}

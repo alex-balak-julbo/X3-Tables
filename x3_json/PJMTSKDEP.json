@@ -1,0 +1,251 @@
+{
+  "table": "PJMTSKDEP",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PJMTSKDEP.htm",
+  "keys": [
+    {
+      "key": "PKD0",
+      "description": "OPPNUM+TASCOD+OPENUM+ITTSEQ",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "PKD1",
+      "description": "OPPNUM+TASCOD+OPENUM",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "PKD2",
+      "description": "OPPNUM+TASCOD+ITTSEQ",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "PKD3",
+      "description": "OPPNUM+TASCOD",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BILL",
+      "label": "Tâche facturable",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PKD]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DEPITM",
+      "label": "Dépendance article",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DEPOPE",
+      "label": "Dépendance opération",
+      "dim": "",
+      "type": "OPE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ITTSEQ",
+      "label": "Séquence",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPEEND",
+      "label": "Date fin",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPENUM",
+      "label": "Code opération",
+      "dim": "",
+      "type": "OPE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPESTR",
+      "label": "Date début",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPPNDEP",
+      "label": "Dépendance affaire",
+      "dim": "",
+      "type": "PIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PIM]PIM0=[PKD]OPPNDEP",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "OPPNUM",
+      "label": "Numéro affaire",
+      "dim": "",
+      "type": "PIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PIM]PIM0=[PKD]OPPNUM",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "PRICE",
+      "label": "Prix",
+      "dim": "",
+      "type": "DCB",
+      "length": "9.2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TASCOD",
+      "label": "Code tâche",
+      "dim": "",
+      "type": "TAC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TASDEP",
+      "label": "Dépendance tâche",
+      "dim": "",
+      "type": "TAC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TASSTATE",
+      "label": "Statut",
+      "dim": "",
+      "type": "M",
+      "length": "9",
+      "menu": "2250",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PKD]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "PKD",
+  "label": "Dépendances de l'affaire",
+  "module": "Données de base"
+}

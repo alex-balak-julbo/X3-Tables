@@ -1,0 +1,161 @@
+{
+  "table": "FAEPAR",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/FAEPAR.htm",
+  "keys": [
+    {
+      "key": "FAE0",
+      "description": "IDT",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODPVT",
+      "label": "Pivot",
+      "dim": "",
+      "type": "PIT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PIT]PIT0=CODPVT",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CPY",
+      "label": "Société",
+      "dim": "",
+      "type": "CPY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CPY]CPY0=[FAE]CPY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[FAE]CREUSR",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "DES",
+      "label": "Intitulé",
+      "dim": "",
+      "type": "DES",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FIYPER",
+      "label": "Exercice/Période",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "3639",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "IDT",
+      "label": "Identifiant",
+      "dim": "",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYPEXP",
+      "label": "Type de destination",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "921",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[FAE]UPDUSR",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "VOLFIL",
+      "label": "Répertoire",
+      "dim": "",
+      "type": "ASTO",
+      "length": "250",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "FAE",
+  "label": "Paramétrage FEC",
+  "module": "Comptabilité"
+}

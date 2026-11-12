@@ -1,0 +1,137 @@
+{
+  "table": "TABPLACETIME",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/TABPLACETIME.htm",
+  "keys": [
+    {
+      "key": "TPCT0",
+      "description": "DPETPC+ARVTPC+TRNTPC+BPTNUM",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ARVTPC",
+      "label": "Transit arrivée",
+      "dim": "",
+      "type": "TPC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TPC]TPC0=[TPCT]ARVTPC",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BPTNUM",
+      "label": "Transporteur",
+      "dim": "",
+      "type": "BPT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPT]BPT0=[TPCT]BPTNUM",
+      "nullify": "R.A.Z.",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[TPCT]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DPETPC",
+      "label": "Transit départ",
+      "dim": "",
+      "type": "TPC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TPC]TPC0=[TPCT]DPETPC",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "LTITPC",
+      "label": "Délai",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TRNTPC",
+      "label": "Mode transport",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2027",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[TPCT]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "TPCT",
+  "label": "Délai de transport",
+  "module": "Données de base"
+}

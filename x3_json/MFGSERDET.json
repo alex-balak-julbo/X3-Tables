@@ -1,0 +1,173 @@
+{
+  "table": "MFGSERDET",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/MFGSERDET.htm",
+  "keys": [
+    {
+      "key": "MFSD0",
+      "description": "ITMREF+MFGSER+DETSERNUM",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[MFSD]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DETITMREF",
+      "label": "Composant",
+      "dim": "",
+      "type": "ITM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ITM]ITM0=[MFSD]DETITMREF",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "DETMFGFCY",
+      "label": "Site",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[MFSD]DETMFGFCY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "DETMFGNUM",
+      "label": "Ordre fabrication",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DETSERNUM",
+      "label": "Numéro de série enfant",
+      "dim": "",
+      "type": "SER",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ECCVALMAJ",
+      "label": "Version majeure",
+      "dim": "",
+      "type": "ICVVAL",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": "ECC"
+    },
+    {
+      "name": "ECCVALMIN",
+      "label": "Version mineure",
+      "dim": "",
+      "type": "ICVVAL",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": "ECC"
+    },
+    {
+      "name": "ITMREF",
+      "label": "Article",
+      "dim": "",
+      "type": "ITM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ITM]ITM0=[MFSD]ITMREF",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "MFGSER",
+      "label": "Numéro de série parent",
+      "dim": "",
+      "type": "SER",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[MFSD]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "MFSD",
+  "label": "OF - détail lien No série",
+  "module": "Production"
+}

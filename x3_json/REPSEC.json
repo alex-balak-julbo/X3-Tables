@@ -1,0 +1,143 @@
+{
+  "table": "REPSEC",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/REPSEC.htm",
+  "keys": [
+    {
+      "key": "RSE0",
+      "description": "BPCNUM+REPNUM",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "RSE1",
+      "description": "BPCNUM",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUTASS",
+      "label": "Affectation auto.",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BPCNUM",
+      "label": "Code client",
+      "dim": "",
+      "type": "BPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPR]BPR0=[RSE]BPCNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[RSE]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "GRPITM",
+      "label": "Famille de produit",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=19+GFAMCIA;GRPITM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "MSS",
+      "label": "Rôle",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=414;MSS",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "REPNUM",
+      "label": "Code représentant",
+      "dim": "",
+      "type": "REP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[REP]REP0=[RSE]REPNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[RSE]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "RSE",
+  "label": "Commerciaux secondaires",
+  "module": "Données de base"
+}

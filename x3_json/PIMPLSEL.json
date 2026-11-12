@@ -1,0 +1,173 @@
+{
+  "table": "PIMPLSEL",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PIMPLSEL.htm",
+  "keys": [
+    {
+      "key": "PIS0",
+      "description": "PIMSSS+SEQ",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPPNUM",
+      "label": "Numéro affaire",
+      "dim": "",
+      "type": "OPP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[OPP]OPP0=[PIS]OPPNUM",
+      "nullify": "BSRA",
+      "activity": ""
+    },
+    {
+      "name": "PBUCOD",
+      "label": "Code budget",
+      "dim": "",
+      "type": "PBU",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PIMNUM",
+      "label": "Lien affaire",
+      "dim": "",
+      "type": "VPJ",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PIMSSS",
+      "label": "Session",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PIMSTA",
+      "label": "Statut",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PIMTYP",
+      "label": "Type",
+      "dim": "",
+      "type": "M",
+      "length": "20",
+      "menu": "2254",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SEQ",
+      "label": "Séquence",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TASCOD",
+      "label": "Code tâche",
+      "dim": "",
+      "type": "TAC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Auteur modification",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "PIS",
+  "label": "Lignes d'imputation temporaire",
+  "module": "Données de base"
+}

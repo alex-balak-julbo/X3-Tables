@@ -1,0 +1,221 @@
+{
+  "table": "LTAPAR",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/LTAPAR.htm",
+  "keys": [
+    {
+      "key": "LTP0",
+      "description": "DOSSIER",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ACCTID",
+      "label": "Compte",
+      "dim": "",
+      "type": "A",
+      "length": "20",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AVRREQ",
+      "label": "Vérification",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CLCALL",
+      "label": "Calculer",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[LTP]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CRY",
+      "label": "Pays",
+      "dim": "25",
+      "type": "CRY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TCY]TCY0=[LTP]CRY",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DEVURL",
+      "label": "URL développement",
+      "dim": "",
+      "type": "A",
+      "length": "100",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DOSSIER",
+      "label": "Dossier",
+      "dim": "",
+      "type": "ADS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADS]DOSSIER=[LTP]DOSSIER",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "JVBRIP",
+      "label": "IP Java Bridge",
+      "dim": "",
+      "type": "A",
+      "length": "100",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "JVBRPT",
+      "label": "Port Java Bridge",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LICKEY",
+      "label": "Clé licence",
+      "dim": "",
+      "type": "A",
+      "length": "50",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PRDURL",
+      "label": "URL test",
+      "dim": "",
+      "type": "A",
+      "length": "100",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[LTP]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "USEPRDURL",
+      "label": "Type URL",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VCRDISDTA",
+      "label": "Remise doc SST",
+      "dim": "25",
+      "type": "SFI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[SFI]SFI0=[LTP]VCRDISDTA",
+      "nullify": "Bloquant",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "LTP",
+  "label": "Connexion à Sage sales tax",
+  "module": "Ventes"
+}

@@ -1,0 +1,263 @@
+{
+  "table": "PREPINVOICED",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PREPINVOICED.htm",
+  "keys": [
+    {
+      "key": "PREPID0",
+      "description": "PCNTNUM+PCNTLIN",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "PREPID1",
+      "description": "INVNUM",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ACCLIN",
+      "label": "Compte général",
+      "dim": "",
+      "type": "GAC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GAC]GAC0=COA;ACCLIN",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "AMTATILIN",
+      "label": "Montant facture TTC",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AMTNOTLIN",
+      "label": "Montant facture HT",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "COA",
+      "label": "Plan comptable",
+      "dim": "",
+      "type": "COA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[COA]COA0=[PREPID]COA",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREMEMNUM",
+      "label": "No avoir",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PREPID]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "INVDAT",
+      "label": "Date facture",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "INVNUM",
+      "label": "Numéro facture",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PAYAMTNOT",
+      "label": "Montant réglé HT",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PAYAMTNOTLED",
+      "label": "Mnt réglé HT réf.",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PAYAMTTAX",
+      "label": "Impôt acquitté",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PAYAMTTAXLED",
+      "label": "Taxe rég réf",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PCNTLIN",
+      "label": "Numéro ligne",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PCNTNUM",
+      "label": "Numéro de contrat",
+      "dim": "",
+      "type": "PREPI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PREPI]PREPI0=[PREPID]PCNTNUM",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "PPCT",
+      "label": "Pourcentage acompte",
+      "dim": "",
+      "type": "COE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PREPID]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VATLIN",
+      "label": "Code taxe",
+      "dim": "",
+      "type": "VAT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TVT]TVT0=VATLIN;[V]GSUPCLE",
+      "nullify": "Bloquant",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "PREPID",
+  "label": "Détail factures d'acompte",
+  "module": "Comptabilité tiers"
+}

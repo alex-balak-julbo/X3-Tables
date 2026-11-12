@@ -1,0 +1,239 @@
+{
+  "table": "RNWPREP",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/RNWPREP.htm",
+  "keys": [
+    {
+      "key": "RWP0",
+      "description": "CPY+FCY+RNWAASREF+MOTHAASREF",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "RWP1",
+      "description": "CPY+MOTHAASREF",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "RWP2",
+      "description": "CPY+FCY+CCNREF+RNWAASREF",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "RWP3",
+      "description": "RNWDONFLG",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CCNREF",
+      "label": "Contrat de concession",
+      "dim": "",
+      "type": "VC9",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CCNUSR",
+      "label": "Concédant",
+      "dim": "",
+      "type": "BPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPR]BPR0=[RWP]CCNUSR",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CPY",
+      "label": "Société",
+      "dim": "",
+      "type": "CPY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CPY]CPY0=[RWP]CPY",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[RWP]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "FCY",
+      "label": "Site",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[RWP]FCY",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "FLGCAL",
+      "label": "Calcul des fonds",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ISSDATRUL",
+      "label": "Règle date sortie",
+      "dim": "",
+      "type": "M",
+      "length": "30",
+      "menu": "3274",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MOTHAASREF",
+      "label": "",
+      "dim": "",
+      "type": "VC9",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "RNWAASREF",
+      "label": "",
+      "dim": "",
+      "type": "VC9",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "RNWDAT",
+      "label": "Date renouvellement",
+      "dim": "",
+      "type": "D4",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": "CCN"
+    },
+    {
+      "name": "RNWDONFLG",
+      "label": "Renouvellement effec",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "RNWVALFLGO",
+      "label": "Forçage valeur renouvellement",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "RNWVALO",
+      "label": "Valeur renouvellement",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[RWP]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "RWP",
+  "label": "Renouvellement",
+  "module": "Immobilisations"
+}

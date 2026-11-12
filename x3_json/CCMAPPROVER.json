@@ -1,0 +1,173 @@
+{
+  "table": "CCMAPPROVER",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/CCMAPPROVER.htm",
+  "keys": [
+    {
+      "key": "CCMAPPR0",
+      "description": "CRID+APPRLN",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "CCMAPPR1",
+      "description": "CRID+APPRUSER",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "CCMAPPR2",
+      "description": "CRID+SORTSEQ",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "APPRLN",
+      "label": "N° ligne",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "APPRREASON",
+      "label": "Motif",
+      "dim": "",
+      "type": "A",
+      "length": "50",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "APPRSTAT",
+      "label": "Statut approbation",
+      "dim": "",
+      "type": "M",
+      "length": "20",
+      "menu": "2041",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "APPRUSER",
+      "label": "Code utilisateur",
+      "dim": "",
+      "type": "CCMAUSAP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[CCMAPPR]APPRUSER",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[CCMAPPR]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CRID",
+      "label": "ID demande",
+      "dim": "",
+      "type": "CCMCRID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SORTSEQ",
+      "label": "Sens tri",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TRANSTYPE",
+      "label": "Type transaction",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2039",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[CCMAPPR]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "CCMAPPR",
+  "label": "Approbateurs demande changement",
+  "module": "Données de base"
+}

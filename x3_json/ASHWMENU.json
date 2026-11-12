@@ -1,0 +1,155 @@
+{
+  "table": "ASHWMENU",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/ASHWMENU.htm",
+  "keys": [
+    {
+      "key": "ASWMN0",
+      "description": "CODREP+CODMENU",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "ASWMN1",
+      "description": "CODREP+PARMENU+ORDMENU+CODMENU",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ACTMENU",
+      "label": "Code activité",
+      "dim": "",
+      "type": "ACV",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ACV]CODACT=[ASWMN]ACTMENU",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODMENU",
+      "label": "Code",
+      "dim": "",
+      "type": "AVA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODREP",
+      "label": "Code",
+      "dim": "",
+      "type": "ASW",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ASW]ASW0=[ASWMN]CODREP",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ASWMN]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "LIBMENU",
+      "label": "Libellé",
+      "dim": "",
+      "type": "ATX",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ORDMENU",
+      "label": "Ordre",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PARMENU",
+      "label": "Parent",
+      "dim": "",
+      "type": "AVA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ASWMN]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ASWMN",
+  "label": "Représentations (Menus)",
+  "module": "Superviseur"
+}

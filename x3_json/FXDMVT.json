@@ -1,0 +1,269 @@
+{
+  "table": "FXDMVT",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/FXDMVT.htm",
+  "keys": [
+    {
+      "key": "FXM0",
+      "description": "IDMVT",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "FXM1",
+      "description": "OBJMVT+REF1MVT+REF2MVT+SEQMVT+TYPMVT",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "FXM2",
+      "description": "OBJMVT+TYPMVT+REF1MVT+REF2MVT+SEQMVT",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CPY",
+      "label": "Société",
+      "dim": "",
+      "type": "CPY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CPY]CPY0=[FXM]CPY",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[FXM]CREUSR",
+      "nullify": "BSRA",
+      "activity": ""
+    },
+    {
+      "name": "DATINTMVT",
+      "label": "Date intégration",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DESRJTMVT",
+      "label": "Désignation rejet",
+      "dim": "",
+      "type": "A",
+      "length": "250",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FCY",
+      "label": "Site",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[FXM]FCY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "IDMVT",
+      "label": "N° du mouvement",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OBJMVT",
+      "label": "Objet métier",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "3141",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ORIMVT",
+      "label": "Origine du mouvement",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "3295",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "REF1MVT",
+      "label": "Référence",
+      "dim": "",
+      "type": "A",
+      "length": "30",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "REF2MVT",
+      "label": "N° de pièce",
+      "dim": "",
+      "type": "A",
+      "length": "30",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SEQMVT",
+      "label": "N° séquence",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "STATMVT",
+      "label": "Statut du mouvement",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "3294",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TRACE",
+      "label": "Trace",
+      "dim": "",
+      "type": "TRA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYPMVT",
+      "label": "Type de mouvement",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "3293",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[FXM]UPDUSR",
+      "nullify": "BSRA",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "FXM",
+  "label": "Import des mouvements - Entête",
+  "module": "Immobilisations"
+}

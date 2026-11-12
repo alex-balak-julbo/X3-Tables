@@ -1,0 +1,161 @@
+{
+  "table": "AWRKPARC",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/AWRKPARC.htm",
+  "keys": [
+    {
+      "key": "AWC0",
+      "description": "CODE+NUMACT",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ACTION",
+      "label": "Code action",
+      "dim": "",
+      "type": "ACT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ACT]ACTION=[AWC]ACTION",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODE",
+      "label": "Code workflow",
+      "dim": "",
+      "type": "AWA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AWA]AWA0=[AWC]CODE",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CODPAR",
+      "label": "Code paramètre",
+      "dim": "20",
+      "type": "AAR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AAR]CODPAR=[AWC]CODPAR",
+      "nullify": "R.A.Z.",
+      "activity": ""
+    },
+    {
+      "name": "CONACT",
+      "label": "Conditions",
+      "dim": "",
+      "type": "AFR",
+      "length": "250",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AWC]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DECACT",
+      "label": "Déclenchement",
+      "dim": "",
+      "type": "MM",
+      "length": "20",
+      "menu": "2923",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUMACT",
+      "label": "Numéro d'ordre",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AWC]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VALPAR",
+      "label": "Valeur paramètre",
+      "dim": "20",
+      "type": "A",
+      "length": "30",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "AWC",
+  "label": "Règles Workflow (actions)",
+  "module": "Superviseur"
+}

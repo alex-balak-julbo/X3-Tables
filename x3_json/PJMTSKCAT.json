@@ -1,0 +1,221 @@
+{
+  "table": "PJMTSKCAT",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PJMTSKCAT.htm",
+  "keys": [
+    {
+      "key": "CTA0",
+      "description": "TCACOD",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ENAREC",
+      "label": "Actif",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PCCCOD",
+      "label": "Nature de dépense",
+      "dim": "",
+      "type": "PJCC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PJCC]PCC0=[PTC]PCCCOD",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "PTETYP",
+      "label": "Catégorie de temps",
+      "dim": "",
+      "type": "PJTC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PJTC]PJTC0=[PTC]PTETYP",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "RPBAUS",
+      "label": "Responsable",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PTC]RPBAUS",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "TASDUR",
+      "label": "Durée",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TASTYP",
+      "label": "Type tâche",
+      "dim": "",
+      "type": "M",
+      "length": "12",
+      "menu": "2252",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TCACOD",
+      "label": "Catégorie",
+      "dim": "",
+      "type": "CTA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PTC]CTA0=[PTC]TCACOD",
+      "nullify": "BSRA",
+      "activity": ""
+    },
+    {
+      "name": "TCADESAXX",
+      "label": "Désignation",
+      "dim": "",
+      "type": "AX3",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TCADESX",
+      "label": "Description courte",
+      "dim": "",
+      "type": "AX1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TCAMOD",
+      "label": "Planification",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2263",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "PTC",
+  "label": "Catégorie tâche affaire",
+  "module": "Données de base"
+}

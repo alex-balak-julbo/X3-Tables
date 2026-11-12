@@ -1,0 +1,9 @@
+{
+  "table": "HRTAXVAL",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/HRTAXVAL.htm",
+  "keys": [],
+  "fields": [],
+  "abbreviation": "HRTXVAL",
+  "label": "Validation extrait taxe",
+  "module": "Administration des RH"
+}

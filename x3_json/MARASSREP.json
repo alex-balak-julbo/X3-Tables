@@ -1,0 +1,191 @@
+{
+  "table": "MARASSREP",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/MARASSREP.htm",
+  "keys": [
+    {
+      "key": "MAR0",
+      "description": "RECORDNUM+RECORDADD+RECORDTYP",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "MAR1",
+      "description": "RECORDNUM+RECORDTYP",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "MAR2",
+      "description": "RECORDNUM+RECORDADD+RECORDTYP+REPTYP",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "MAR3",
+      "description": "RECORDNUM+RECORDTYP+REPTYP",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[MAR]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "MANASS",
+      "label": "Affecté manuellement",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "RECORDADD",
+      "label": "Code adresse",
+      "dim": "",
+      "type": "ADR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "RECORDNUM",
+      "label": "Clé enregistrement",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "RECORDTYP",
+      "label": "Type enregistrement",
+      "dim": "",
+      "type": "ABR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "REPITM",
+      "label": "Famille de produit",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=1+GFAMCIA;REPITM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "REPMSS",
+      "label": "Rôle",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=414;REPMSS",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "REPNUM",
+      "label": "Représentant",
+      "dim": "",
+      "type": "REP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[REP]REP0=[MAR]REPNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "REPTYP",
+      "label": "Type représentant",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[MAR]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "MAR",
+  "label": "Portefeuilles représentants",
+  "module": "Action commerciale"
+}

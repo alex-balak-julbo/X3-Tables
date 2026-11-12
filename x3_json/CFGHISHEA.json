@@ -1,0 +1,293 @@
+{
+  "table": "CFGHISHEA",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/CFGHISHEA.htm",
+  "keys": [
+    {
+      "key": "CHH0",
+      "description": "CFGVCRNUM",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "CHH1",
+      "description": "SCENUM+CFGVCRNUM",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "CHH2",
+      "description": "SCENUM+CFGBPRNUM+CFGBPRREF",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BOMALT",
+      "label": "Alternative nomencl",
+      "dim": "",
+      "type": "TBO",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TBO]TBO0=BOMALTTYP;BOMALT",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "BOMALTTYP",
+      "label": "Type alternative",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "224",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CFGBPRNUM",
+      "label": "Tiers",
+      "dim": "",
+      "type": "BPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPR]BPR0=[CHH]CFGBPRNUM",
+      "nullify": "R.A.Z.",
+      "activity": ""
+    },
+    {
+      "name": "CFGBPRREF",
+      "label": "Référence tiers",
+      "dim": "",
+      "type": "A",
+      "length": "20",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CFGDELDAT",
+      "label": "Date purge config.",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CFGVCRNUM",
+      "label": "N.pièce config.",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CPNCRE",
+      "label": "Création nomencl.",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "EXPNUM",
+      "label": "Numéro Export",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FCY",
+      "label": "Site",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[CHH]FCY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "ITMCRE",
+      "label": "Création composé;",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ITMREF",
+      "label": "Article",
+      "dim": "",
+      "type": "ITM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ITM]ITM0=[CHH]ITMREF",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "QTYSTU",
+      "label": "Quantité US",
+      "dim": "",
+      "type": "QTY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ROUALT",
+      "label": "Alternative gamme",
+      "dim": "",
+      "type": "TRO",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TRO]TRO0=[CHH]ROUALT",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "ROUCRE",
+      "label": "Création gamme",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ROUNUM",
+      "label": "Gamme",
+      "dim": "",
+      "type": "ITM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ITM]ITM0=[CHH]ROUNUM",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "SCENUM",
+      "label": "Scénario",
+      "dim": "",
+      "type": "CFG",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CSC]CSC0=[CHH]SCENUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[CHH]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "CHH",
+  "label": "Entête histor. configurations",
+  "module": "Stocks"
+}

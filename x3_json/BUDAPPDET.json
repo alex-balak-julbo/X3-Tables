@@ -1,0 +1,215 @@
+{
+  "table": "BUDAPPDET",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/BUDAPPDET.htm",
+  "keys": [
+    {
+      "key": "BAD0",
+      "description": "NUMERO+NUMAPP",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "BAD1",
+      "description": "NUMAPP+NUMERO",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ACC",
+      "label": "Compte",
+      "dim": "",
+      "type": "GAC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GAC]GAC0=COA;ACC",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "ACCNUM",
+      "label": "Ligne budgétaire",
+      "dim": "",
+      "type": "UNQ",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AMT",
+      "label": "Montant",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "COA",
+      "label": "Code plan",
+      "dim": "",
+      "type": "COA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[COA]COA0=[BAD]COA",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[BAD]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CUR",
+      "label": "Devise",
+      "dim": "",
+      "type": "CUR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TCU]TCU0=[BAD]CUR",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "ENV",
+      "label": "Enveloppe",
+      "dim": "",
+      "type": "ENV",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ENV]ENV0=[BAD]ENV",
+      "nullify": "Suppression",
+      "activity": "GDD"
+    },
+    {
+      "name": "FIY",
+      "label": "Exercice",
+      "dim": "",
+      "type": "C",
+      "length": "2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUMAPP",
+      "label": "N° approbation",
+      "dim": "",
+      "type": "A",
+      "length": "12",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUMERO",
+      "label": "Numéro",
+      "dim": "",
+      "type": "C",
+      "length": "2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PRJ",
+      "label": "Projet",
+      "dim": "",
+      "type": "PRJ",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PRJ]PRJ0=[BAD]PRJ",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "TYP",
+      "label": "Type",
+      "dim": "",
+      "type": "M",
+      "length": "3",
+      "menu": "2694",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[BAD]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "BAD",
+  "label": "Détail approbation",
+  "module": "Comptabilité"
+}

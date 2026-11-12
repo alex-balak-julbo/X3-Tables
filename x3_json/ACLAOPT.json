@@ -1,0 +1,149 @@
+{
+  "table": "ACLAOPT",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/ACLAOPT.htm",
+  "keys": [
+    {
+      "key": "ACLAO0",
+      "description": "CODCLA+OPTCOD",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODCLA",
+      "label": "Code classe",
+      "dim": "",
+      "type": "ACLA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ACLA]ACLA0=[ACLAO]CODCLA",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ACLAO]CREUSR",
+      "nullify": "R.A.Z.",
+      "activity": ""
+    },
+    {
+      "name": "OPTACT",
+      "label": "Code activité",
+      "dim": "",
+      "type": "ACV",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ACV]CODACT=[ACLAO]OPTACT",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "OPTCND",
+      "label": "Condition option",
+      "dim": "",
+      "type": "AFR",
+      "length": "250",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPTCOD",
+      "label": "Code option",
+      "dim": "",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPTERR",
+      "label": "Message erreur",
+      "dim": "",
+      "type": "ATX",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPTLIB",
+      "label": "Intitulé option",
+      "dim": "",
+      "type": "ATX",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ACLAO]UPDUSR",
+      "nullify": "R.A.Z.",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ACLAO",
+  "label": "Classes (options)",
+  "module": "Superviseur"
+}

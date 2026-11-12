@@ -1,0 +1,233 @@
+{
+  "table": "SREMACCPN",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/SREMACCPN.htm",
+  "keys": [
+    {
+      "key": "SRN0",
+      "description": "SRENUM+MACNUM+TPYFLG",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CPNCOVFLG",
+      "label": "Couvert",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2985",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CPNCOVREN",
+      "label": "Motif non couverture",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CPNCOVSPT",
+      "label": "Support couverture",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "974",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CPNCOVVCR",
+      "label": "N° de pièce",
+      "dim": "",
+      "type": "A",
+      "length": "15",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CPNITM",
+      "label": "Composant concerné",
+      "dim": "",
+      "type": "ITM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ITM]ITM0=[SRN]CPNITM",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CPNQTY",
+      "label": "Quantité",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CPNSEQ",
+      "label": "Séquence",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FGVCAH",
+      "label": "Cache abandon",
+      "dim": "",
+      "type": "C",
+      "length": "1",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MACNUM",
+      "label": "Parc concerné",
+      "dim": "",
+      "type": "MAC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[MAC]MAC0=[SRN]MACNUM",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "SRENUM",
+      "label": "Demande de service",
+      "dim": "",
+      "type": "SRE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[SRE]SRE0=[SRN]SRENUM",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "TPYFLG",
+      "label": "Enregistrement temp.",
+      "dim": "",
+      "type": "C",
+      "length": "1",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modif",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "SRN",
+  "label": "Composants concernés",
+  "module": "Données de base"
+}

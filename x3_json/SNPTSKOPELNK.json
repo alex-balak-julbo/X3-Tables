@@ -1,0 +1,209 @@
+{
+  "table": "SNPTSKOPELNK",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/SNPTSKOPELNK.htm",
+  "keys": [
+    {
+      "key": "OPLNK0",
+      "description": "SNPVCR+OPPNUM+TASCOD+OPENUM+OPESPLNUM+SEQNUM",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[SOPLNK]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "OPELNKCSTR",
+      "label": "Type de contrainte",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "7724",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPELNKLAG",
+      "label": "Décalage (jours)",
+      "dim": "",
+      "type": "C",
+      "length": "3",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPELNKTYP",
+      "label": "Type lien",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "7726",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPENUM",
+      "label": "Opération",
+      "dim": "",
+      "type": "OPE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPENUMLNK",
+      "label": "Opération liée",
+      "dim": "",
+      "type": "OPE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPESPLNUM",
+      "label": "Fract opé",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPESPNUMLNK",
+      "label": "Fractionmt opé. liée",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPPNUM",
+      "label": "Chrono affaire",
+      "dim": "",
+      "type": "PIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PIM]PIM0=[SOPLNK]OPPNUM",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "SEQNUM",
+      "label": "Numéro de la ligne",
+      "dim": "",
+      "type": "ISEQ",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SNPVCR",
+      "label": "Code cliché",
+      "dim": "",
+      "type": "VPJ",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TASCOD",
+      "label": "Code tâche",
+      "dim": "",
+      "type": "TAC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[SOPLNK]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "SOPLNK",
+  "label": "Lien précédence entre opérations",
+  "module": "Données de base"
+}

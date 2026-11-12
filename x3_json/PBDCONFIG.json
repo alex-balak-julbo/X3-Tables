@@ -1,0 +1,203 @@
+{
+  "table": "PBDCONFIG",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PBDCONFIG.htm",
+  "keys": [
+    {
+      "key": "PBDCNF0",
+      "description": "CODE+LEG",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "PBDCNF1",
+      "description": "LEG+GRPORCPY+LEDTYP+ROOTACC",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AMOUNT",
+      "label": "Montant",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "3643",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AMTLIMIT",
+      "label": "Limite",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AMTTYPE",
+      "label": "Type montant",
+      "dim": "",
+      "type": "M",
+      "length": "6",
+      "menu": "243",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "COA",
+      "label": "Plan comptable",
+      "dim": "",
+      "type": "COA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[COA]COA0=COA",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CODE",
+      "label": "Code",
+      "dim": "",
+      "type": "A",
+      "length": "20",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PBDCNF]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "GRPORCPY",
+      "label": "Code groupe+société",
+      "dim": "",
+      "type": "CPY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CPY]CPY0=[PBDCNF]GRPORCPY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "LEDTYP",
+      "label": "Type référentiel",
+      "dim": "",
+      "type": "MM",
+      "length": "15",
+      "menu": "2644",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LEG",
+      "label": "Législation",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=909;LEG",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "PROCESSTYPE",
+      "label": "Type traitement",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "3644",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ROOTACC",
+      "label": "Compte déclenchant",
+      "dim": "",
+      "type": "A",
+      "length": "200",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PBDCNF]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "PBDCNF",
+  "label": "Configuration balance pmts",
+  "module": "Comptabilité"
+}

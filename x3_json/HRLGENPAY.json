@@ -1,0 +1,9 @@
+{
+  "table": "HRLGENPAY",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/HRLGENPAY.htm",
+  "keys": [],
+  "fields": [],
+  "abbreviation": "HRLGPP",
+  "label": "Générer versement prêt",
+  "module": "Administration des RH"
+}

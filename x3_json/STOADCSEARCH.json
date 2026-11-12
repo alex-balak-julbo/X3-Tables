@@ -1,0 +1,233 @@
+{
+  "table": "STOADCSEARCH",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/STOADCSEARCH.htm",
+  "keys": [
+    {
+      "key": "SAS0",
+      "description": "STOFCY+FLWTYP",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "EXPNUM",
+      "label": "Numéro export",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FILSTO1",
+      "label": "Filtre stock",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2793",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FILSTO2",
+      "label": "Filtre stock",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2793",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FILSTO3",
+      "label": "Filtre stock",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2793",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FILSTO4",
+      "label": "Filtre stock",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2793",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FILSTO5",
+      "label": "Filtre stock",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2793",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FILSTO6",
+      "label": "Filtre stock",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2793",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FILSTO7",
+      "label": "Filtre stock",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2793",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FILSTO8",
+      "label": "Filtre stock",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2793",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FLWTYP",
+      "label": "Type de Flux",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2792",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "STOFCY",
+      "label": "Site stockage",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[SAS]STOFCY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "SAS",
+  "label": "Paramétrage recherche stock",
+  "module": "Stocks"
+}

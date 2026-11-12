@@ -1,0 +1,197 @@
+{
+  "table": "SREMAC",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/SREMAC.htm",
+  "keys": [
+    {
+      "key": "SRM1",
+      "description": "SRENUM+MACNUM",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "COVFLG",
+      "label": "Couvert",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2985",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "COVSPT",
+      "label": "Support couverture",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "974",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "COVVCR",
+      "label": "N° de pièce",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ITNGRU",
+      "label": "Code regroupement",
+      "dim": "",
+      "type": "A",
+      "length": "15",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MACCOVREN",
+      "label": "Motif non couverture",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MACNUM",
+      "label": "Parc concerné",
+      "dim": "",
+      "type": "MAC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[MAC]MAC0=[SRM]MACNUM",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "PBLNUM",
+      "label": "Compétence",
+      "dim": "",
+      "type": "PBL",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PBL]PBL0=[SRM]PBLNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "SRENUM",
+      "label": "Demande de service",
+      "dim": "",
+      "type": "SRE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[SRE]SRE0=[SRM]SRENUM",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "SRM",
+  "label": "Parc concerné",
+  "module": "Données de base"
+}

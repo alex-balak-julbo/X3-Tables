@@ -1,0 +1,473 @@
+{
+  "table": "FUP",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/FUP.htm",
+  "keys": [
+    {
+      "key": "FUP0",
+      "description": "NUMEDT+LAN+TRI+GRPCRI",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "FUP1",
+      "description": "NUMEDT+LAN+GRPCRI+LEVFUP",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "FUP2",
+      "description": "TYP+NUM+LIG",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "FUP3",
+      "description": "FUPMOD",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "FUP4",
+      "description": "BPRFUP+ADD+FCY",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "FUP5",
+      "description": "NUMEDT+ACCNUM+DUDLIG+NUMCOP",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "FUP6",
+      "description": "NUMEDT+GRPCRI",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "FUP7",
+      "description": "DST",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "FUP8",
+      "description": "FCY",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ACCDAT",
+      "label": "Date comptable",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ACCNUM",
+      "label": "Numéro interne",
+      "dim": "",
+      "type": "UNQ",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ADD",
+      "label": "Code adresse",
+      "dim": "",
+      "type": "ADR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BANCRG",
+      "label": "Agios",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BPRFUP",
+      "label": "Tiers",
+      "dim": "",
+      "type": "BPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPR]BPR0=[FUP]BPRFUP",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[FUP]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DATEDT",
+      "label": "Date d'édition",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DATREF",
+      "label": "Date de référence",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DEPRAT",
+      "label": "Taux d'agios",
+      "dim": "",
+      "type": "RAT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DST",
+      "label": "Destination",
+      "dim": "",
+      "type": "AIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AIM]AIM0=[FUP]DST",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "DUDLIG",
+      "label": "Numéro échéance",
+      "dim": "",
+      "type": "C",
+      "length": "3",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FCY",
+      "label": "Site",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[FUP]FCY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "FUPCRG",
+      "label": "Frais de relance",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FUPCRGCUR",
+      "label": "Frais de relance",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FUPMOD",
+      "label": "Mode de relance",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2629",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "GRP",
+      "label": "Groupe",
+      "dim": "",
+      "type": "FGP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FGP]FGP0=[FUP]GRP",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "GRPCRI",
+      "label": "Regroupement",
+      "dim": "",
+      "type": "A",
+      "length": "30",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LAN",
+      "label": "Langue",
+      "dim": "",
+      "type": "LAN",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TLA]TLA0=[FUP]LAN",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "LEVFUP",
+      "label": "Niveau relance",
+      "dim": "",
+      "type": "C",
+      "length": "2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LIG",
+      "label": "Numéro de ligne",
+      "dim": "",
+      "type": "C",
+      "length": "3",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NBRCOP",
+      "label": "Nombre d'exemplaires",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NBRDAY",
+      "label": "Nombre jours",
+      "dim": "",
+      "type": "C",
+      "length": "3",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUM",
+      "label": "Numéro de pièce",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUMCOP",
+      "label": "Copie",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUMEDT",
+      "label": "Numéro de campagne",
+      "dim": "",
+      "type": "FUP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TF0]TFP0=NUMEDT",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "PREVIEW",
+      "label": "Pré-visualisation",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SIM",
+      "label": "Simulation",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TRI",
+      "label": "Critère de tri",
+      "dim": "",
+      "type": "A",
+      "length": "30",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYP",
+      "label": "Type de pièce",
+      "dim": "",
+      "type": "GTE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GTE]GTE0=TYP;[V]GSUPCLE",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "TYPTXT",
+      "label": "Type texte",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2654",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[FUP]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "FUP",
+  "label": "Relances effectuées",
+  "module": "Comptabilité tiers"
+}

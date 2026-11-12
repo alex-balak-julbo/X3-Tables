@@ -1,0 +1,161 @@
+{
+  "table": "LABADCPRINT",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/LABADCPRINT.htm",
+  "keys": [
+    {
+      "key": "LAP0",
+      "description": "STOFCY",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ALWLABDES",
+      "label": "Toujours destination étiquette",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "EXPNUM",
+      "label": "Numéro export",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PROLAB",
+      "label": "Etiquettes de prod.",
+      "dim": "",
+      "type": "ARP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ARP]ARP0=[LAP]PROLAB",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "STOFCY",
+      "label": "Site stockage",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[LAP]STOFCY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "STOLAB",
+      "label": "Etiquettes de stock",
+      "dim": "",
+      "type": "ARP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ARP]ARP0=[LAP]STOLAB",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "LAP",
+  "label": "Paramétrage des étiquettes",
+  "module": "Stocks"
+}

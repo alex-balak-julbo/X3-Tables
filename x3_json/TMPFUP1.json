@@ -1,0 +1,209 @@
+{
+  "table": "TMPFUP1",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/TMPFUP1.htm",
+  "keys": [
+    {
+      "key": "TFP1",
+      "description": "NUMREQ+BPC+CPY+FCY",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "TFP2",
+      "description": "BPC",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "TFP3",
+      "description": "CPY",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BPC",
+      "label": "Tiers facturé/cde",
+      "dim": "",
+      "type": "BPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPR]BPR0=[TF1]BPC",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CMT",
+      "label": "Commentaire",
+      "dim": "",
+      "type": "AC0",
+      "length": "1",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CPY",
+      "label": "Société",
+      "dim": "",
+      "type": "CPY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CPY]CPY0=[TF1]CPY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[TF1]CREUSR",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "FCY",
+      "label": "Site",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[TF1]FCY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "FUPTOTAMT",
+      "label": "Montant à relancer",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUMREQ",
+      "label": "Numéro de campagne",
+      "dim": "",
+      "type": "FUP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TF0]TFP0=NUMREQ",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "SEL",
+      "label": "",
+      "dim": "",
+      "type": "M",
+      "length": "1",
+      "menu": "2638",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYPBLB",
+      "label": "Type",
+      "dim": "",
+      "type": "AT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[TF1]UPDUSR",
+      "nullify": "Bloquant",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "TF1",
+  "label": "Tiers à relancer",
+  "module": "Comptabilité tiers"
+}

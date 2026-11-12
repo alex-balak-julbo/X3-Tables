@@ -1,0 +1,113 @@
+{
+  "table": "GFSATTVAL",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/GFSATTVAL.htm",
+  "keys": [
+    {
+      "key": "ATTVAL0",
+      "description": "ATTCOD+ATTVALCOD",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ATTCOD",
+      "label": "Attribut",
+      "dim": "",
+      "type": "GFSATT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GFSATT]ATT0=[GFSATTV]ATTCOD",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "ATTVALCOD",
+      "label": "Valeur attribut",
+      "dim": "",
+      "type": "GFSATTV",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GFSATTV]ATTVAL0=[GFSATTV]ATTVALCOD",
+      "nullify": "BSRA",
+      "activity": ""
+    },
+    {
+      "name": "ATTVALDESAXX",
+      "label": "Désignation",
+      "dim": "",
+      "type": "AXX",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[GFSATTV]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[GFSATTV]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "GFSATTV",
+  "label": "Valeur attribut",
+  "module": "Production"
+}

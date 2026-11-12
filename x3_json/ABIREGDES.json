@@ -1,0 +1,149 @@
+{
+  "table": "ABIREGDES",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/ABIREGDES.htm",
+  "keys": [
+    {
+      "key": "ABY0",
+      "description": "CODREG+NUMDES",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "ABY1",
+      "description": "CODREG+FLDDES",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "ABY2",
+      "description": "CODREG+TABDES+NUMDES",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODREG",
+      "label": "Règle",
+      "dim": "",
+      "type": "ABV",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ABV]ABV0=[ABY]CODREG",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ABY]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "FLDDES",
+      "label": "Champ",
+      "dim": "",
+      "type": "AVA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FORDES",
+      "label": "Formule",
+      "dim": "",
+      "type": "AFR",
+      "length": "250",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUMDES",
+      "label": "Numéro de ligne",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TABDES",
+      "label": "Table destination",
+      "dim": "",
+      "type": "ABF",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ABF]ABF0=[ABY]TABDES",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ABY]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ABY",
+  "label": "Règles synchronisation (dest)",
+  "module": "Superviseur"
+}

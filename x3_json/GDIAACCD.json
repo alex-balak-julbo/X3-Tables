@@ -1,0 +1,221 @@
+{
+  "table": "GDIAACCD",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/GDIAACCD.htm",
+  "keys": [
+    {
+      "key": "GDC0",
+      "description": "DIA+LINNUM",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ACC",
+      "label": "Compte",
+      "dim": "9",
+      "type": "GAC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GAC]GAC0=[GDC]ACC",
+      "nullify": "BSRA",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BPR",
+      "label": "Tiers",
+      "dim": "",
+      "type": "BPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPR]BPR0=[GDC]BPR",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CCE",
+      "label": "Section",
+      "dim": "",
+      "type": "CCE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CCE]CCE0=[GDC]CCE",
+      "nullify": "BSRA",
+      "activity": "ANA"
+    },
+    {
+      "name": "COE",
+      "label": "Coefficient",
+      "dim": "",
+      "type": "DCB",
+      "length": "9",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Auteur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DIA",
+      "label": "Schéma",
+      "dim": "",
+      "type": "GDA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GDA]GDA0=[GDC]DIA",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "DSP",
+      "label": "Répartition",
+      "dim": "",
+      "type": "DSP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[DSP]DSP0=DSP;1",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "EXPNUM",
+      "label": "Numéro Export",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LIGDES",
+      "label": "Intitulé",
+      "dim": "",
+      "type": "AFR",
+      "length": "250",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LINNUM",
+      "label": "Numéro de ligne",
+      "dim": "",
+      "type": "C",
+      "length": "2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Auteur modification",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VAT",
+      "label": "Taxe",
+      "dim": "",
+      "type": "VAT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TVT]TVT0=VAT;[V]GSUPCLE",
+      "nullify": "Bloquant",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "GDC",
+  "label": "Lignes schémas comptes",
+  "module": "Comptabilité"
+}

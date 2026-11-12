@@ -1,0 +1,149 @@
+{
+  "table": "ABIREPORTID",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/ABIREPORTID.htm",
+  "keys": [
+    {
+      "key": "ABOID0",
+      "description": "COD+DATAW+LAN",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "COD",
+      "label": "Code",
+      "dim": "",
+      "type": "ABO",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ABO]ABO0=[ABOID]COD",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ABOID]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DATAW",
+      "label": "Datawarehouse",
+      "dim": "",
+      "type": "ABW",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ABW]ABW0=[ABOID]DATAW",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "DOCID",
+      "label": "Identifiant",
+      "dim": "",
+      "type": "A",
+      "length": "80",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LAN",
+      "label": "Langues",
+      "dim": "",
+      "type": "LAN",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TLA]TLA0=[ABOID]LAN",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ABOID]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ABOID",
+  "label": "Etats Business Objects",
+  "module": "Superviseur"
+}

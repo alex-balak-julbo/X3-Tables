@@ -1,0 +1,251 @@
+{
+  "table": "APORTVIG",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/APORTVIG.htm",
+  "keys": [
+    {
+      "key": "AVP0",
+      "description": "CODVI",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "AVP1",
+      "description": "MENUR+RANGR+CODVI",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODACC",
+      "label": "Code d'accès",
+      "dim": "",
+      "type": "ACS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ACS]ACS0=[AVP]CODACC",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CODACT",
+      "label": "Code activité",
+      "dim": "",
+      "type": "ACV",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ACV]CODACT=[AVP]CODACT",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CODFA",
+      "label": "Code famille",
+      "dim": "",
+      "type": "ATP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ATP]ATP0=[AVP]CODFA",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CODVI",
+      "label": "Code vignette",
+      "dim": "",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AVP]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DESCR",
+      "label": "Description",
+      "dim": "",
+      "type": "A",
+      "length": "200",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ICONE",
+      "label": "Icône",
+      "dim": "",
+      "type": "A",
+      "length": "100",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "INTIT1",
+      "label": "Intitulé",
+      "dim": "",
+      "type": "AX3",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MENUR",
+      "label": "Menu de rattachement",
+      "dim": "",
+      "type": "AVP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AVP]AVP0=[AVP]MENUR",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "MODVAL",
+      "label": "Modifiable",
+      "dim": "10",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NBPAR",
+      "label": "Nb de paramètres",
+      "dim": "",
+      "type": "C",
+      "length": "2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PROPVAL",
+      "label": "Valeur paramètre",
+      "dim": "10",
+      "type": "A",
+      "length": "250",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "RANGR",
+      "label": "Rang",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AVP]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "AVP",
+  "label": "Vignettes",
+  "module": "Superviseur"
+}

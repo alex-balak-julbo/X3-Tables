@@ -1,0 +1,221 @@
+{
+  "table": "EDIFLOA",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/EDIFLOA.htm",
+  "keys": [
+    {
+      "key": "EFLA0",
+      "description": "FLOCOD+FLOREL+NUMLIN",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[EFLA]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CRUSED",
+      "label": "Crystal report",
+      "dim": "",
+      "type": "ARP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ARP]ARP0=[EFLA]CRUSED",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "DESTIN",
+      "label": "Destination",
+      "dim": "",
+      "type": "AIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AIM]AIM0=[EFLA]DESTIN",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "EXCMSG",
+      "label": "Exclure message",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FICNAM",
+      "label": "Nom du fichier",
+      "dim": "",
+      "type": "FIC",
+      "length": "50",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FICVOL",
+      "label": "Volume",
+      "dim": "",
+      "type": "AVL",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AVL]CODE=[EFLA]FICVOL",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "FIXNAM",
+      "label": "Nom fixe",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FLOCOD",
+      "label": "ID flux",
+      "dim": "",
+      "type": "EFC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FLOREL",
+      "label": "Version",
+      "dim": "",
+      "type": "EFR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "GENFLG",
+      "label": "Généré",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUMLIN",
+      "label": "Ligne",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PATH",
+      "label": "Répertoire",
+      "dim": "",
+      "type": "A",
+      "length": "250",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SGNFLG",
+      "label": "Signé",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[EFLA]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "EFLA",
+  "label": "Pièce jointe",
+  "module": "Données de base"
+}

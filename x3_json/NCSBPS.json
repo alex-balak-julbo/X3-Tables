@@ -1,0 +1,149 @@
+{
+  "table": "NCSBPS",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/NCSBPS.htm",
+  "keys": [
+    {
+      "key": "NCSBPS0",
+      "description": "NCSID+ORIGSLN",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "NCSBPS1",
+      "description": "NCSID+BPSNUM",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "NCSBPS2",
+      "description": "NCSID+SORTSEQ",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BPSNUM",
+      "label": "Fournisseur",
+      "dim": "",
+      "type": "BPS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPS]BPS0=[NCSBPS]BPSNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[NCSBPS]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "NCSID",
+      "label": "Non-conformité",
+      "dim": "",
+      "type": "NCSID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[NCSRC]NCSRC0=[NCSBPS]NCSID",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "ORIGSLN",
+      "label": "Numéro de la ligne",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SORTSEQ",
+      "label": "Sens tri",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SUPPCONTACT",
+      "label": "Contact",
+      "dim": "",
+      "type": "AIN",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AIN]AIN0=[NCSBPS]SUPPCONTACT",
+      "nullify": "BSRA",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[NCSBPS]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "NCSBPS",
+  "label": "Fournisseurs",
+  "module": "Données de base"
+}

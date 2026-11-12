@@ -1,0 +1,221 @@
+{
+  "table": "TABMODELIV",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/TABMODELIV.htm",
+  "keys": [
+    {
+      "key": "TMD0",
+      "description": "MDL",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DESAXX",
+      "label": "Intitulé",
+      "dim": "",
+      "type": "AX3",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "EECICT",
+      "label": "Incoterm",
+      "dim": "",
+      "type": "ICT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ICTH]ICT0=[TMD]EECICT",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "EECLOC",
+      "label": "Lieu transport DEB",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "236",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": "DEB"
+    },
+    {
+      "name": "EECTRN",
+      "label": "Mode transp. DEB",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "237",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": "DEB"
+    },
+    {
+      "name": "GFY",
+      "label": "Groupe",
+      "dim": "",
+      "type": "AGF",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AGF]AGF0=[TMD]GFY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "LANDESSHO",
+      "label": "Libellés",
+      "dim": "",
+      "type": "A",
+      "length": "60",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MDL",
+      "label": "Mode livraison",
+      "dim": "",
+      "type": "MDL",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TMD]TMD0=[TMD]MDL",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "PORT",
+      "label": "Port",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=951;PORT",
+      "nullify": "Bloquant",
+      "activity": "DEBP"
+    },
+    {
+      "name": "REGION",
+      "label": "Région",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=950;REGION",
+      "nullify": "Bloquant",
+      "activity": "KPO"
+    },
+    {
+      "name": "SHOAXX",
+      "label": "Intitulé court",
+      "dim": "",
+      "type": "AX1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "TMD",
+  "label": "Table des modes de livraison",
+  "module": "Données de base"
+}

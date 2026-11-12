@@ -1,0 +1,173 @@
+{
+  "table": "NCSAPPROVER",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/NCSAPPROVER.htm",
+  "keys": [
+    {
+      "key": "NCSAPPR0",
+      "description": "NCSID+APPRLN",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "NCSAPPR1",
+      "description": "NCSID+NCSAPPUSR",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "NCSAPPR2",
+      "description": "NCSID+SORTSEQ",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "APPRLN",
+      "label": "N° ligne",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "APPRREASON",
+      "label": "Motif",
+      "dim": "",
+      "type": "A",
+      "length": "50",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "APPRSTAT",
+      "label": "Statut approbation",
+      "dim": "",
+      "type": "M",
+      "length": "20",
+      "menu": "2041",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[NCSAPPR]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "NCSAPPUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "NCSAUSAP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[NCSAPPR]NCSAPPUSR",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "NCSID",
+      "label": "Non-conformité",
+      "dim": "",
+      "type": "NCSID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[NCSRC]NCSRC0=[NCSAPPR]NCSID",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "SORTSEQ",
+      "label": "Sens tri",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TRANSTYPE",
+      "label": "Type transaction",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=807;TRANSTYPE",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[NCSAPPR]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "NCSAPPR",
+  "label": "Approbateurs non-conformité",
+  "module": "Données de base"
+}

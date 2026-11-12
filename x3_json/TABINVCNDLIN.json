@@ -1,0 +1,221 @@
+{
+  "table": "TABINVCNDLIN",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/TABINVCNDLIN.htm",
+  "keys": [
+    {
+      "key": "INVCNDD0",
+      "description": "INVCND+LEG+INVCNDLIN",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "INVCND1",
+      "description": "INVCND+INVCNDLIN",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "INVCND2",
+      "description": "INVCND+LEG",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[INVCNDD]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "INVCND",
+      "label": "Code",
+      "dim": "",
+      "type": "INVCND",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[INVCND]INVCND0=INVCND;[V]GSUPCLE",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "INVCNDLIN",
+      "label": "Numéro ligne",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "INVCNDTYP",
+      "label": "Type échéance",
+      "dim": "",
+      "type": "M",
+      "length": "10",
+      "menu": "2420",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "INVDAYMON",
+      "label": "Quantième",
+      "dim": "6",
+      "type": "C",
+      "length": "2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "INVMONTHEND",
+      "label": "Fin de mois",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2237",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "INVNBDAYS",
+      "label": "Nombre jours",
+      "dim": "",
+      "type": "C",
+      "length": "3",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "INVNBMONTHS",
+      "label": "Nombre mois",
+      "dim": "",
+      "type": "C",
+      "length": "2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "INVPERCENT",
+      "label": "Pourcentage",
+      "dim": "",
+      "type": "RAT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LEG",
+      "label": "Législation",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=909;LEG",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "MINAMTNOT",
+      "label": "Montant minimum",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MINAMTNOTCUR",
+      "label": "Devise",
+      "dim": "",
+      "type": "CUR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TCU]TCU0=[INVCNDD]MINAMTNOTCUR",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[INVCNDD]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "INVCNDD",
+  "label": "Conditions de facturation",
+  "module": "Données de base"
+}

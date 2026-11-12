@@ -1,0 +1,113 @@
+{
+  "table": "TACONTAINERC",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/TACONTAINERC.htm",
+  "keys": [
+    {
+      "key": "TCTRC0",
+      "description": "TCTRNUM",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[TCTRC]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "IMG",
+      "label": "Images",
+      "dim": "",
+      "type": "ABIMG",
+      "length": "1",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TCTRNUM",
+      "label": "Contenant",
+      "dim": "",
+      "type": "TCTR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TCTR]TCTR0=[TCTRC]TCTRNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "TEX",
+      "label": "Texte",
+      "dim": "",
+      "type": "ACRTF",
+      "length": "1",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[TCTRC]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "TCTRC",
+  "label": "Contenant clob",
+  "module": "Données de base"
+}

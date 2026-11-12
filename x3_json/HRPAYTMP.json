@@ -1,0 +1,9 @@
+{
+  "table": "HRPAYTMP",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/HRPAYTMP.htm",
+  "keys": [],
+  "fields": [],
+  "abbreviation": "HRPYE",
+  "label": "Règlements à comptabiliser",
+  "module": "Administration des RH"
+}

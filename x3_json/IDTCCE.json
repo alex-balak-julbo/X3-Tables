@@ -1,0 +1,227 @@
+{
+  "table": "IDTCCE",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/IDTCCE.htm",
+  "keys": [
+    {
+      "key": "IDTC0",
+      "description": "LED+CCE1+CCE2+CCE3+CCE4+CCE5+CCE6+CCE7+CCE8+CCE9",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "IDTC1",
+      "description": "IDTCCE",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CCE1",
+      "label": "Section analytique 1",
+      "dim": "",
+      "type": "CCE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CCE]CCE0=DIE(0);CCE1",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CCE2",
+      "label": "Section analytique 2",
+      "dim": "",
+      "type": "CCE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CCE]CCE0=DIE(1);CCE2",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CCE3",
+      "label": "Section analytique 3",
+      "dim": "",
+      "type": "CCE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CCE]CCE0=DIE(2);CCE3",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CCE4",
+      "label": "Section analytique 4",
+      "dim": "",
+      "type": "CCE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CCE]CCE0=DIE(3);CCE4",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CCE5",
+      "label": "Section analytique 5",
+      "dim": "",
+      "type": "CCE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CCE]CCE0=DIE(4);CCE5",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CCE6",
+      "label": "Section analytique 6",
+      "dim": "",
+      "type": "CCE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CCE]CCE0=DIE(5);CCE6",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CCE7",
+      "label": "Section analytique 7",
+      "dim": "",
+      "type": "CCE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CCE]CCE0=DIE(6);CCE7",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CCE8",
+      "label": "Section analytique 8",
+      "dim": "",
+      "type": "CCE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CCE]CCE0=DIE(7);CCE8",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CCE9",
+      "label": "Section analytique 9",
+      "dim": "",
+      "type": "CCE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CCE]CCE0=DIE(8);CCE9",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[IDTC]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DIE",
+      "label": "Code axe",
+      "dim": "9",
+      "type": "DIE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[DIE]DIE0=[IDTC]DIE",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "IDTCCE",
+      "label": "Id sections",
+      "dim": "",
+      "type": "UNQ",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LED",
+      "label": "Référentiel",
+      "dim": "",
+      "type": "LED",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[LED]LED0=[IDTC]LED",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[IDTC]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "IDTC",
+  "label": "Index sections",
+  "module": "Comptabilité"
+}

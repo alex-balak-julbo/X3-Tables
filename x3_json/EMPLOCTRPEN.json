@@ -1,0 +1,9 @@
+{
+  "table": "EMPLOCTRPEN",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/EMPLOCTRPEN.htm",
+  "keys": [],
+  "fields": [],
+  "abbreviation": "CPN",
+  "label": "Pénibilité du poste au contrat",
+  "module": "Données de base"
+}

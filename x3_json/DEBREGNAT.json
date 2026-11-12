@@ -1,0 +1,221 @@
+{
+  "table": "DEBREGNAT",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/DEBREGNAT.htm",
+  "keys": [
+    {
+      "key": "DRN0",
+      "description": "LEG+CRY+GRP+MVT",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[DRN]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CRY",
+      "label": "Pays",
+      "dim": "",
+      "type": "CRY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TCY]TCY0=[DRN]CRY",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "EECNAT",
+      "label": "Nature",
+      "dim": "",
+      "type": "TEC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TEC]TEC0=EECNAT;[V]GSUPCLE",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "EECNATR",
+      "label": "Nature régul",
+      "dim": "",
+      "type": "TEC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TEC]TEC0=EECNATR;[V]GSUPCLE",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "EECSCH",
+      "label": "Régime",
+      "dim": "",
+      "type": "TSC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TSC]TSC0=EECSCH;[V]GSUPCLE",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "EECSCHR",
+      "label": "Régime régul",
+      "dim": "",
+      "type": "TSC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TSC]TSC0=EECSCHR;[V]GSUPCLE",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "ENAFLG",
+      "label": "Actif",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FLUX",
+      "label": "Flux physique",
+      "dim": "",
+      "type": "M",
+      "length": "",
+      "menu": "205",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FLUXREGUL",
+      "label": "Flux régularisation",
+      "dim": "",
+      "type": "M",
+      "length": "",
+      "menu": "205",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "GRP",
+      "label": "Groupe",
+      "dim": "",
+      "type": "AGF",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AGF]AGF0=[DRN]GRP",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "LEG",
+      "label": "Législation",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=909;LEG",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "MVT",
+      "label": "Mouvement",
+      "dim": "",
+      "type": "M",
+      "length": "",
+      "menu": "2236",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[DRN]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VALSTO",
+      "label": "Valeur stock",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "DRN",
+  "label": "Régime et nature mouvement",
+  "module": "Données de base"
+}

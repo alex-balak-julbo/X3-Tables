@@ -1,0 +1,143 @@
+{
+  "table": "AMSKPAR",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/AMSKPAR.htm",
+  "keys": [
+    {
+      "key": "CODPAR",
+      "description": "TYPAFF+CODAFF+CODZON+CODPAR",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "CODAFF",
+      "description": "CODAFF+CODZON",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODAFF",
+      "label": "Code affectation",
+      "dim": "",
+      "type": "AMK",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AMK]CODMSK=[AMP]CODAFF",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CODPAR",
+      "label": "Code paramètre",
+      "dim": "",
+      "type": "AAR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AAR]CODPAR=[AMP]CODPAR",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CODZON",
+      "label": "Code champ",
+      "dim": "",
+      "type": "AVA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AMP]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "TYPAFF",
+      "label": "Type affectation",
+      "dim": "",
+      "type": "C",
+      "length": "3",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AMP]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VALPAR",
+      "label": "Valeur paramètre",
+      "dim": "",
+      "type": "A",
+      "length": "80",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "AMP",
+  "label": "Paramètres action-objet",
+  "module": "Superviseur"
+}

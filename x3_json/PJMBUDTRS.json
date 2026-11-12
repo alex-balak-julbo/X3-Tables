@@ -1,0 +1,173 @@
+{
+  "table": "PJMBUDTRS",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PJMBUDTRS.htm",
+  "keys": [
+    {
+      "key": "PTS0",
+      "description": "PBTGRP+PBTCOD",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODDES",
+      "label": "Contenu colonne",
+      "dim": "",
+      "type": "AXX",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "COL1TYP",
+      "label": "",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2296",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "COL2TYP",
+      "label": "",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2296",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PJS]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DSPLY",
+      "label": "Afficher",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PBTCOD",
+      "label": "Séquence colonne",
+      "dim": "",
+      "type": "PJS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PJS]PTS0=[PJS]PBTCOD",
+      "nullify": "BSRA",
+      "activity": ""
+    },
+    {
+      "name": "PBTGRP",
+      "label": "Vue financière",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=388;PBTGRP",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "SCOL1",
+      "label": "Titre sous-col. 1",
+      "dim": "",
+      "type": "AX3",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SCOL2",
+      "label": "Titre sous-col. 2",
+      "dim": "",
+      "type": "AX3",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PJS]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "PJS",
+  "label": "Structure suivi financier",
+  "module": "Données de base"
+}

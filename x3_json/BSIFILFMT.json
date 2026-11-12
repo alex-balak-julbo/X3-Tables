@@ -1,0 +1,161 @@
+{
+  "table": "BSIFILFMT",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/BSIFILFMT.htm",
+  "keys": [
+    {
+      "key": "BSIFFM0",
+      "description": "CODBFF",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODBFF",
+      "label": "Format",
+      "dim": "",
+      "type": "BSIBFF",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BSIFFM]BSIFFM0=[BSIFFM]CODBFF",
+      "nullify": "BSRA",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[BSIFFM]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DESAXX",
+      "label": "Intitulé",
+      "dim": "",
+      "type": "AX3",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FILFMT",
+      "label": "Codage des caractères",
+      "dim": "",
+      "type": "M",
+      "length": "10",
+      "menu": "945",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FILTYP",
+      "label": "Type fichier",
+      "dim": "",
+      "type": "M",
+      "length": "10",
+      "menu": "3677",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FLDSEP",
+      "label": "Séparateur de champ",
+      "dim": "",
+      "type": "A",
+      "length": "3",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FLDSEPTYP",
+      "label": "Type de séparateur",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "3722",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "RECSEP",
+      "label": "Séparateur enregistrement",
+      "dim": "",
+      "type": "A",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[BSIFFM]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "BSIFFM",
+  "label": "Déf. format import bancaire",
+  "module": "Comptabilité tiers"
+}

@@ -1,0 +1,233 @@
+{
+  "table": "PJMTSKCATOPE",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PJMTSKCATOPE.htm",
+  "keys": [
+    {
+      "key": "PCTO0",
+      "description": "TCACOD+IPTCOSEQ",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "EXTLAB",
+      "label": "Ressource n°2",
+      "dim": "",
+      "type": "WST",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "EXTQTY",
+      "label": "Quantité prévue",
+      "dim": "",
+      "type": "QTY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "EXTWST",
+      "label": "Ressource n°1",
+      "dim": "",
+      "type": "WST",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FCY",
+      "label": "Site",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[PTCO]FCY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "IPTCOSEQ",
+      "label": "Rang",
+      "dim": "",
+      "type": "ISEQ",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPEDUR",
+      "label": "Durée",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPEUOM2",
+      "label": "Unité",
+      "dim": "",
+      "type": "UOM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TUN]TUN0=[PTCO]OPEUOM2",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "POACLB",
+      "label": "Collaborateur affecté",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PTCO]POACLB",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "PTCODESAXX",
+      "label": "Désignation",
+      "dim": "",
+      "type": "AX3",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PTETYP",
+      "label": "Catégorie de temps",
+      "dim": "",
+      "type": "PJTC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PJTC]PJTC0=[PTCO]PTETYP",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "TCACOD",
+      "label": "Catégorie",
+      "dim": "",
+      "type": "CTA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PTC]CTA0=[PTCO]TCACOD",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "PTCO",
+  "label": "Opérations catégorie de tâche",
+  "module": "Données de base"
+}

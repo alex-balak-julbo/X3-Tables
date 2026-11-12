@@ -1,0 +1,167 @@
+{
+  "table": "PJMMSTNEXINV",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PJMMSTNEXINV.htm",
+  "keys": [
+    {
+      "key": "PJMST0",
+      "description": "OPPNUM+TASCOD+PBUCOD+SEQLIN",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "PJMTS1",
+      "description": "OPPNUM+PBUCOD+TASCOD+SEQLIN",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PJMST]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "KEYCONCAT",
+      "label": "Concaténation",
+      "dim": "",
+      "type": "A",
+      "length": "40",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NEXINV",
+      "label": "Date prochaine facture",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPPNUM",
+      "label": "Numéro affaire",
+      "dim": "",
+      "type": "PIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PIM]PIM0=[PJMST]OPPNUM",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "PBUCOD",
+      "label": "Code budget",
+      "dim": "",
+      "type": "PBU",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SEQLIN",
+      "label": "Numéro de ligne",
+      "dim": "",
+      "type": "ISEQ",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SVICDUID",
+      "label": "ID échéance facturation",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TASCOD",
+      "label": "Code tâche",
+      "dim": "",
+      "type": "TAC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PJMST]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "PJMST",
+  "label": "Jalon prochaine facture",
+  "module": "Données de base"
+}

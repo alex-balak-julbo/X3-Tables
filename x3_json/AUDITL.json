@@ -1,0 +1,65 @@
+{
+  "table": "AUDITL",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/AUDITL.htm",
+  "keys": [
+    {
+      "key": "AUL0",
+      "description": "SEQ+COL",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "COL",
+      "label": "Colonne",
+      "dim": "",
+      "type": "A",
+      "length": "20",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NVAL",
+      "label": "Nouvelle valeur",
+      "dim": "",
+      "type": "A",
+      "length": "250",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OVAL",
+      "label": "Ancienne valeur",
+      "dim": "",
+      "type": "A",
+      "length": "250",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SEQ",
+      "label": "Chrono",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "AUL",
+  "label": "Audit - Lignes",
+  "module": "Superviseur"
+}

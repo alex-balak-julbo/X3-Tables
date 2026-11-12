@@ -1,0 +1,143 @@
+{
+  "table": "CONTITM",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/CONTITM.htm",
+  "keys": [
+    {
+      "key": "CIT0",
+      "description": "CONNUM+TPL+CONMACNUM",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "CIT1",
+      "description": "CONMACCOD",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CONMACCOD",
+      "label": "Famille/Article/Parc",
+      "dim": "",
+      "type": "A",
+      "length": "20",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CONMACNUM",
+      "label": "Chrono parc",
+      "dim": "",
+      "type": "A",
+      "length": "15",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CONNUM",
+      "label": "Code contrat",
+      "dim": "",
+      "type": "CON",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CON]CON0=[CIT]CONNUM",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "COVTYP",
+      "label": "Type de couverture",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "983",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[CIT]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "TPL",
+      "label": "Modèle",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[CIT]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "CIT",
+  "label": "Articles couverts",
+  "module": "Données de base"
+}

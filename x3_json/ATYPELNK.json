@@ -1,0 +1,149 @@
+{
+  "table": "ATYPELNK",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/ATYPELNK.htm",
+  "keys": [
+    {
+      "key": "ATYL0",
+      "description": "CODTYP+CODLNK",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ACTLNK",
+      "label": "Code activité",
+      "dim": "",
+      "type": "ACV",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ACV]CODACT=[ATYL]ACTLNK",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODLNK",
+      "label": "Code",
+      "dim": "",
+      "type": "A",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODTYP",
+      "label": "Type de données",
+      "dim": "",
+      "type": "ATY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ATY]CODTYP=[ATYL]CODTYP",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ATYL]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "ORDLNK",
+      "label": "Rang",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "REPLNK",
+      "label": "Représentation",
+      "dim": "",
+      "type": "ASW",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ASW]ASW0=[ATYL]REPLNK",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "TYPLNK",
+      "label": "Type de lien",
+      "dim": "",
+      "type": "M",
+      "length": "25",
+      "menu": "7971",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ATYL]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ATYL",
+  "label": "Liens types de données",
+  "module": "Superviseur"
+}

@@ -1,0 +1,149 @@
+{
+  "table": "CCMCRORIGC",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/CCMCRORIGC.htm",
+  "keys": [
+    {
+      "key": "CCMCROC0",
+      "description": "CRID+ORIGCLN",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "CCMCROC1",
+      "description": "CRID+BPCNUM",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "CCMCROC2",
+      "description": "CRID+SORTSEQ",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BPCNUM",
+      "label": "Client",
+      "dim": "",
+      "type": "BPC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPC]BPC0=[CCMCROC]BPCNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[CCMCROC]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CRID",
+      "label": "ID demande",
+      "dim": "",
+      "type": "CCMCRID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CUSTCONTACT",
+      "label": "Contact",
+      "dim": "",
+      "type": "AIN",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AIN]AIN0=[CCMCROC]CUSTCONTACT",
+      "nullify": "BSRA",
+      "activity": ""
+    },
+    {
+      "name": "ORIGCLN",
+      "label": "Numéro de la ligne",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SORTSEQ",
+      "label": "Sens tri",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[CCMCROC]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "CCMCROC",
+  "label": "Initiateurs clients",
+  "module": "Données de base"
+}

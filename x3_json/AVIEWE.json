@@ -1,0 +1,119 @@
+{
+  "table": "AVIEWE",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/AVIEWE.htm",
+  "keys": [
+    {
+      "key": "AVE0",
+      "description": "CODVUE+OBCTYP+OBCCOD",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "AVE1",
+      "description": "OBCTYP+OBCCOD+CODVUE",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODVUE",
+      "label": "Code vue",
+      "dim": "",
+      "type": "AVW",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AVW]AVW0=[AVE]CODVUE",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AVE]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "OBCCOD",
+      "label": "Code",
+      "dim": "",
+      "type": "A",
+      "length": "12",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OBCTYP",
+      "label": "Type de donnée",
+      "dim": "",
+      "type": "ATY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ATY]CODTYP=[AVE]OBCTYP",
+      "nullify": "BSRA",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AVE]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "AVE",
+  "label": "Liste des tables et vues",
+  "module": "Superviseur"
+}

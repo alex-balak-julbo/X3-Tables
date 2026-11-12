@@ -1,0 +1,161 @@
+{
+  "table": "GFSSETEXC",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/GFSSETEXC.htm",
+  "keys": [
+    {
+      "key": "MATE0",
+      "description": "MATCOD+MATSEQ",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[GFSSTE]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "FAVDESAXX",
+      "label": "Libellé début",
+      "dim": "",
+      "type": "AXX",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FROATTVAL",
+      "label": "Valeur attribut début",
+      "dim": "",
+      "type": "GFSATTV",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GFSATTV]ATTVAL0=[GFSSTE]FROATTVAL",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "MATCOD",
+      "label": "Code matrice",
+      "dim": "",
+      "type": "GFSMAT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GFSST]MAT0=[GFSSTE]MATCOD",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "MATSEQ",
+      "label": "Rang",
+      "dim": "",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SETTIM",
+      "label": "Temps réglage",
+      "dim": "",
+      "type": "TIH",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TAVDESAXX",
+      "label": "Libellé fin",
+      "dim": "",
+      "type": "AXX",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TOATTVAL",
+      "label": "Valeur attribut fin",
+      "dim": "",
+      "type": "GFSATTV",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GFSATTV]ATTVAL0=[GFSSTE]TOATTVAL",
+      "nullify": "BSRA",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[GFSSTE]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "GFSSTE",
+  "label": "Exceptions temps réglage",
+  "module": "Production"
+}

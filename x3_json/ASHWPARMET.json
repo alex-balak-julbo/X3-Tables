@@ -1,0 +1,203 @@
+{
+  "table": "ASHWPARMET",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/ASHWPARMET.htm",
+  "keys": [
+    {
+      "key": "ASWMP0",
+      "description": "CODREP+CODMET+CODPARMET",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "ASWMP1",
+      "description": "CODREP+CODMET+NOPARMET+CODPARMET",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AWMAJTYP",
+      "label": "",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CLAPARMET",
+      "label": "Classe",
+      "dim": "",
+      "type": "ACLA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ACLA]ACLA0=[ASWMP]CLAPARMET",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CODMET",
+      "label": "Code méthode",
+      "dim": "",
+      "type": "ASM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODPARMET",
+      "label": "Code paramètre",
+      "dim": "",
+      "type": "AVB",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODREP",
+      "label": "Code représentation",
+      "dim": "",
+      "type": "ASW",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ASW]ASW0=[ASWMP]CODREP",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ASWMP]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DIMPARMET",
+      "label": "Dimension",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "7987",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "INTPARMET",
+      "label": "Intitulé",
+      "dim": "",
+      "type": "ATX",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MODPARMET",
+      "label": "Mode",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "34",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NOPARMET",
+      "label": "Numéro",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYPPARMET",
+      "label": "Type paramètre",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "10030",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ASWMP]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ASWMP",
+  "label": "Représentation (par. méthodes)",
+  "module": "Superviseur"
+}

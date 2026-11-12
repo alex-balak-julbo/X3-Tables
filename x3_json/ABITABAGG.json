@@ -1,0 +1,227 @@
+{
+  "table": "ABITABAGG",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/ABITABAGG.htm",
+  "keys": [
+    {
+      "key": "ABE0",
+      "description": "CODABF+NUMAGG+CODAGG",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "ABE1",
+      "description": "CODABF+CODAGG",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ACTAGG",
+      "label": "Code activité",
+      "dim": "",
+      "type": "ACV",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ACV]CODACT=[ABE]ACTAGG",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODABF",
+      "label": "Tables de faits",
+      "dim": "",
+      "type": "ABF",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ABF]ABF0=[ABE]CODABF",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CODAGG",
+      "label": "Nom",
+      "dim": "",
+      "type": "A",
+      "length": "7",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ABE]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DIMAGG",
+      "label": "Dimension",
+      "dim": "16",
+      "type": "ABI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ABI]ABI0=[ABE]DIMAGG",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "FLDAGG",
+      "label": "Nom du champ",
+      "dim": "16",
+      "type": "AVA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "INDAGG",
+      "label": "Index",
+      "dim": "8",
+      "type": "A",
+      "length": "80",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LNKAGG",
+      "label": "Champs",
+      "dim": "16",
+      "type": "A",
+      "length": "80",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NBRAGD",
+      "label": "Nb dimensions",
+      "dim": "",
+      "type": "C",
+      "length": "2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NBRAGI",
+      "label": "Nb index",
+      "dim": "",
+      "type": "C",
+      "length": "2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NIVAGG",
+      "label": "Niveau d'agrégation",
+      "dim": "16",
+      "type": "M",
+      "length": "15",
+      "menu": "7825",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUMAGG",
+      "label": "Agrégat",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYPAGG",
+      "label": "Type dimension",
+      "dim": "16",
+      "type": "M",
+      "length": "15",
+      "menu": "7826",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ABE]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ABE",
+  "label": "Table de faits (agrégats)",
+  "module": "Superviseur"
+}

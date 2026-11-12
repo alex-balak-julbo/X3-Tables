@@ -1,0 +1,281 @@
+{
+  "table": "PREPINVOICEF",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PREPINVOICEF.htm",
+  "keys": [
+    {
+      "key": "PREPIDF0",
+      "description": "PCNTNUMF+PCNTLINF",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "PREPIDF1",
+      "description": "INVNUMF",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "PREPIDF2",
+      "description": "PCNTNUMF+INVNUMF+PCNTLINF",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ACCLINF",
+      "label": "Compte général",
+      "dim": "",
+      "type": "GAC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GAC]GAC0=COA;ACCLINF",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "AMTATILINF",
+      "label": "Montant facture TTC",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AMTNOTLINF",
+      "label": "Montant facture HT",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BPCINVF",
+      "label": "Client facture",
+      "dim": "",
+      "type": "BPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPR]BPR0=BPCINVF",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "COA",
+      "label": "Plan comptable",
+      "dim": "",
+      "type": "COA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[COA]COA0=[PREPIDF]COA",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PREPIDF]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DEDAMTNOT",
+      "label": "Montant déduit HT",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DEDAMTTAX",
+      "label": "Montant taxe déduit",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DEDNUMVCR",
+      "label": "N° pièce d'extourne",
+      "dim": "",
+      "type": "GAS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[HAE]HAE0=[PREPIDF]DEDNUMVCR",
+      "nullify": "BSRA",
+      "activity": ""
+    },
+    {
+      "name": "DUDDOCTYP",
+      "label": "Type document",
+      "dim": "",
+      "type": "GTE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GTE]GTE0=DUDDOCTYP;[V]GSUPCLE",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "INVDATF",
+      "label": "Date facture définitive",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "INVLINF",
+      "label": "N° ligne facture définitive",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "INVNUMF",
+      "label": "No facture définitive",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PCNTLINF",
+      "label": "Numéro ligne",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PCNTNUMF",
+      "label": "Numéro de contrat",
+      "dim": "",
+      "type": "PREPI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PREPI]PREPI0=[PREPIDF]PCNTNUMF",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PREPIDF]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VATLINF",
+      "label": "Code taxe",
+      "dim": "",
+      "type": "VAT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TVT]TVT0=VATLINF;[V]GSUPCLE",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "VCRTYPF",
+      "label": "Type de pièce",
+      "dim": "",
+      "type": "GTE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GTE]GTE0=VCRTYPF;[V]GSUPCLE",
+      "nullify": "Bloquant",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "PREPIDF",
+  "label": "Factures définitives",
+  "module": "Comptabilité tiers"
+}

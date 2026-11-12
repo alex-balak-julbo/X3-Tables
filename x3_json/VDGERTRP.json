@@ -1,0 +1,203 @@
+{
+  "table": "VDGERTRP",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/VDGERTRP.htm",
+  "keys": [
+    {
+      "key": "TRPG0",
+      "description": "LEG+VAT+LINENO",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "TRPG1",
+      "description": "VAT+FLGVAT+VATIPT",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "TRPG2",
+      "description": "VAT",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "TRPG3",
+      "description": "FLGVAT+VATIPT",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "TRPG4",
+      "description": "LEG+VAT",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "TRPG5",
+      "description": "LEG+VAT+REPLINE+FLGVAT+VATIPT+STRDAT+ENDDAT",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "User",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[TRPG]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "ENDDAT",
+      "label": "Date fin",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FLGVAT",
+      "label": "Gestion TVA",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "608",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LEG",
+      "label": "Législation",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=909;LEG",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "LINENO",
+      "label": "N° de ligne",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "REPLINE",
+      "label": "Ligne état",
+      "dim": "",
+      "type": "REPLINDE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[RLI]RLI0=LEG;1;REPLINE",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "STRDAT",
+      "label": "Date de démarrage",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "User",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[TRPG]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VAT",
+      "label": "Taxe",
+      "dim": "",
+      "type": "VAT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TVT]TVT0=VAT;LEG",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "VATIPT",
+      "label": "Imputation taxe",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "609",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "TRPG",
+  "label": "Paramètre déclaration fiscale allemande",
+  "module": "Comptabilité"
+}

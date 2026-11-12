@@ -1,0 +1,233 @@
+{
+  "table": "PJMAUS",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PJMAUS.htm",
+  "keys": [
+    {
+      "key": "PAUS",
+      "description": "PAUS",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PAUS]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "ENAREC",
+      "label": "Actif",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ENARECFGR",
+      "label": "",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FCYDEF",
+      "label": "Site par défaut",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[PAUS]FCYDEF",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "INTUSR",
+      "label": "Nom",
+      "dim": "",
+      "type": "AX3",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PAUS",
+      "label": "Collaborateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PAUS]PAUS",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "PAUSCST",
+      "label": "Taux horaire",
+      "dim": "",
+      "type": "MD2",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PAUSCUR",
+      "label": "Devise",
+      "dim": "",
+      "type": "CUR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TCU]TCU0=[PAUS]PAUSCUR",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "PAUSPA",
+      "label": "Administrateur saisie temps",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PAUSROL",
+      "label": "Rôle",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=639;PAUSROL",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "PAUSTT",
+      "label": "Saisie des temps",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PCCCOD",
+      "label": "Nature de dépense",
+      "dim": "",
+      "type": "PJCC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PJCC]PCC0=[PAUS]PCCCOD",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "PTETYP",
+      "label": "Catégorie de temps",
+      "dim": "",
+      "type": "PJTC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PJTC]PJTC0=[PAUS]PTETYP",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "TWD",
+      "label": "Schéma hebdomadaire",
+      "dim": "",
+      "type": "TWD",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TWD]TWD0=[PAUS]TWD",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PAUS]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "PAUS",
+  "label": "Utilisateurs gestion affaire",
+  "module": "Données de base"
+}

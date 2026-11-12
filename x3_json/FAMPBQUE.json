@@ -1,0 +1,149 @@
+{
+  "table": "FAMPBQUE",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/FAMPBQUE.htm",
+  "keys": [
+    {
+      "key": "PBQ0",
+      "description": "GRPPBLNUM",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "PBQ1",
+      "description": "QUENUM",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "PBQ2",
+      "description": "GRPPBLNUM+QUENUM",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PBQ]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "GRPPBLNUM",
+      "label": "Code",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "QUENAM",
+      "label": "Nom queue",
+      "dim": "",
+      "type": "DCO",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "QUENUM",
+      "label": "Code queue",
+      "dim": "",
+      "type": "QUE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[QUE]QUE0=[PBQ]QUENUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "SRECOU",
+      "label": "Compteur de demandes",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "STTFLG",
+      "label": "Flag statistique",
+      "dim": "",
+      "type": "C",
+      "length": "2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PBQ]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "PBQ",
+  "label": "Queues concernées",
+  "module": "Support client"
+}

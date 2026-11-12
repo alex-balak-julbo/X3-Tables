@@ -1,0 +1,137 @@
+{
+  "table": "GFSSETTIM",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/GFSSETTIM.htm",
+  "keys": [
+    {
+      "key": "MAT0",
+      "description": "MATCOD",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ATTCOD",
+      "label": "Attribut",
+      "dim": "",
+      "type": "GFSATT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GFSATT]ATT0=[GFSST]ATTCOD",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[GFSST]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DEFSETTIM",
+      "label": "Attributs différents",
+      "dim": "",
+      "type": "TIH",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MATCOD",
+      "label": "Code matrice",
+      "dim": "",
+      "type": "GFSMAT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GFSST]MAT0=[GFSST]MATCOD",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "MATDESAXX",
+      "label": "Description",
+      "dim": "",
+      "type": "AX3",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SAMVAL",
+      "label": "Attributs similaires",
+      "dim": "",
+      "type": "TIH",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[GFSST]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "GFSST",
+  "label": "Matrice temps réglage",
+  "module": "Production"
+}

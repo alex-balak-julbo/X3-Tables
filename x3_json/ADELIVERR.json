@@ -1,0 +1,113 @@
+{
+  "table": "ADELIVERR",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/ADELIVERR.htm",
+  "keys": [
+    {
+      "key": "ADLR0",
+      "description": "COD+CODASW+CODBDG",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "COD",
+      "label": "Code",
+      "dim": "",
+      "type": "ADLV",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADLV]ADLV0=[ADLR]COD",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CODASW",
+      "label": "Représentation",
+      "dim": "",
+      "type": "ASW",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ASW]ASW0=[ADLR]CODASW",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CODBDG",
+      "label": "Badge",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=83;CODBDG",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ADLR]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ADLR]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ADLR",
+  "label": "Livrable",
+  "module": "Superviseur"
+}

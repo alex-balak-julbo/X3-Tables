@@ -1,0 +1,173 @@
+{
+  "table": "EDIFCYPAR",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/EDIFCYPAR.htm",
+  "keys": [
+    {
+      "key": "EFP0",
+      "description": "FCY+PARCOD",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[EFP]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "EXCEDICOD",
+      "label": "Code EDI",
+      "dim": "",
+      "type": "A",
+      "length": "20",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FCY",
+      "label": "Site",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[EFP]FCY",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "GLN",
+      "label": "GLN",
+      "dim": "",
+      "type": "A",
+      "length": "20",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "IDTYPE",
+      "label": "Type d'identification",
+      "dim": "",
+      "type": "M",
+      "length": "10",
+      "menu": "2002",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PARCOD",
+      "label": "Partenaire EDI",
+      "dim": "",
+      "type": "EPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[EPR]EPR0=[EFP]PARCOD",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "PARTYP",
+      "label": "Type partenaire EDI",
+      "dim": "",
+      "type": "M",
+      "length": "30",
+      "menu": "2009",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "STA",
+      "label": "Statut",
+      "dim": "",
+      "type": "M",
+      "length": "1",
+      "menu": "782",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[EFP]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VALID",
+      "label": "Valide",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "EFP",
+  "label": "Partenaires EDI par site",
+  "module": "Données de base"
+}

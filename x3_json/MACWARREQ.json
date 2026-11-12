@@ -1,0 +1,125 @@
+{
+  "table": "MACWARREQ",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/MACWARREQ.htm",
+  "keys": [
+    {
+      "key": "MWR0",
+      "description": "MACNUM",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CONNUM",
+      "label": "Contrat de garantie",
+      "dim": "",
+      "type": "CON",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CON]CON0=[MWR]CONNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Création demande",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[MWR]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "MACNUM",
+      "label": "Chrono parc",
+      "dim": "",
+      "type": "MAC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[MAC]MAC0=[MWR]MACNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[MWR]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "WRENUM",
+      "label": "Demande de garantie",
+      "dim": "",
+      "type": "RQW",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[RQW]RQW0=[MWR]WRENUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "MWR",
+  "label": "Historique demande de garantie",
+  "module": "Données de base"
+}

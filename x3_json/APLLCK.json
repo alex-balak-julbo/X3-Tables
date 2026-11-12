@@ -1,0 +1,95 @@
+{
+  "table": "APLLCK",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/APLLCK.htm",
+  "keys": [
+    {
+      "key": "LCKCLE",
+      "description": "LCKSYM+LCKIND",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "PIDFLG",
+      "description": "LCKPID+LCKFLG",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "LCKDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LCKFLG",
+      "label": "Flag transaction",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LCKIND",
+      "label": "Indice",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LCKPID",
+      "label": "No processus",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LCKSYM",
+      "label": "Symbole",
+      "dim": "",
+      "type": "ASYM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LCKTIM",
+      "label": "Heure",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ALK",
+  "label": "Table des verrous",
+  "module": "Superviseur"
+}

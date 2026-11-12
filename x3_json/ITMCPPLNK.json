@@ -1,0 +1,113 @@
+{
+  "table": "ITMCPPLNK",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/ITMCPPLNK.htm",
+  "keys": [
+    {
+      "key": "ILK0",
+      "description": "ITMNUM",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "ILK1",
+      "description": "ITMCPPNUM",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "ILK2",
+      "description": "ITMNUM+ITMCPPNUM",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ILK]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "ITMCPPNUM",
+      "label": "Article concurrent",
+      "dim": "",
+      "type": "CCC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ICM]ICM0=[ILK]ITMCPPNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "ITMNUM",
+      "label": "Code article",
+      "dim": "",
+      "type": "ITM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ITM]ITM0=[ILK]ITMNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ILK]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ILK",
+  "label": "Lien Article/Concurrents",
+  "module": "Données de base"
+}

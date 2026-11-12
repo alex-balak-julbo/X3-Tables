@@ -1,0 +1,161 @@
+{
+  "table": "GCCEPYMPRT",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/GCCEPYMPRT.htm",
+  "keys": [
+    {
+      "key": "CYP0",
+      "description": "DIE+PYM+CCE",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CCE",
+      "label": "Section",
+      "dim": "",
+      "type": "CCE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CCE]CCE0=DIE;CCE",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[CYP]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DIE",
+      "label": "Axe",
+      "dim": "",
+      "type": "DIE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[DIE]DIE0=[CYP]DIE",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "GRU",
+      "label": "Code groupe",
+      "dim": "10",
+      "type": "CYR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CRY]CRY0=PYM;GRU(indice);1",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "LEV",
+      "label": "Niveau",
+      "dim": "",
+      "type": "C",
+      "length": "2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LIE",
+      "label": "Lien",
+      "dim": "",
+      "type": "C",
+      "length": "2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PYM",
+      "label": "Code pyramide",
+      "dim": "",
+      "type": "CYM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CYM]CYM0=[CYP]PYM",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "ROW",
+      "label": "Rang",
+      "dim": "10",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[CYP]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "CYP",
+  "label": "Impression pyramides",
+  "module": "Données de base"
+}

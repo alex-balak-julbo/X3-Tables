@@ -1,0 +1,191 @@
+{
+  "table": "ADELIVERO",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/ADELIVERO.htm",
+  "keys": [
+    {
+      "key": "ADLO0",
+      "description": "COD+TABCOD+TABKEY",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "ADLO1",
+      "description": "COD+TABCOD+TABAWM",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "COD",
+      "label": "Code",
+      "dim": "",
+      "type": "ADLV",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADLV]ADLV0=[ADLO]COD",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ADLO]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "NULRECFLG",
+      "label": "Données",
+      "dim": "",
+      "type": "M",
+      "length": "908",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TABADINUM",
+      "label": "Numéro de table",
+      "dim": "",
+      "type": "ADV",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADV]CODE=[ADLO]TABADINUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "TABAWM",
+      "label": "Modèle",
+      "dim": "",
+      "type": "AWM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AWM]AWM0=[ADLO]TABAWM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "TABCOD",
+      "label": "Table",
+      "dim": "",
+      "type": "ATB",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ATB]CODFIC=[ADLO]TABCOD",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "TABKEY",
+      "label": "Clé enregistrement",
+      "dim": "",
+      "type": "A",
+      "length": "200",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TABKEYFMT",
+      "label": "Description clé",
+      "dim": "",
+      "type": "A",
+      "length": "120",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TABKEYNAM",
+      "label": "Code clé",
+      "dim": "",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TABLEG",
+      "label": "Législation",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=909;TABLEG",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ADLO]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ADLO",
+  "label": "Livrable",
+  "module": "Superviseur"
+}

@@ -1,0 +1,293 @@
+{
+  "table": "BETCPYL",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/BETCPYL.htm",
+  "keys": [
+    {
+      "key": "BCL0",
+      "description": "NUMERO",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "BCL1",
+      "description": "FLG1234+NUMERO",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "BCL2",
+      "description": "CRIBETCPY",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUZBETFLG",
+      "label": "Autorisation",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[BCL]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CRIBETCPY",
+      "label": "Critères",
+      "dim": "",
+      "type": "A",
+      "length": "30",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FLG1234",
+      "label": "Flag",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FLG1CPYORI",
+      "label": "Flag",
+      "dim": "",
+      "type": "C",
+      "length": "1",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FLG2FCYORI",
+      "label": "Flag",
+      "dim": "",
+      "type": "C",
+      "length": "1",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FLG3CPYDES",
+      "label": "Flag",
+      "dim": "",
+      "type": "C",
+      "length": "1",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FLG4FCYDES",
+      "label": "Flag",
+      "dim": "",
+      "type": "C",
+      "length": "1",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "GRPCPYDES",
+      "label": "Soc/Grp Destinataire",
+      "dim": "",
+      "type": "AGF",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AGF]AGF0=[BCL]GRPCPYDES",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "GRPCPYORI",
+      "label": "Soc/Grp source",
+      "dim": "",
+      "type": "AGF",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AGF]AGF0=[BCL]GRPCPYORI",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "GRPFCYDES",
+      "label": "Site/Grp Dest.",
+      "dim": "",
+      "type": "AGF",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AGF]AGF0=[BCL]GRPFCYDES",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "GRPFCYORI",
+      "label": "Site/Grp source",
+      "dim": "",
+      "type": "AGF",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AGF]AGF0=[BCL]GRPFCYORI",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "NUMERO",
+      "label": "Numéro",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TRFPRI",
+      "label": "Transfert prix",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYPBET",
+      "label": "Type",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2203",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[BCL]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VCRTYP",
+      "label": "Document",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "701",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VCRTYPDES",
+      "label": "Document",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "701",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VLTFOOINV",
+      "label": "Valorisation",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "298",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "BCL",
+  "label": "Paramétrage inter-sociétés",
+  "module": "Données de base"
+}

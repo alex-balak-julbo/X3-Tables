@@ -1,0 +1,9 @@
+{
+  "table": "ESSTAXBLB",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/ESSTAXBLB.htm",
+  "keys": [],
+  "fields": [],
+  "abbreviation": "ESTL",
+  "label": "Génération documents portail Employés",
+  "module": "Administration des RH"
+}

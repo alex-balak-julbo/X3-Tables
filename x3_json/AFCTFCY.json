@@ -1,0 +1,131 @@
+{
+  "table": "AFCTFCY",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/AFCTFCY.htm",
+  "keys": [
+    {
+      "key": "AFF0",
+      "description": "FCY+PRFCOD+FNC",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "AFF1",
+      "description": "PRFCOD+FNC",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AFF]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "FCY",
+      "label": "Site",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[AFF]FCY",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "FNC",
+      "label": "Fonction",
+      "dim": "",
+      "type": "AFC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AFC]CODINT=[AFF]FNC",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "OPT",
+      "label": "Options",
+      "dim": "",
+      "type": "A",
+      "length": "23",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PRFCOD",
+      "label": "Code profil",
+      "dim": "",
+      "type": "AFT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AFT]AFT0=[AFF]PRFCOD",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AFF]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "AFF",
+  "label": "Profil fonction site",
+  "module": "Superviseur"
+}

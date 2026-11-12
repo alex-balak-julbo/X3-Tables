@@ -1,0 +1,137 @@
+{
+  "table": "SFTTEMH",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/SFTTEMH.htm",
+  "keys": [
+    {
+      "key": "SFTTMH0",
+      "description": "TEAMNUM+EMPNUM+TEAMSEQ",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[SFTTH]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "EMPNUM",
+      "label": "Matricule",
+      "dim": "",
+      "type": "TMA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TMA]TMA0=[SFTTH]EMPNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "ENDDAT",
+      "label": "Date fin",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "STRDAT",
+      "label": "Date début",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TEAMNUM",
+      "label": "Équipe",
+      "dim": "",
+      "type": "TMA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TMA]TMA0=[SFTTH]TEAMNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "TEAMSEQ",
+      "label": "Rang",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[SFTTH]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "SFTTH",
+  "label": "Historique équipe",
+  "module": "Données de base"
+}

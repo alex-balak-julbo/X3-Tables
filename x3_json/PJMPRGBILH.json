@@ -1,0 +1,269 @@
+{
+  "table": "PJMPRGBILH",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PJMPRGBILH.htm",
+  "keys": [
+    {
+      "key": "PBILH0",
+      "description": "PRGBILNUM",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "PBILH1",
+      "description": "SOHNUM+SOPLIN+SOPSEQ",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "PBILH2",
+      "description": "PRJLNK",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PBILH]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CUR",
+      "label": "Devise",
+      "dim": "",
+      "type": "CUR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TCU]TCU0=[PBILH]CUR",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "DESAXX",
+      "label": "Désignation localisée",
+      "dim": "",
+      "type": "AXX",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FCY",
+      "label": "Site",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[PBILH]FCY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "OPPNUM",
+      "label": "Affaire",
+      "dim": "",
+      "type": "PIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PIM]PIM0=[PBILH]OPPNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "PBUCOD",
+      "label": "Budget",
+      "dim": "",
+      "type": "PBU",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PERENDDAT",
+      "label": "Fin période",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PERSTRDAT",
+      "label": "Début période",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PRGBILNUM",
+      "label": "Numéro plan facturation",
+      "dim": "",
+      "type": "PBIL",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PBILH]PBILH0=[PBILH]PRGBILNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "PRJLNK",
+      "label": "Lien affaire",
+      "dim": "",
+      "type": "PIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PIM]PIM0=[PBILH]PRJLNK",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "PROBIL",
+      "label": "Mode de facturation",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "7769",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": "PJM"
+    },
+    {
+      "name": "SOHNUM",
+      "label": "Commande vente",
+      "dim": "",
+      "type": "SOH",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[SOH]SOH0=SOHNUM;SOPLIN;SOPSEQ",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "SOPLIN",
+      "label": "Numéro ligne commande vente",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SOPSEQ",
+      "label": "Compteur commande vente",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TASCOD",
+      "label": "Tâche",
+      "dim": "",
+      "type": "TAC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UOM",
+      "label": "Unité vente",
+      "dim": "",
+      "type": "UOM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TUN]TUN0=[PBILH]UOM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PBILH]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "PBILH",
+  "label": "Plan facturation à l'avancemnt",
+  "module": "Ventes"
+}

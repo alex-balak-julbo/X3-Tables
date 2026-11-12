@@ -1,0 +1,221 @@
+{
+  "table": "EDICAT",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/EDICAT.htm",
+  "keys": [
+    {
+      "key": "ECA0",
+      "description": "CATCOD",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CATACT",
+      "label": "Action",
+      "dim": "",
+      "type": "M",
+      "length": "20",
+      "menu": "2011",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CATCOD",
+      "label": "Code catégorie",
+      "dim": "",
+      "type": "CAT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ECA]ECA0=[ECA]CATCOD",
+      "nullify": "BSRA",
+      "activity": ""
+    },
+    {
+      "name": "CATDES",
+      "label": "Description",
+      "dim": "",
+      "type": "A",
+      "length": "35",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CATOPE",
+      "label": "Opération",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2025",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CATTRGTAB",
+      "label": "Table déclenchante",
+      "dim": "",
+      "type": "ATB",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ATB]CODFIC=[ECA]CATTRGTAB",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CATTYP",
+      "label": "Type de catégorie",
+      "dim": "",
+      "type": "M",
+      "length": "50",
+      "menu": "2012",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODIND",
+      "label": "Code index",
+      "dim": "",
+      "type": "ANX",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ECA]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DESCRIPT",
+      "label": "Descripteur index",
+      "dim": "",
+      "type": "A",
+      "length": "120",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DUPLICATE",
+      "label": "Duplicata",
+      "dim": "",
+      "type": "M",
+      "length": "30",
+      "menu": "2010",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FLGSYRA",
+      "label": "Syracuse",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FNC",
+      "label": "Fonction",
+      "dim": "",
+      "type": "EFN",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": "EDIX3"
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ECA]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VALID",
+      "label": "Valide",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ECA",
+  "label": "Catégorie EDI",
+  "module": "Données de base"
+}

@@ -1,0 +1,257 @@
+{
+  "table": "PITCOUNT",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PITCOUNT.htm",
+  "keys": [
+    {
+      "key": "PCT0",
+      "description": "SRENUM+TPYFLG+FGVCAH+BPC+MAC+PBL+HDT+HDTSEQ",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "PCT1",
+      "description": "CONNUM",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "PCT2",
+      "description": "LOO",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BPC",
+      "label": "Client",
+      "dim": "",
+      "type": "BPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPR]BPR0=[PCT]BPC",
+      "nullify": "R.A.Z.",
+      "activity": ""
+    },
+    {
+      "name": "CONNUM",
+      "label": "Contrat de service",
+      "dim": "",
+      "type": "CON",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CON]CON0=[PCT]CONNUM",
+      "nullify": "R.A.Z.",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FGVCAH",
+      "label": "Cache abandon",
+      "dim": "",
+      "type": "C",
+      "length": "1",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "HDT",
+      "label": "Consommations",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "HDTSEQ",
+      "label": "Consommations",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LOO",
+      "label": "Boucle",
+      "dim": "",
+      "type": "A",
+      "length": "100",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MAC",
+      "label": "Parc",
+      "dim": "",
+      "type": "MAC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[MAC]MAC0=[PCT]MAC",
+      "nullify": "R.A.Z.",
+      "activity": ""
+    },
+    {
+      "name": "PBL",
+      "label": "Compétence",
+      "dim": "",
+      "type": "PBL",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PBL]PBL0=[PCT]PBL",
+      "nullify": "R.A.Z.",
+      "activity": ""
+    },
+    {
+      "name": "PIT",
+      "label": "Points",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PITTYP",
+      "label": "Type de point",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "3017",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SAT",
+      "label": "Etat des points",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "3013",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SRENUM",
+      "label": "Demande de service",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TPYFLG",
+      "label": "Enregistrement temp.",
+      "dim": "",
+      "type": "C",
+      "length": "1",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PCT]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "PCT",
+  "label": "Comptage des points",
+  "module": "Données de base"
+}

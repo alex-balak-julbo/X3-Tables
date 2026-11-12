@@ -1,0 +1,167 @@
+{
+  "table": "RSLINESGER1",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/RSLINESGER1.htm",
+  "keys": [
+    {
+      "key": "RSLG1",
+      "description": "USERID",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "RSLG2",
+      "description": "USERID+GEREECNUM+TRNTYP",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AMTTRN",
+      "label": "Rotation",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur Création",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[RSLG1]CREUSR",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CRY",
+      "label": "Pays",
+      "dim": "",
+      "type": "CRY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TCY]TCY0=[RSLG1]CRY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "FLG",
+      "label": "",
+      "dim": "",
+      "type": "A",
+      "length": "3",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "GEREECNUM",
+      "label": "N° TVA intracommunautaire",
+      "dim": "",
+      "type": "A",
+      "length": "20",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TAX",
+      "label": "Taxe",
+      "dim": "",
+      "type": "VAT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TVT]TVT0=TAX;[V]GSUPCLE",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "TRNTYP",
+      "label": "Type chiffre d'affaires",
+      "dim": "",
+      "type": "REPLINDE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[RLI]RLI0=LEG;2;TRNTYP",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[RSLG1]UPDUSR",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "USERID",
+      "label": "Identificateur utilisateur+adxuid",
+      "dim": "",
+      "type": "ID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "RSLG1",
+  "label": "Relevé récapitulatif",
+  "module": "Comptabilité tiers"
+}

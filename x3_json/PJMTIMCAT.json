@@ -1,0 +1,173 @@
+{
+  "table": "PJMTIMCAT",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PJMTIMCAT.htm",
+  "keys": [
+    {
+      "key": "PJTC0",
+      "description": "CATCOD",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BILLABLE",
+      "label": "Facturable",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CATCOD",
+      "label": "Code catégorie",
+      "dim": "",
+      "type": "PJTC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PJTC]PJTC0=[PJTC]CATCOD",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CHGTYP",
+      "label": "Type cours",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "202",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PJTC]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DESAXX",
+      "label": "Intitulé",
+      "dim": "",
+      "type": "AX3",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NONPRJCAT",
+      "label": "Catégorie hors affaire",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PCCCOD",
+      "label": "Nature de dépense",
+      "dim": "",
+      "type": "PJCC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PJCC]PCC0=[PJTC]PCCCOD",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "RATMUL",
+      "label": "Coefficient multiplicateur",
+      "dim": "",
+      "type": "RAT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SHOAXX",
+      "label": "Intitulé court",
+      "dim": "",
+      "type": "AX1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PJTC]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "PJTC",
+  "label": "Catégorie de temps",
+  "module": "Données de base"
+}

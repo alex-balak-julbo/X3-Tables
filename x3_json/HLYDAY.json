@@ -1,0 +1,9 @@
+{
+  "table": "HLYDAY",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/HLYDAY.htm",
+  "keys": [],
+  "fields": [],
+  "abbreviation": "HLY",
+  "label": "Jours fériés",
+  "module": "Données de base"
+}

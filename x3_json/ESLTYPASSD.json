@@ -1,0 +1,215 @@
+{
+  "table": "ESLTYPASSD",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/ESLTYPASSD.htm",
+  "keys": [
+    {
+      "key": "ESTAD0",
+      "description": "ESLCOD+LEG+TYP+VAT+FLGVAT+VATIPT+VCRTYP+GTEGRPCOD+VACBPR",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "ESTAD1",
+      "description": "ESLCOD+TYP",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ESTAD]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "ESLCOD",
+      "label": "Code",
+      "dim": "",
+      "type": "ESL",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FBDCRY",
+      "label": "Pays",
+      "dim": "",
+      "type": "CRY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TCY]TCY0=[ESTAD]FBDCRY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "FLGVAT",
+      "label": "Gestion TVA",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "608",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "GTEGRPCOD",
+      "label": "Groupe types de pièce",
+      "dim": "",
+      "type": "GTEGRP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GTEGH]GTEGH0=GTEGRPCOD;LEG",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "LEG",
+      "label": "Législation",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=909;LEG",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "STRDAT",
+      "label": "Date début",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYP",
+      "label": "Type",
+      "dim": "",
+      "type": "A",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ESTAD]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VACBPR",
+      "label": "Régime de taxe du tiers",
+      "dim": "",
+      "type": "TVB",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TVB]TVB0=VACBPR;LEG",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "VAT",
+      "label": "Taxe",
+      "dim": "",
+      "type": "VAT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TVT]TVT0=VAT;[V]GSUPCLE",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "VATIPT",
+      "label": "Imputation taxe",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "609",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VCRTYP",
+      "label": "Type de pièce",
+      "dim": "",
+      "type": "GTE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GTE]GTE0=VCRTYP;[V]GSUPCLE",
+      "nullify": "Bloquant",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ESTAD",
+  "label": "Affec. par type vente intracom.",
+  "module": "Comptabilité"
+}

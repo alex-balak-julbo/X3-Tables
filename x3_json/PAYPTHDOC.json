@@ -1,0 +1,9 @@
+{
+  "table": "PAYPTHDOC",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PAYPTHDOC.htm",
+  "keys": [],
+  "fields": [],
+  "abbreviation": "PAO",
+  "label": "Documents Ord. paiement/Reçus",
+  "module": "Comptabilité tiers"
+}

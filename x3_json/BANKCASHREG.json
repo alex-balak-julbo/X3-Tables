@@ -1,0 +1,9 @@
+{
+  "table": "BANKCASHREG",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/BANKCASHREG.htm",
+  "keys": [],
+  "fields": [],
+  "abbreviation": "BCREG",
+  "label": "Registre caisse/banque",
+  "module": "Comptabilité tiers"
+}

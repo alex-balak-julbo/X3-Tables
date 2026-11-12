@@ -1,0 +1,239 @@
+{
+  "table": "EDIBPRCPYD",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/EDIBPRCPYD.htm",
+  "keys": [
+    {
+      "key": "EBCD0",
+      "description": "BPRNUM+CPY+PARCOD+NUMLIN",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "EBCD1",
+      "description": "BPRNUM+CPY+PARCOD+SORT",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "EBCD2",
+      "description": "BPRNUM+CPY+PARCOD+CATTYP+CATACT+CATOPE",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "EBCD3",
+      "description": "BPRNUM+CPY+PARCOD+CATCOD+CATACT",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BPRNUM",
+      "label": "Tiers",
+      "dim": "",
+      "type": "BPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPR]BPR0=[EBCD]BPRNUM",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CATACT",
+      "label": "Action",
+      "dim": "",
+      "type": "M",
+      "length": "20",
+      "menu": "2011",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CATCOD",
+      "label": "Code catégorie",
+      "dim": "",
+      "type": "CAT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ECA]ECA0=[EBCD]CATCOD",
+      "nullify": "BSRA",
+      "activity": ""
+    },
+    {
+      "name": "CATOPE",
+      "label": "Opération",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2025",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CATTYP",
+      "label": "Type de catégorie",
+      "dim": "",
+      "type": "M",
+      "length": "50",
+      "menu": "2012",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CPY",
+      "label": "Société",
+      "dim": "",
+      "type": "CPY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CPY]CPY0=[EBCD]CPY",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[EBCD]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "FLOCOD",
+      "label": "ID flux",
+      "dim": "",
+      "type": "EFC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FLOREL",
+      "label": "Version",
+      "dim": "",
+      "type": "EFR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUMLIN",
+      "label": "Numéro ligne",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PARCOD",
+      "label": "Partenaire EDI",
+      "dim": "",
+      "type": "EPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[EPR]EPR0=[EBCD]PARCOD",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "PARTYP",
+      "label": "Type partenaire EDI",
+      "dim": "",
+      "type": "M",
+      "length": "30",
+      "menu": "2009",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SORT",
+      "label": "Tri",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[EBCD]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "EBCD",
+  "label": "Flux EDI par tiers société",
+  "module": "Données de base"
+}

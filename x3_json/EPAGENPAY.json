@@ -1,0 +1,9 @@
+{
+  "table": "EPAGENPAY",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/EPAGENPAY.htm",
+  "keys": [],
+  "fields": [],
+  "abbreviation": "EPAGPP",
+  "label": "Génération versements extérieurs",
+  "module": "Administration des RH"
+}

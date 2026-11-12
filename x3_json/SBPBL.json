@@ -1,0 +1,113 @@
+{
+  "table": "SBPBL",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/SBPBL.htm",
+  "keys": [
+    {
+      "key": "SBP0",
+      "description": "BPRNUM",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "SBP1",
+      "description": "PBL",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "SBP2",
+      "description": "BPRNUM+PBL",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BPRNUM",
+      "label": "Code prestataire",
+      "dim": "",
+      "type": "BPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPR]BPR0=[SBP]BPRNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[SBP]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "PBL",
+      "label": "Familles compétence",
+      "dim": "",
+      "type": "PBL",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PBL]PBL0=[SBP]PBL",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[SBP]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "SBP",
+  "label": "Compétences prestataire",
+  "module": "Support client"
+}

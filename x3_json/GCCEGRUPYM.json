@@ -1,0 +1,257 @@
+{
+  "table": "GCCEGRUPYM",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/GCCEGRUPYM.htm",
+  "keys": [
+    {
+      "key": "CRY0",
+      "description": "PYM+GRU+LIN",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "CRY1",
+      "description": "PYM+LEV+GRU+LIN",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "CRY2",
+      "description": "PYM+SBBGRU",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "CRY4",
+      "description": "PYM+GRU",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "CRY5",
+      "description": "PYM+CCE",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BUDTRK",
+      "label": "Suivi budgétaire",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CCE",
+      "label": "Section",
+      "dim": "",
+      "type": "A",
+      "length": "15",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DESTRA",
+      "label": "Intitulé",
+      "dim": "",
+      "type": "AX3",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "EXPNUM",
+      "label": "Numéro Export",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "GRU",
+      "label": "Groupe",
+      "dim": "",
+      "type": "CYR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CRY]CRY0=PYM;GRU;1",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "LEV",
+      "label": "Niveau définition",
+      "dim": "",
+      "type": "C",
+      "length": "2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LIN",
+      "label": "Numéro de ligne",
+      "dim": "",
+      "type": "C",
+      "length": "2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PRNROW",
+      "label": "Rang d'impression",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PYM",
+      "label": "Pyramide",
+      "dim": "",
+      "type": "CYM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CYM]CYM0=PYM",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "SBBGRU",
+      "label": "Sous-groupes",
+      "dim": "",
+      "type": "CYR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CRY]CRY0=PYM;SBBGRU;1",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "SHOTRA",
+      "label": "Intitulé court",
+      "dim": "",
+      "type": "AX1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "CRY",
+  "label": "Groupes pyramides analytiques",
+  "module": "Données de base"
+}

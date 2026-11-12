@@ -1,0 +1,239 @@
+{
+  "table": "TABTNHTYP",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/TABTNHTYP.htm",
+  "keys": [
+    {
+      "key": "TTN0",
+      "description": "TNHTYP+LEG",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "TTN1",
+      "description": "TNHTYP",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODNUM",
+      "label": "Compteur",
+      "dim": "",
+      "type": "ANM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ANM]ANM0=[TTN]CODNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CODNUMEND",
+      "label": "Compteur définitif",
+      "dim": "",
+      "type": "ANM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ANM]ANM0=[TTN]CODNUMEND",
+      "nullify": "Bloquant",
+      "activity": "KPO"
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DATUPDFLG",
+      "label": "MAJ date document",
+      "dim": "",
+      "type": "M",
+      "length": "12",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": "KPO"
+    },
+    {
+      "name": "DESAXX",
+      "label": "Intitulé",
+      "dim": "",
+      "type": "AX3",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "GFY",
+      "label": "Groupe",
+      "dim": "",
+      "type": "AGF",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AGF]AGF0=[TTN]GFY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "LEG",
+      "label": "Législation",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=909;LEG",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "MANCOU",
+      "label": "Compteur manuel",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "RECTYP",
+      "label": "Type enregistrement",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2029",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": "KPO"
+    },
+    {
+      "name": "SAFTTRNTYP",
+      "label": "Type document SAF-T",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2046",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": "KPO"
+    },
+    {
+      "name": "SHOAXX",
+      "label": "Intitulé court",
+      "dim": "",
+      "type": "AX1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TNHTYP",
+      "label": "Type",
+      "dim": "",
+      "type": "TTN",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TTN]TTN0=TNHTYP;LEG",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "TTN",
+  "label": "Type note transport",
+  "module": "Données de base"
+}

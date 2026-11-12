@@ -1,0 +1,221 @@
+{
+  "table": "WIPRESW",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/WIPRESW.htm",
+  "keys": [
+    {
+      "key": "WRW0",
+      "description": "UID+VCRTYP+VCRNUM+VCRLIN+TYPCST+OVETYPCST+BRDCOD",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "WRW1",
+      "description": "UID+MFGFCY+TYPCST+OVETYPCST+BRDCOD+VCRTYP+VCRNUM+VCRLIN",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "WRW2",
+      "description": "MFGFCY+VCRTYP+VCRNUM+VCRLIN",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BRDCOD",
+      "label": "Famille coûts",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CPLAMT",
+      "label": "Montant réalisé",
+      "dim": "",
+      "type": "DCB",
+      "length": "11.4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[WRW]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "EXTAMT",
+      "label": "Montant prévu",
+      "dim": "",
+      "type": "DCB",
+      "length": "11.4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MFGFCY",
+      "label": "Site production",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[WRW]MFGFCY",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "OVETYPCST",
+      "label": "Type de coût FG",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "319",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYPCST",
+      "label": "Type de coût",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "319",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UID",
+      "label": "Process",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[WRW]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VARAMT",
+      "label": "Variance",
+      "dim": "",
+      "type": "DCB",
+      "length": "11.4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VCRLIN",
+      "label": "No ligne pièce",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VCRNUM",
+      "label": "No pièce",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VCRTYP",
+      "label": "Type pièce",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "701",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "WRW",
+  "label": "Résumé WIPCOST pour impression",
+  "module": "Données de base"
+}

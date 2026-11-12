@@ -1,0 +1,137 @@
+{
+  "table": "HOROITM",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/HOROITM.htm",
+  "keys": [
+    {
+      "key": "HOI0",
+      "description": "MACNUM+PBLNUM+AUSNUM",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "HOI1",
+      "description": "PBLNUM+MACNUM+AUSNUM",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "HOI2",
+      "description": "AUSNUM+PBLNUM+MACNUM",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUSNUM",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[HOI]AUSNUM",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[HOI]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "ITMREF",
+      "label": "Article horodaté",
+      "dim": "",
+      "type": "ITM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ITM]ITM0=[HOI]ITMREF",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "MACNUM",
+      "label": "Article parc",
+      "dim": "",
+      "type": "ITM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ITM]ITM0=[HOI]MACNUM",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "PBLNUM",
+      "label": "Famille de compétence",
+      "dim": "",
+      "type": "PBL",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PBL]PBL0=[HOI]PBLNUM",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[HOI]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "HOI",
+  "label": "Articles horodatés",
+  "module": "Données de base"
+}

@@ -1,0 +1,161 @@
+{
+  "table": "MEMFOR",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/MEMFOR.htm",
+  "keys": [
+    {
+      "key": "FOG0",
+      "description": "CODMSK+CODZON+USR+FORCOD",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODMSK",
+      "label": "Code écran",
+      "dim": "",
+      "type": "AMK",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AMK]CODMSK=[FOG]CODMSK",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CODZON",
+      "label": "Code champ",
+      "dim": "",
+      "type": "AVA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[FOG]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "FORCOD",
+      "label": "Code formule",
+      "dim": "",
+      "type": "FOR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TFO]TFO0=FORTYP;FORCOD",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "FORTYP",
+      "label": "Type formule",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "213",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "GLOB",
+      "label": "Global",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[FOG]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "USR",
+      "label": "Code utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[FOG]USR",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "VALDEF",
+      "label": "Valeur par défaut",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "FOG",
+  "label": "Mémos",
+  "module": "Données de base"
+}

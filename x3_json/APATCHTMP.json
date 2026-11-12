@@ -1,0 +1,173 @@
+{
+  "table": "APATCHTMP",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/APATCHTMP.htm",
+  "keys": [
+    {
+      "key": "APATMP0",
+      "description": "NUMREQ+FICNAM+FOLD",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[APATMP]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "FICLOG",
+      "label": "Fichier de trace",
+      "dim": "",
+      "type": "FIC",
+      "length": "30",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FICNAM",
+      "label": "Nom du fichier",
+      "dim": "",
+      "type": "FIC",
+      "length": "50",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FLGPAT",
+      "label": "Statut patch",
+      "dim": "",
+      "type": "M",
+      "length": "10",
+      "menu": "7883",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FLGTRT",
+      "label": "Statut traitement",
+      "dim": "",
+      "type": "M",
+      "length": "10",
+      "menu": "7883",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FLGVAL",
+      "label": "Statut validation",
+      "dim": "",
+      "type": "M",
+      "length": "10",
+      "menu": "7883",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FOLD",
+      "label": "Dossier",
+      "dim": "",
+      "type": "ADS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADS]DOSSIER=[APATMP]FOLD",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "NUMREQ",
+      "label": "No requête",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[APATMP]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VOLUME",
+      "label": "Volume",
+      "dim": "",
+      "type": "AVL",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AVL]CODE=[APATMP]VOLUME",
+      "nullify": "Bloquant",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "APATMP",
+  "label": "Intégration de patch",
+  "module": "Superviseur"
+}

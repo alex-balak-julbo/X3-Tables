@@ -1,0 +1,239 @@
+{
+  "table": "BILLLADD",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/BILLLADD.htm",
+  "keys": [
+    {
+      "key": "BOLD0",
+      "description": "BOLNUM+BOLLIN",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "BOLD1",
+      "description": "BOLNUM+FRTCLS+PCK+NMFC",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BOLLIN",
+      "label": "Ligne BT",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BOLNUM",
+      "label": "Numéro BT",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "COMMENT",
+      "label": "Commentaire",
+      "dim": "",
+      "type": "A",
+      "length": "50",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[BOLD]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "FRTCLS",
+      "label": "Classe de fret",
+      "dim": "",
+      "type": "FRT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FRT]FRT0=FRTCLS;[V]GSUPCLE",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "GROWEI",
+      "label": "Poids brut",
+      "dim": "",
+      "type": "WEI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NBRPCK",
+      "label": "Nbre colis",
+      "dim": "",
+      "type": "QTY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NETWEI",
+      "label": "Poids net",
+      "dim": "",
+      "type": "WEI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NMFC",
+      "label": "NMFC",
+      "dim": "",
+      "type": "FCC",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCC]FCC0=1;NMFC",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "PACWEI",
+      "label": "Poids colis",
+      "dim": "",
+      "type": "WEI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PCK",
+      "label": "Emballage",
+      "dim": "",
+      "type": "PCK",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TPA]TPA0=[BOLD]PCK",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[BOLD]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VOL",
+      "label": "Volume",
+      "dim": "",
+      "type": "VOL",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "VOU",
+      "label": "Unité Volume",
+      "dim": "",
+      "type": "UOM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TUN]TUN0=[BOLD]VOU",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "WEU",
+      "label": "Unité poids",
+      "dim": "",
+      "type": "UOM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TUN]TUN0=[BOLD]WEU",
+      "nullify": "Bloquant",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "BOLD",
+  "label": "Détail bon de transport",
+  "module": "Données de base"
+}

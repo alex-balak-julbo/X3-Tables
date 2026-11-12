@@ -1,0 +1,173 @@
+{
+  "table": "PHYMVT",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PHYMVT.htm",
+  "keys": [
+    {
+      "key": "PMVT0",
+      "description": "PHYREF+NUM",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PMVT]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "MVT",
+      "label": "Mouvement en attente",
+      "dim": "",
+      "type": "M",
+      "length": "30",
+      "menu": "3275",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MVTDAT",
+      "label": "Date mouvement",
+      "dim": "",
+      "type": "D4",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MVTFCY",
+      "label": "Site financier dest.",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[PMVT]MVTFCY",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "MVTISSTYP",
+      "label": "Motif sortie",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "3175",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "MVTLCTCOD",
+      "label": "Localisation dest.",
+      "dim": "",
+      "type": "LCT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[LCT]LCT0=MVTLCTCOD",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "MVTTRANS",
+      "label": "Motif de transfert",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=612;MVTTRANS",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "NUM",
+      "label": "N° Ordre",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "PHYREF",
+      "label": "Référence",
+      "dim": "",
+      "type": "PHY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PHY]PHY0=PHYREF",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PMVT]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "PMVT",
+  "label": "Elts physiques - mouvements",
+  "module": "Immobilisations"
+}

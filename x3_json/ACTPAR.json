@@ -1,0 +1,155 @@
+{
+  "table": "ACTPAR",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/ACTPAR.htm",
+  "keys": [
+    {
+      "key": "NOPAR",
+      "description": "ACTION+NOPAR",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "CODPAR",
+      "description": "CODPAR",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ACTION",
+      "label": "Code action",
+      "dim": "",
+      "type": "ACT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ACT]ACTION=[ATR]ACTION",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "ADRVAL",
+      "label": "Type d'argument",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "34",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODPAR",
+      "label": "Code paramètre",
+      "dim": "",
+      "type": "AAR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AAR]CODPAR=[ATR]CODPAR",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ATR]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "INTITPAR",
+      "label": "Intitulé paramètre",
+      "dim": "",
+      "type": "ATX",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NOPAR",
+      "label": "No paramètre",
+      "dim": "",
+      "type": "C",
+      "length": "2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYPPAR",
+      "label": "Type paramètre",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "33",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[ATR]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "ATR",
+  "label": "Paramètres des actions",
+  "module": "Superviseur"
+}

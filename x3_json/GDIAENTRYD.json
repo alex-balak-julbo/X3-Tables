@@ -1,0 +1,149 @@
+{
+  "table": "GDIAENTRYD",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/GDIAENTRYD.htm",
+  "keys": [
+    {
+      "key": "GDD0",
+      "description": "DIA+FLD",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CRD",
+      "label": "Mode fiche",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[GDD]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CTL",
+      "label": "Contrôle",
+      "dim": "",
+      "type": "ACL",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ACL]ACL0=[GDD]CTL",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "DAC",
+      "label": "Mode de saisie",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "35",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DEFVAL",
+      "label": "Valeur par défaut",
+      "dim": "",
+      "type": "AFR",
+      "length": "250",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DIA",
+      "label": "Transaction",
+      "dim": "",
+      "type": "GDE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GDE]DIA=[GDD]DIA",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "FLD",
+      "label": "Champ",
+      "dim": "",
+      "type": "A",
+      "length": "20",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[GDD]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "GDD",
+  "label": "Transactions saisie pièces",
+  "module": "Comptabilité"
+}

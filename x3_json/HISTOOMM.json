@@ -1,0 +1,167 @@
+{
+  "table": "HISTOOMM",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/HISTOOMM.htm",
+  "keys": [
+    {
+      "key": "HIM0",
+      "description": "HIMNUM",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "HIM1",
+      "description": "OMMNUM+CCNNUM",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "HIM2",
+      "description": "OMMNUM+BPRNUM+CCNNUM",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "HIM3",
+      "description": "OMMNUM+BPRNUM",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "HIM4",
+      "description": "BPRNUM",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "HIM5",
+      "description": "CCNNUM",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BPRNUM",
+      "label": "Code tiers",
+      "dim": "",
+      "type": "BPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPR]BPR0=BPRNUM",
+      "nullify": "R.A.Z.",
+      "activity": ""
+    },
+    {
+      "name": "CCNNUM",
+      "label": "Code interlocuteur",
+      "dim": "",
+      "type": "AIN",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AIN]AIN0=[HIM]CCNNUM",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[HIM]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DATSND",
+      "label": "Date d'envoi",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "HIMNUM",
+      "label": "Code historique",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OMMNUM",
+      "label": "Code mailing",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[HIM]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "HIM",
+  "label": "Historique envois mailing",
+  "module": "Données de base"
+}

@@ -1,0 +1,263 @@
+{
+  "table": "TABROUALT",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/TABROUALT.htm",
+  "keys": [
+    {
+      "key": "TRO0",
+      "description": "ROUALT",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "TRO1",
+      "description": "FCY+ROUALT",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ACSCOD",
+      "label": "Code accès",
+      "dim": "",
+      "type": "ACS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ACS]ACS0=[TRO]ACSCOD",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BOMALT1",
+      "label": "Alternative nomencl",
+      "dim": "",
+      "type": "TBO",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TBO]TBO0=2;BOMALT1",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "BOMALT2",
+      "label": "Alternative nomencl",
+      "dim": "",
+      "type": "TBO",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TBO]TBO0=2;BOMALT2",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "BOMALT3",
+      "label": "Alternative nomencl",
+      "dim": "",
+      "type": "TBO",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TBO]TBO0=2;BOMALT3",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CSTUSE",
+      "label": "Utilisation coûts",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FCY",
+      "label": "Site",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[TRO]FCY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "MFGUSE",
+      "label": "Utilisation fabric",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "RCCUSE",
+      "label": "Utilisation PGC",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "ROUALT",
+      "label": "Alternative gamme",
+      "dim": "",
+      "type": "TRO",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TRO]TRO0=[TRO]ROUALT",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "TRODES",
+      "label": "Intitulé",
+      "dim": "",
+      "type": "DES",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TRODESAXX",
+      "label": "Intitulé",
+      "dim": "",
+      "type": "AX3",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TROSHO",
+      "label": "Intitulé court",
+      "dim": "",
+      "type": "SHO",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TROSHOAXX",
+      "label": "Intitulé court",
+      "dim": "",
+      "type": "AX1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDAT",
+      "label": "Date modification",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "TRO",
+  "label": "Table des Alternatives Gammes",
+  "module": "Données de base"
+}

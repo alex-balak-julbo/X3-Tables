@@ -1,0 +1,161 @@
+{
+  "table": "VDGERRSP",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/VDGERRSP.htm",
+  "keys": [
+    {
+      "key": "RSP0",
+      "description": "LEG+VAT+TRNTYP",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "RSP1",
+      "description": "LEG+VAT-STRDAT",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "RSP2",
+      "description": "LEG+VAT",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "User",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[RSP]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "CRY",
+      "label": "",
+      "dim": "",
+      "type": "CRY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TCY]TCY0=[RSP]CRY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "LEG",
+      "label": "Législation",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=909;LEG",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "STRDAT",
+      "label": "Date de démarrage",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TRNTYP",
+      "label": "Type chiffre d'affaires",
+      "dim": "",
+      "type": "REPLINDE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[RLI]RLI0=LEG;2;TRNTYP",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "User",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[RSP]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "VACBPR",
+      "label": "Régime de taxe du tiers",
+      "dim": "",
+      "type": "TVB",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TVB]TVB0=VACBPR;LEG",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "VAT",
+      "label": "Date activation taux 1",
+      "dim": "",
+      "type": "VAT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TVT]TVT0=VAT;LEG",
+      "nullify": "Bloquant",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "RSP",
+  "label": "Param relevé récap",
+  "module": "Comptabilité"
+}

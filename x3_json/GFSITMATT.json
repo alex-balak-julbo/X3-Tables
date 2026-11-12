@@ -1,0 +1,113 @@
+{
+  "table": "GFSITMATT",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/GFSITMATT.htm",
+  "keys": [
+    {
+      "key": "GFSIA0",
+      "description": "ITMREF+ATTCOD",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ATTCOD",
+      "label": "Attribut",
+      "dim": "",
+      "type": "GFSATT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GFSATT]ATT0=[GFSIA]ATTCOD",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "ATTVALCOD",
+      "label": "Valeur attribut",
+      "dim": "",
+      "type": "GFSATTV",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GFSATTV]ATTVAL0=ATTCOD;ATTVALCOD",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[GFSIA]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "ITMREF",
+      "label": "Article",
+      "dim": "",
+      "type": "ITM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ITM]ITM0=[GFSIA]ITMREF",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[GFSIA]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "GFSIA",
+  "label": "Attribut article",
+  "module": "Données de base"
+}

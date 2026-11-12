@@ -1,0 +1,299 @@
+{
+  "table": "TMPFUP2",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/TMPFUP2.htm",
+  "keys": [
+    {
+      "key": "TFP1",
+      "description": "NUMREQ+NUMDUD",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "TFP2",
+      "description": "NUMDUD",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "TFP3",
+      "description": "BPC",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "TFP4",
+      "description": "BPC+FUPMOD",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "TFP5",
+      "description": "NUMREQ+FCY",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "TFP6",
+      "description": "NUMREQ+LEVFUP",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ADD",
+      "label": "Code adresse",
+      "dim": "",
+      "type": "ADR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AMTDEP",
+      "label": "Montant escompte",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AMTDEPCUR",
+      "label": "Dscount amount",
+      "dim": "",
+      "type": "MD1",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "BPC",
+      "label": "Tiers",
+      "dim": "",
+      "type": "BPR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[BPR]BPR0=[TF2]BPC",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CPY",
+      "label": "Société",
+      "dim": "",
+      "type": "CPY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CPY]CPY0=[TF2]CPY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[TF2]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DEP",
+      "label": "Escompte agios",
+      "dim": "",
+      "type": "TDA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TDA]TDA0=DEP;[V]GSUPCLE",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "DEPRAT",
+      "label": "Taux d'agios",
+      "dim": "",
+      "type": "RAT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "DPTCOD",
+      "label": "Code litige",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=315;DPTCOD",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "FCY",
+      "label": "Site",
+      "dim": "",
+      "type": "FCY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[FCY]FCY0=[TF2]FCY",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "FUPMOD",
+      "label": "Mode de relance",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2629",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "GRPCRI",
+      "label": "Regroupement",
+      "dim": "",
+      "type": "A",
+      "length": "30",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "LEVFUP",
+      "label": "Niveau relance",
+      "dim": "",
+      "type": "C",
+      "length": "2",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUMDUD",
+      "label": "Numéro échéance",
+      "dim": "",
+      "type": "A",
+      "length": "15",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NUMREQ",
+      "label": "Numéro de campagne",
+      "dim": "",
+      "type": "FUP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TF0]TFP0=NUMREQ",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "SEL",
+      "label": "Sélection",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYPTXT",
+      "label": "Type texte",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "2654",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[TF2]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "TF2",
+  "label": "Echéances à relancer",
+  "module": "Comptabilité tiers"
+}

@@ -1,0 +1,155 @@
+{
+  "table": "AMOTCLE",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/AMOTCLE.htm",
+  "keys": [
+    {
+      "key": "AMC0",
+      "description": "TYPZON+IDENT1+IDENT2",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "AMC1",
+      "description": "IDENT1+IDENT2",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AMC]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "IDENT1",
+      "label": "Identifiant 1",
+      "dim": "",
+      "type": "A",
+      "length": "30",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "IDENT2",
+      "label": "Identifiant 2",
+      "dim": "",
+      "type": "A",
+      "length": "200",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "INFBUL",
+      "label": "Info bulle",
+      "dim": "",
+      "type": "ADZ",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADZ]ADZ0=[V]GLANGUE;INFBUL",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "MOTCLE",
+      "label": "Mot-clé d'aide",
+      "dim": "",
+      "type": "ADZ",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADZ]ADZ0=[V]GLANGUE;MOTCLE",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "TYPZON",
+      "label": "Type",
+      "dim": "",
+      "type": "M",
+      "length": "20",
+      "menu": "7985",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UNAFFHTM",
+      "label": "Invisible dans HTML",
+      "dim": "",
+      "type": "M",
+      "length": "4",
+      "menu": "1",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AMC]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "AMC",
+  "label": "Mots-clés d'aide",
+  "module": "Superviseur"
+}

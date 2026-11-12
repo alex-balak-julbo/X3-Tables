@@ -1,0 +1,9 @@
+{
+  "table": "HRTAXMSG",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/HRTAXMSG.htm",
+  "keys": [],
+  "fields": [],
+  "abbreviation": "HRMSG",
+  "label": "Messages taxe",
+  "module": "Administration des RH"
+}

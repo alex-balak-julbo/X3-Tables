@@ -1,0 +1,209 @@
+{
+  "table": "APTLVW",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/APTLVW.htm",
+  "keys": [
+    {
+      "key": "APV0",
+      "description": "APVCOD",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "APVCOD",
+      "label": "Code",
+      "dim": "",
+      "type": "APV",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[APV]APV0=[APV]APVCOD",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "APVINTIT",
+      "label": "Désignation",
+      "dim": "",
+      "type": "AX3",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CMPCODTYP",
+      "label": "Composant visuel",
+      "dim": "",
+      "type": "APP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[APP]APP0=2;CMPCODTYP",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "CMPPARCOD",
+      "label": "Paramètre",
+      "dim": "20",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CMPPARFOR",
+      "label": "Formule",
+      "dim": "20",
+      "type": "AFF",
+      "length": "80",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CMPPARNBR",
+      "label": "Nb de paramètres",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[APV]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "SRCCOD",
+      "label": "Code source",
+      "dim": "",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SRCCODTYP",
+      "label": "Source de données",
+      "dim": "",
+      "type": "APP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[APP]APP0=1;SRCCODTYP",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "SRCPARCOD",
+      "label": "Paramètre",
+      "dim": "20",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SRCPARFOR",
+      "label": "Formule",
+      "dim": "20",
+      "type": "AFF",
+      "length": "80",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SRCPARNBR",
+      "label": "Nb de paramètres",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[APV]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "APV",
+  "label": "Vues du portail",
+  "module": "Superviseur"
+}

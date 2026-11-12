@@ -1,0 +1,125 @@
+{
+  "table": "MKGOPG",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/MKGOPG.htm",
+  "keys": [
+    {
+      "key": "MOG0",
+      "description": "MKGQUR+OPGNUM+TGR",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "MOG1",
+      "description": "MKGQUR+TGR",
+      "duplicates": true,
+      "activity": ""
+    },
+    {
+      "key": "MOG2",
+      "description": "OPGNUM+TGR",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[MOG]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "MKGQUR",
+      "label": "Ciblage",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "OPGNUM",
+      "label": "Code opération",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TGR",
+      "label": "Cible",
+      "dim": "",
+      "type": "TGL",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TGL]TGL0=[MOG]TGR",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[MOG]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "MOG",
+  "label": "Relations ciblages/opérations",
+  "module": "Action commerciale"
+}

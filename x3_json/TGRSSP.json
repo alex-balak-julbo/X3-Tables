@@ -1,0 +1,191 @@
+{
+  "table": "TGRSSP",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/TGRSSP.htm",
+  "keys": [
+    {
+      "key": "TGP0",
+      "description": "TGRSSPNUM",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "TGP1",
+      "description": "TGR+TGRSSPNUM",
+      "duplicates": true,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDAT",
+      "label": "Date création",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FIESRT",
+      "label": "Champ tri",
+      "dim": "",
+      "type": "A",
+      "length": "17",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "FIESRTTYP",
+      "label": "Sens tri",
+      "dim": "",
+      "type": "M",
+      "length": "10",
+      "menu": "90",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SPTDEF",
+      "label": "Support par défaut",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SPTSTD",
+      "label": "Support standard",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TABSRT",
+      "label": "Table de tri",
+      "dim": "",
+      "type": "ATB",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ATB]CODFIC=[TGP]TABSRT",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "TGR",
+      "label": "Cible",
+      "dim": "",
+      "type": "TGL",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TGL]TGL0=[TGP]TGR",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "TGRAXX",
+      "label": "Dénomination",
+      "dim": "",
+      "type": "AXX",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TGRSSPNUM",
+      "label": "Code support",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[TGP]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "TGP",
+  "label": "Supports de présentation",
+  "module": "Action commerciale"
+}

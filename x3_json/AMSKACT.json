@@ -1,0 +1,191 @@
+{
+  "table": "AMSKACT",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/AMSKACT.htm",
+  "keys": [
+    {
+      "key": "TYPAFF",
+      "description": "TYPAFF+CODAFF+CODZON+TYPACT+NOACT",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "NOACT",
+      "description": "CODAFF+CODZON+TYPACT+NOACT+TYPAFF",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ACTION",
+      "label": "Code action",
+      "dim": "",
+      "type": "ACT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ACT]ACTION=[AMA]ACTION",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CODAFF",
+      "label": "Code affectation",
+      "dim": "",
+      "type": "AMK",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AMK]CODMSK=[AMA]CODAFF",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "CODZON",
+      "label": "Code champ",
+      "dim": "",
+      "type": "AVA",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AMA]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DISACT",
+      "label": "Désactivation",
+      "dim": "",
+      "type": "M",
+      "length": "10",
+      "menu": "2944",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "EXEACT",
+      "label": "Exécution",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "928",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "INTITACT",
+      "label": "Intitulé bouton",
+      "dim": "",
+      "type": "ATX",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "NOACT",
+      "label": "No d'ordre",
+      "dim": "",
+      "type": "C",
+      "length": "4",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYPACT",
+      "label": "Type d'action",
+      "dim": "",
+      "type": "M",
+      "length": "15",
+      "menu": "31",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "TYPAFF",
+      "label": "Type affectation",
+      "dim": "",
+      "type": "C",
+      "length": "3",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[AMA]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "AMA",
+  "label": "Table affectation action-objet",
+  "module": "Superviseur"
+}

@@ -1,0 +1,113 @@
+{
+  "table": "GFSOPTLIN",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/GFSOPTLIN.htm",
+  "keys": [
+    {
+      "key": "GFSOL0",
+      "description": "OPTCOD+OPTSEQ",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[GFSOL]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "MATCOD",
+      "label": "Code matrice",
+      "dim": "",
+      "type": "GFSMAT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GFSST]MAT0=MATCOD",
+      "nullify": "Bloquant",
+      "activity": "GFSA"
+    },
+    {
+      "name": "OPTCOD",
+      "label": "Code optimisation",
+      "dim": "",
+      "type": "GFSOPT",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GFSOM]GFSOM0=OPTCOD",
+      "nullify": "Suppression",
+      "activity": "GFSA"
+    },
+    {
+      "name": "OPTSEQ",
+      "label": "Rang",
+      "dim": "",
+      "type": "A",
+      "length": "10",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": "GFSA"
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[GFSOL]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "GFSOL",
+  "label": "Lignes matrice d'optimisation",
+  "module": "Production"
+}

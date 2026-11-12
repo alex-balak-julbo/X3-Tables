@@ -1,0 +1,173 @@
+{
+  "table": "TYPACELEG",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/TYPACELEG.htm",
+  "keys": [
+    {
+      "key": "TPL0",
+      "description": "ACETYP+LEG+CPY+LEGLIN",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "ACETYP",
+      "label": "Type d'écriture",
+      "dim": "",
+      "type": "TPE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[TPE]TPE0=ACETYP;LEG;CPY",
+      "nullify": "R.A.Z.",
+      "activity": ""
+    },
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CPY",
+      "label": "Société",
+      "dim": "",
+      "type": "CPY",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[CPY]CPY0=[TPL]CPY",
+      "nullify": "R.A.Z.",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Opérateur création",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "GTE",
+      "label": "Type de pièce",
+      "dim": "",
+      "type": "GTE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GTE]GTE0=GTE;LEGLIN",
+      "nullify": "R.A.Z.",
+      "activity": ""
+    },
+    {
+      "name": "GTEPRO",
+      "label": "Type de pièce",
+      "dim": "",
+      "type": "GTE",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[GTE]GTE0=GTEPRO;LEGLIN",
+      "nullify": "R.A.Z.",
+      "activity": ""
+    },
+    {
+      "name": "JOU",
+      "label": "Journal",
+      "dim": "",
+      "type": "JOU",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[JOU]JOU0=JOU;LEGLIN",
+      "nullify": "R.A.Z.",
+      "activity": ""
+    },
+    {
+      "name": "JOUPRO",
+      "label": "Journal",
+      "dim": "",
+      "type": "JOU",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[JOU]JOU0=JOUPRO;LEGLIN",
+      "nullify": "R.A.Z.",
+      "activity": ""
+    },
+    {
+      "name": "LEG",
+      "label": "Législation",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=909;LEG",
+      "nullify": "R.A.Z.",
+      "activity": ""
+    },
+    {
+      "name": "LEGLIN",
+      "label": "Législation",
+      "dim": "",
+      "type": "ADI",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[ADI]CODE=909;LEGLIN",
+      "nullify": "Bloquant",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Opérateur modif",
+      "dim": "",
+      "type": "A",
+      "length": "5",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "TPL",
+  "label": "Types d'écritures comptables",
+  "module": "Immobilisations"
+}

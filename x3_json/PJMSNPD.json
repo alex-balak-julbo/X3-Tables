@@ -1,0 +1,155 @@
+{
+  "table": "PJMSNPD",
+  "url": "https://online-help.sagex3.com/erp/12/fr-fr/Content/MCD/PJMSNPD.htm",
+  "keys": [
+    {
+      "key": "PSNPD0",
+      "description": "KEYEXT",
+      "duplicates": false,
+      "activity": ""
+    },
+    {
+      "key": "PSNPD1",
+      "description": "SNPCOD+SNPSEQ",
+      "duplicates": false,
+      "activity": ""
+    }
+  ],
+  "fields": [
+    {
+      "name": "AUUID",
+      "label": "Identifiant unique",
+      "dim": "",
+      "type": "AUUID",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "CREUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PSNPD]CREUSR",
+      "nullify": "Autre",
+      "activity": ""
+    },
+    {
+      "name": "DDESAXX",
+      "label": "Intitulé",
+      "dim": "",
+      "type": "AXX",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "KEYEXT",
+      "label": "Identifiant",
+      "dim": "",
+      "type": "SNPD",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PSNPD]PSNPD0=[PSNPD]KEYEXT",
+      "nullify": "BSRA",
+      "activity": ""
+    },
+    {
+      "name": "REVRECCOD",
+      "label": "Identifiant reconnaissance revenu",
+      "dim": "",
+      "type": "VCR",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SNPCOD",
+      "label": "Code cliché",
+      "dim": "",
+      "type": "SNP",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[PSNPH]PSNPH0=[PSNPD]SNPCOD",
+      "nullify": "Suppression",
+      "activity": ""
+    },
+    {
+      "name": "SNPDDTECRE",
+      "label": "Date cliché",
+      "dim": "",
+      "type": "D",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "SNPSEQ",
+      "label": "Rang",
+      "dim": "",
+      "type": "L",
+      "length": "8",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDDATTIM",
+      "label": "Date heure",
+      "dim": "",
+      "type": "ADATIM",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "",
+      "nullify": "",
+      "activity": ""
+    },
+    {
+      "name": "UPDUSR",
+      "label": "Utilisateur",
+      "dim": "",
+      "type": "AUS",
+      "length": "",
+      "menu": "",
+      "link": "",
+      "link_expr": "[AUS]CODUSR=[PSNPD]UPDUSR",
+      "nullify": "Autre",
+      "activity": ""
+    }
+  ],
+  "abbreviation": "PSNPD",
+  "label": "Détail cliché",
+  "module": "Données de base"
+}
