@@ -1,3 +1,41 @@
+<?php
+if (isset($_GET['json'])) {
+  header('Content-Type: application/json; charset=utf-8');
+
+  $jsonName = $_GET['json'];
+  if (!is_string($jsonName)) {
+    http_response_code(400);
+    echo json_encode(['error' => 'Nom de fichier JSON invalide.']);
+    exit;
+  }
+
+  if ($jsonName === 'search-index') {
+    $jsonPath = __DIR__ . '/x3_search_index.json';
+  } elseif (preg_match('/\A[A-Za-z0-9_-]+\z/', $jsonName)) {
+    $jsonPath = __DIR__ . '/x3_json/' . $jsonName . '.json';
+  } else {
+    http_response_code(400);
+    echo json_encode(['error' => 'Nom de fichier JSON invalide.']);
+    exit;
+  }
+
+  if (!is_file($jsonPath) || !is_readable($jsonPath)) {
+    http_response_code(404);
+    echo json_encode(['error' => 'Fichier JSON introuvable.']);
+    exit;
+  }
+
+  $json = file_get_contents($jsonPath);
+  if ($json === false) {
+    http_response_code(500);
+    echo json_encode(['error' => 'Impossible de lire le fichier JSON.']);
+    exit;
+  }
+
+  echo $json;
+  exit;
+}
+?>
 <!doctype html>
 <html lang="fr">
 <head>
@@ -38,20 +76,23 @@
     <section class="mx-auto max-w-4xl text-center">
       <p class="mb-3 text-sm font-semibold uppercase tracking-[.16em] text-blue-700">Documentation locale</p>
       <h1 class="text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">Retrouvez une table ou un champ</h1>
-      <p class="mt-3 text-slate-600">Recherchez dans les champs, leurs intitulés, les noms de tables ou les types.</p>
+      <p class="mt-3 text-slate-600">Choisissez de rechercher une table, un champ ou un intitulé.</p>
     </section>
 
     <section class="mx-auto mt-8 max-w-5xl rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:p-5" aria-label="Recherche">
       <div class="flex gap-3 mobile-stack">
         <label class="relative min-w-0 flex-1">
-          <span class="sr-only">Rechercher une table, un champ ou un type</span>
+          <span class="sr-only">Saisir le terme à rechercher</span>
           <svg class="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
-          <input id="search-input" type="search" autocomplete="off" placeholder="Ex. ITMMASTER, ITMREF, Code article, AUUID…" class="w-full rounded-xl border border-slate-300 bg-white py-3.5 pl-12 pr-4 text-sm outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-100" disabled>
+          <input id="search-input" type="search" autocomplete="off" placeholder="Saisissez votre recherche…" class="w-full rounded-xl border border-slate-300 bg-white py-3.5 pl-12 pr-4 text-sm outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-100" disabled>
         </label>
         <label class="sm:w-56">
-          <span class="sr-only">Filtrer par type de champ</span>
-          <select id="type-filter" class="w-full rounded-xl border border-slate-300 bg-white px-3.5 py-3.5 text-sm text-slate-700 outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-100" disabled>
-            <option value="">Tous les types</option>
+          <span class="sr-only">Choisir où chercher</span>
+          <select id="search-mode" class="w-full rounded-xl border border-slate-300 bg-white px-3.5 py-3.5 text-sm text-slate-700 outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-100" disabled>
+            <option value="">Rechercher dans…</option>
+            <option value="table">Table</option>
+            <option value="field">Champ</option>
+            <option value="label">Intitulé</option>
           </select>
         </label>
         <button id="clear-button" type="button" class="rounded-xl border border-slate-300 px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50" disabled>Effacer</button>
@@ -92,7 +133,7 @@
     (() => {
       const indexStatus = document.getElementById("index-status");
       const searchInput = document.getElementById("search-input");
-      const typeFilter = document.getElementById("type-filter");
+      const searchMode = document.getElementById("search-mode");
       const clearButton = document.getElementById("clear-button");
       const results = document.getElementById("results");
       const resultCount = document.getElementById("result-count");
@@ -121,33 +162,33 @@
 
       function updateResults() {
         const query = normalize(searchInput.value.trim());
-        const selectedType = typeFilter.value;
-        if (!query && !selectedType) {
+        const mode = searchMode.value;
+        if (!query || !mode) {
           results.replaceChildren();
           resultCount.textContent = "";
-          setEmpty("À vous de chercher", "Saisissez un nom de table, de champ, un intitulé ou sélectionnez un type.");
+          if (query && !mode) {
+            setEmpty("Choisissez un critère", "Sélectionnez Table, Champ ou Intitulé pour lancer la recherche.");
+          } else {
+            setEmpty("À vous de chercher", "Saisissez un terme et choisissez Table, Champ ou Intitulé.");
+          }
           return;
         }
 
         const matchingFields = [];
         const tableMatches = [];
-        const matchedTables = new Set();
         const maxFields = 120;
-        for (const field of fields) {
-          if (selectedType && field.type !== selectedType) continue;
-          const tableName = String(field.table || "");
-          const name = normalize(field.name);
-          const label = normalize(field.label);
-          const type = normalize(field.type);
-          const normalizedTable = normalize(tableName);
-          const fieldMatches = !query || name.includes(query) || label.includes(query) || type.includes(query);
-          if (fieldMatches && matchingFields.length < maxFields) matchingFields.push(field);
-
-          if (query && normalizedTable.includes(query) && !matchedTables.has(tableName)) {
-            matchedTables.add(tableName);
-            tableMatches.push({ table: tableName, count: selectedType
-              ? (tables.get(tableName) || []).filter(item => item.type === selectedType).length
-              : (tables.get(tableName) || []).length });
+        if (mode === "table") {
+          for (const [tableName, tableFields] of tables) {
+            if (normalize(tableName).includes(query)) {
+              tableMatches.push({ table: tableName, count: tableFields.length });
+            }
+          }
+        } else {
+          for (const field of fields) {
+            const value = normalize(mode === "field" ? field.name : field.label);
+            if (value.includes(query) && matchingFields.length < maxFields) {
+              matchingFields.push(field);
+            }
           }
         }
 
@@ -155,7 +196,7 @@
           <button type="button" data-open-table="${escapeHtml(item.table)}" class="result-card flex w-full items-center justify-between gap-4 rounded-xl border border-blue-200 bg-blue-50/60 p-4 text-left">
             <span class="min-w-0">
               <span class="block font-semibold text-slate-900">${escapeHtml(item.table)}</span>
-              <span class="mt-1 block text-sm text-slate-600">Table · ${item.count} champ${item.count > 1 ? "s" : ""}${selectedType ? ` de type ${escapeHtml(selectedType)}` : ""}</span>
+              <span class="mt-1 block text-sm text-slate-600">Table · ${item.count} champ${item.count > 1 ? "s" : ""}</span>
             </span>
             <span class="shrink-0 rounded-lg bg-white px-3 py-2 text-xs font-semibold text-blue-700 shadow-sm">Voir la table →</span>
           </button>`).join("");
@@ -180,7 +221,7 @@
         const hasMoreFields = matchingFields.length === maxFields;
         resultCount.textContent = `${totalShown}${hasMoreTables || hasMoreFields ? "+" : ""} résultat${totalShown > 1 ? "s" : ""}`;
         if (!totalShown) {
-          setEmpty("Aucun résultat", "Essayez un autre terme ou modifiez le filtre de type.");
+          setEmpty("Aucun résultat", "Essayez un autre terme ou choisissez un autre critère de recherche.");
           return;
         }
         emptyState.classList.add("hidden");
@@ -254,7 +295,7 @@
         try {
           let data = tableCache.get(table);
           if (!data) {
-            const response = await fetch(`x3_json/${encodeURIComponent(table)}.json`);
+            const response = await fetch(`index.php?json=${encodeURIComponent(table)}`);
             if (!response.ok) throw new Error(`Le fichier x3_json/${table}.json est introuvable (HTTP ${response.status}).`);
             data = await response.json();
             if (!data || !Array.isArray(data.fields)) throw new Error("Le fichier de cette table n’a pas le format attendu.");
@@ -290,15 +331,15 @@
         window.clearTimeout(searchTimer);
         searchTimer = window.setTimeout(updateResults, 100);
       });
-      typeFilter.addEventListener("change", updateResults);
+      searchMode.addEventListener("change", updateResults);
       clearButton.addEventListener("click", () => {
         searchInput.value = "";
-        typeFilter.value = "";
+        searchMode.value = "";
         searchInput.focus();
         updateResults();
       });
 
-      fetch("x3_search_index.json")
+      fetch("index.php?json=search-index")
         .then(response => {
           if (!response.ok) throw new Error(`Impossible de charger x3_search_index.json (HTTP ${response.status}).`);
           return response.json();
@@ -306,30 +347,22 @@
         .then(data => {
           if (!Array.isArray(data)) throw new Error("x3_search_index.json doit contenir une liste de champs.");
           fields = data;
-          const typeSet = new Set();
           for (const field of fields) {
             if (!field.table) continue;
             if (!tables.has(field.table)) tables.set(field.table, []);
             tables.get(field.table).push(field);
-            if (field.type) typeSet.add(field.type);
-          }
-          for (const type of [...typeSet].sort((a, b) => a.localeCompare(b, "fr"))) {
-            const option = document.createElement("option");
-            option.value = type;
-            option.textContent = type;
-            typeFilter.append(option);
           }
           searchInput.disabled = false;
-          typeFilter.disabled = false;
+          searchMode.disabled = false;
           clearButton.disabled = false;
           indexStatus.textContent = `${fields.length.toLocaleString("fr-FR")} champs · ${tables.size.toLocaleString("fr-FR")} tables`;
           indexStatus.className = "rounded-full bg-emerald-50 px-3 py-1.5 text-xs font-medium text-emerald-700";
-          setEmpty("À vous de chercher", "Saisissez un nom de table, de champ, un intitulé ou sélectionnez un type.");
+          setEmpty("À vous de chercher", "Saisissez un terme et choisissez Table, Champ ou Intitulé.");
         })
         .catch(error => {
           indexStatus.textContent = "Index indisponible";
           indexStatus.className = "rounded-full bg-red-50 px-3 py-1.5 text-xs font-medium text-red-700";
-          setEmpty("Impossible de charger l’index", `${error.message || "Vérifiez que les fichiers JSON sont accessibles."} Lancez un serveur statique dans le dossier du projet (par exemple : python -m http.server 8000), puis ouvrez http://localhost:8000.`);
+          setEmpty("Impossible de charger l’index", `${error.message || "Vérifiez que les fichiers JSON sont accessibles."} Lancez un serveur PHP dans le dossier du projet (par exemple : php -S localhost:8000), puis ouvrez http://localhost:8000.`);
         });
     })();
   </script>
