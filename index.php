@@ -42,6 +42,7 @@ if (isset($_GET['json'])) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f8fafc">
+  <link rel="icon" type="image/png" href="favicon.png">
   <title>Explorateur des tables Sage X3</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
